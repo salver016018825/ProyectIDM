@@ -1,0 +1,164 @@
+:root{
+    --blue:#2C4964;
+    --black:#1A1C1E;
+    --yellow:#E8EC16;
+    --white:#FBFBEF;
+    --red:#ED2109;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#FBFBEF;
+    overflow-x: hidden;
+    font-family: 'Crete Round', serif;
+}
+
+/**menu de navegacion**/
+#header{
+    position: relative;
+    widows: 100%;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #FBFBEF;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.menu .logo.box{
+    margin-left: 20px;
+}
+.menu .logo.box h1 a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color:var(--black);
+}
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container .lists{
+    display: flex;
+}
+.menu .list-container .lists li{
+    list-style: none;
+}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: var(--black);
+    border-radius: 24px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.menu .list-container .lists li a.activo{
+    background: var(--black);
+    color: white;
+}
+.menu .list-container .lists li a:hover{
+    background: var(--black);
+    color: white;
+}
+
+.btn-menu > .fa-bars{
+    display: none;
+}
+
+/**IMG Header**/
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../imagen/header.jpg);
+    /**animacion imagen de inicio "heater"**/
+    animation: movimiento 5s infinite linear alternate;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/**movimiento de imagen de inicio**/
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+/**oscurecer imagen**/
+.img-header .welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, );
+
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-header .welcome h1{
+    font-size: 50px;
+    color: black;
+    font-weight: 200 ;
+}
+.img-header .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: white;
+    border: none;
+    margin: 5px;
+}
+/**disenio boton intermitente azul "ver abajo"
+img-header .welcome p{
+    font-size: 20px;
+    color: #2C4964;
+    margin-top: 20px;
+}
+**/
+
+/**boton**/
+.img-header .welcome > button{
+    width: 170px;
+    height: 40px;
+    background: var(--black);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.img-header .welcome > button:hover{
+    background: var(--red);
+}
+
+/**mision,vision, valores**/
+.acerca-de{
+    width: 100%;
+    margin-top: 120px;
+}
+.acerca-de .info-container{
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
