@@ -18,6 +18,69 @@ body{
     font-family: 'Crete Round', serif;
 }
 
+/**Texto**/
+.card{
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+    position: relative;
+    width: 100%;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    grid-gap: 50px;
+    color: #444;
+    height: 210px;
+}
+
+.container{
+    font-family: lato;
+    width: 330px;
+    box-sizing: border-box;    
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+}
+p{
+    text-align: justify;
+    color: black;
+    font-size: 24px;
+}
+
+/**Boton de ir arriba**/
+.up{
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    border: 2px solid var(--white);
+    background: black;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    cursor: pointer;
+    transition: 400ms;
+}
+.up:hover{
+    border: 2px solid var(--white);
+    background: blue;
+}
+.up:hover span{
+    color: var(--white);
+}
+.up > span{
+    font-size: 20px;
+    color: var(--white);
+}
+
+
 /**menu de navegacion**/
 #header{
     position: relative;
@@ -231,5 +294,298 @@ img-header .welcome p{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.8);
 }
+.client .ejeZclient{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.client .container-client{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+.client .container-client .client-title{
+    border: 2px solid white;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.client .container-client .client-title h2{
+    font-size: 40px;
+    color: white;
+    font-weight: normal;
+}
+.client .container-client .client-title hr{
+    background: white;
+    width: 50%;
+    margin: 10px auto;
+}
+.client .container-client .client-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80%;
+    padding-bottom: 100%;
+}
+/**formato de tamanio de imagenes de los clientes**/
+.client .container-client .client-img img{
+    width: calc(50% - 10%);
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/**Galeria**/
+.galery{
+    width: 100%;
+    margin-top: 120px;
+}
+.galery .galery-title{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.galery .galery-title h2{
+    font-size: 50px;
+    color: var(--black);
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.galery .galery-title hr{
+    width: 60%;
+    margin: auto;
+    height: 2px;
+    background: var(--black);
+    border: none;
+}
+.galery .box-galery{
+    width: 90%;
+    margin: 80px auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.galery .box-galery .card-galery{
+    width: 45%;
+    margin: 20px;
+}
+.galery .box-galery .card-galery .card-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.galery .box-galery .card-galery .card-img img{
+    width: 150px;
+    height: 150px;
+    /**borde de las imagenes son circulares**/ 
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.galery .box-galery .card-galery .element-text{
+    width: 100%;
+    border:2px solid var(--blue);
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 200ms;
+}
+.galery .box-galery .card-galery .element-text h4{
+    color: var(--red);
+    font-weight: normal;
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: 200ms;
+}
+.galery .box-galery .card-galery .element-text p{
+    font-size: 19px;
+    color: var(--blue);
+    text-align: center;
+    line-height: 35px;
+    transition: 200ms;
+}
+.galery .box-galery .card-galery .element-text:hover{
+    border:2px solid var(--red);
+}
+.galery .box-galery .card-galery .element-text:hover h4{
+    color: var(--blue);
+}
+
+/**contacto**/
+.footer{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url(../imagen/machine.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.footer .deg-footer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100%;
+    background: rgba(0,0,0,0.8);
+}
+.footer .ejeZfooter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.footer .footer-content{
+    width: 90%;
+    padding-top: 100px;
+    margin: auto;
+}
+.footer .footer-content .footer-title{
+    width: 50%;
+    margin: auto;
+    border: 2px solid white;
+    padding: 15px;
+}
+.footer .footer-content .footer-title h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.footer .footer-content .footer-title hr{
+    width: 80%;
+    margin:auto;
+}
+.footer .footer-content .formulario-content{
+    width: 90%;
+    background: white;
+    border-radius: 20px;
+    border: 2px solid var(--black);
+    margin: 50px auto;
+    padding: 30px;
+    margin-bottom: 150px;
+}
+.footer .footer-content .formulario-content #formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer .footer-content .formulario-content #formulario label{
+    text-align: center;
+    color: var(--black);
+    font-size: 22px;
+    margin: 30px 0px 10px 0px;
+}
+.footer .footer-content .formulario-content #formulario input{
+    width: 90%;
+    height: 45px;
+    margin: auto;
+    border:2px solid var(--blue);
+    border-radius: 24px;
+    outline: none;
+    text-align: center;
+    font-size: 17px;
+    color: var(--black);
+}
+.footer .footer-content .formulario-content #formulario textarea{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    border:2px solid var(--blue);
+    border-radius: 24px;
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+    color: var(--black);
+    padding: 20px;
+}
+.footer .footer-content .formulario-content #formulario .send{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+.footer .footer-content .formulario-content #formulario .send button{
+    width: 150px;
+    height: 40px;
+    background: var(--black);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer .footer-content .formulario-content #formulario .send button:hover{
+    background: var(--red);
+}
+.footer .footer-content .footer-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: rgba(0,0,0,0.8);
+    border-top: 5px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .footer-content .footer-text p{
+    color: white;
+    font-size: 10px;
+}
+
+/**Media Query (responsive)**/
+@media only screen and (max-width:900px){
+    .btn-menu > .fa-bars{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 28px;
+    }
+    .menu .list-container{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 10px;
+        height: calc(100vh - 60px);
+        background: yellow;
+    }
+    .menu .list-container .lists{
+        width: 10%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top: 5px solid var(--red);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

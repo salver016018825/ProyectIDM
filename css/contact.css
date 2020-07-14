@@ -1,0 +1,132 @@
+:root{
+    --blue:#2C4964;
+    --black:#1A1C1E;
+    --yellow:#E8EC16;
+    --white:#FBFBEF;
+    --red:#ED2109;
+}
+
+.footer{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url(../imagen/machine.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.footer .deg-footer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100%;
+    background: rgba(0,0,0,0.8);
+}
+.footer .ejeZfooter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.footer .footer-content{
+    width: 90%;
+    padding-top: 100px;
+    margin: auto;
+}
+.footer .footer-content .footer-title{
+    width: 50%;
+    margin: auto;
+    border: 2px solid white;
+    padding: 15px;
+}
+.footer .footer-content .footer-title h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.footer .footer-content .footer-title hr{
+    width: 80%;
+    margin:auto;
+}
+.footer .footer-content .formulario-content{
+    width: 90%;
+    background: white;
+    border-radius: 20px;
+    border: 2px solid var(--black);
+    margin: 50px auto;
+    padding: 30px;
+}
+.footer .footer-content .formulario-content #formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer .footer-content .formulario-content #formulario label{
+    text-align: center;
+    color: var(--black);
+    font-size: 22px;
+    margin: 30px 0px 10px 0px;
+}
+.footer .footer-content .formulario-content #formulario input{
+    width: 90%;
+    height: 45px;
+    margin: auto;
+    border:2px solid var(--blue);
+    border-radius: 24px;
+    outline: none;
+    text-align: center;
+    font-size: 17px;
+    color: var(--black);
+}
+.footer .footer-content .formulario-content #formulario textarea{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    border:2px solid var(--blue);
+    border-radius: 24px;
+    outline: none;
+    text-align: center;
+    font-size: 15px;
+    color: var(--black);
+    padding: 20px;
+}
+.footer .footer-content .formulario-content #formulario .send{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+.footer .footer-content .formulario-content #formulario .send button{
+    width: 150px;
+    height: 40px;
+    background: var(--black);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: rgb(217, 221, 245);
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer .footer-content .formulario-content #formulario .send button:hover{
+    background: var(--red);
+}
+.footer .footer-content .footer-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: rgba(0,0,0,0.8);
+    border-top: 5px solid white;
+
+    display: flex;
+    justify-content: center;
+}
+.footer .footer-content .footer-text p{
+    color: white;
+    font-size: 10px;
+}
