@@ -4,6 +4,7 @@
     --yellow:#E8EC16;
     --white:#FBFBEF;
     --red:#ED2109;
+    --grey:#CCD1D1;
 }
 
 .footer{
@@ -112,7 +113,7 @@
     transition: 0.5s;
 }
 .footer .footer-content .formulario-content #formulario .send button:hover{
-    background: var(--red);
+    background: var(--grey);
 }
 .footer .footer-content .footer-text{
     position: absolute;

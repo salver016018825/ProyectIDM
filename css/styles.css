@@ -4,6 +4,8 @@
     --yellow:#E8EC16;
     --white:#FBFBEF;
     --red:#ED2109;
+    --grey:#CCD1D1;
+    --green:#ABEBC6;
 }
 
 *{
@@ -31,13 +33,13 @@ body{
 
     display: flex;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
     cursor: pointer;
     transition: 400ms;
 }
 .up:hover{
     border: 2px solid var(--white);
-    background: blue;
+    background: var(--grey);
 }
 .up:hover span{
     color: var(--white);
@@ -68,6 +70,10 @@ body{
 
 .menu .logo.box{
     margin-left: 20px;
+}
+.logo{
+    width: 100px;
+    height: 30px;
 }
 .menu .logo.box h1 a{
     text-decoration: none;
@@ -153,10 +159,10 @@ body{
     border: none;
     margin: 5px;
 }
-/**disenio boton intermitente azul "ver abajo"**/
+/**disenio boton intermitente "ver abajo"**/
 img-header .welcome p{
     font-size: 20px;
-    color: #2C4964;
+    color: var(--grey);
     margin-top: 20px;
 }
 
@@ -177,7 +183,7 @@ img-header .welcome p{
     transition: 0.5s;
 }
 .img-header .welcome > button:hover{
-    background: var(--red);
+    background: var(--grey);
 }
 
 /**mision,vision, valores**/
@@ -241,7 +247,7 @@ img-header .welcome p{
     transition: 0.5s;
 }
 .acerca-de .info-container .about-more button:hover{
-    background: var(--red);
+    background: var(--grey);
 }
 
 /**clientes**/
@@ -522,14 +528,19 @@ img-header .welcome p{
         top: 20px;
         right: 30px;
         font-size: 28px;
+        cursor: pointer;
     }
+    /**diseño de barra de listas modo responsive**/
+    .btn-menu > .fa-bars:hover{color: var(--yellow);}
+    .btn-menu > .fa-times{color: var(--green);}
+
     .menu .list-container{
         position: absolute;
         top: 60px;
-        left: -100px;
+        left: -100%;
         width: 100%;
         height: calc(100vh - 60px);
-        background: yellow;
+        background: var(--grey);
     }
     .menu .list-container .lists{
         width: 100%;
@@ -538,17 +549,17 @@ img-header .welcome p{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border-top: 5px solid var(--red);
+        border-top: 5px solid var(--black);
     }
     .menu .list-container .lists li{
-        width: 90px;
+        width: 90%;
         margin: 10px 0 px;
-        border-bottom: 1px solid var(--blue);
+        border-bottom: 1px solid var(--black);
         text-align: center;
     }
     .menu .list-container .lists li a{
-        font-size: 2opx;
-        padding-bottom: 10px;
+        font-size: 20px;
+        /**padding-bottom: 10px;**/
     }
     .menu .list-container .lists li a.activo{
         background: none;
