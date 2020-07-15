@@ -1,6 +1,6 @@
 let btnMenu = document.querySelector('.btn-menu');
 let menu = document.querySelector('.list-container');
-let menu = document.querySelector('');
+let menu = document.querySelector('.menu');
 let activador = true;
 
 btnMenu.addEventListener('click', () => {

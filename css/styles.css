@@ -153,13 +153,13 @@ body{
     border: none;
     margin: 5px;
 }
-/**disenio boton intermitente azul "ver abajo"
+/**disenio boton intermitente azul "ver abajo"**/
 img-header .welcome p{
     font-size: 20px;
     color: #2C4964;
     margin-top: 20px;
 }
-**/
+
 
 /**boton**/
 .img-header .welcome > button{
