@@ -401,8 +401,8 @@ body{
     background-position: center;
     background-size: cover;
     margin-top: 100px;
-    border: red solid 2px;
 }
+
 .our-projects .deg-background{
     position:absolute;
     top: 0;
