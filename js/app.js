@@ -69,7 +69,7 @@ window.onscroll = () => {
     //Ocultar Go Top
     goTop.style.right = '-100px';
   }else{
-    menuContent.style.borderBottom = '3px solid #eaeaea';
+    menuContent.style.borderBottom = '4px solid gray';
 
     //Mostrar Go Top
     goTop.style.right = '0px';
@@ -91,3 +91,16 @@ abajo.addEventListener('click', () => {
   
 });
 
+const bodyTag = document.querySelector('body');
+const myNav = document.querySelector('nav');
+const myElem = document.querySelector('nav li a');
+
+let scrolled = () => {
+  let dec = scrollY / (bodyTag.scrollHeight - innerHeight);
+  return Math.floor(dec * 100);
+}
+
+addEventListener('scroll', () => {
+  myNav.style.setProperty('background', scrolled() > 25 ? "#fff" : "rgba(0,0,0,0.0)"); /*#d35400*/
+  
+})
