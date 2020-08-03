@@ -3,6 +3,7 @@
    --gray: #65727d;
    --blue:#235496;
    --white:#eaeaea;
+   --orange:#dc7633;
    --title:35px;
    --text:19px;
 }
@@ -38,7 +39,7 @@ body{
     color:var(--blue);
     border: 2px solid #dc7633;
 }
-.go-top:hover span{color:#dc7633;}
+.go-top:hover span{color:#dc7633}
 
 .go-top > span{
    font-size: 30px;
@@ -90,7 +91,7 @@ body{
 }
 
 .logo:hover{
-    transform: translate(-5px , 5px);
+    transform: translate(-5px , 0px);
     transition: 1s;
 }
 
@@ -113,9 +114,11 @@ body{
 }
 .menu .list-container ul li a.active{
     /*background: rgba(35,84,150,0.4); /*var(--blue)*/
-    color:#c7c7c7;
+    color:#fff;
     text-decoration-line: underline;
+    font-weight: bold;
 }
+
 .menu .list-container ul li a:hover{
     /*background: var(--blue);*/
     color:#dc7633; /*#fff*/
@@ -287,24 +290,13 @@ body{
 .acerca-de .info-container p{
     text-align: center;
     font-size: 17px;
-    color: var(--gray);
+    color: var(--blue);
     line-height: 35px;
-    margin:10px 0px;
+    margin: 20px 20px;
+    padding: 15px 10px;
+    
 }
-.acerca-de .info-container .about-gallery{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 50px 0px;
-}
-.acerca-de .info-container .about-gallery img{
-    width: calc(33.333% - 10px);
-    height: 300px;
-    margin: 10px 10px;
-    object-fit: cover;
-    border-radius: 10px;
-    cursor: pointer;
-}
+
 .acerca-de .info-container .about-more{
     width: 100%;
     display: flex;
@@ -342,7 +334,8 @@ body{
     width: 390px;
     height: 370px;
     border-radius: 20px;
-    box-shadow: 0 2px 2px #c7c7c7;
+    /*box-shadow: 0 2px 2px #c7c7c7;*/
+    
     overflow: hidden;
     margin: 10px;
     text-align: justify;
@@ -369,23 +362,25 @@ body{
     /*stransform: translate(20px , 1px);
     /*transform: translate3d(10px,10px,-10px);*/    
     transition: 1s;
-    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 10px var(--black);
 
 }
 
 .container .card h2{
     padding: 0 1rem;
-    font-size: 40px; /*30px*/
+    font-size: 30px; /*30px*/
     font-weight: 400px;
     text-align: center;
     color: var(--blue);
+    margin: 40px 0 0 0; /**/
+    
 }
 
-.container .card parrafo{
+.container .card .parrafo{
     padding: 0 1rem;
-    font-size: 16px;
-    font-weight: 300px;
-    text-align: justify;
+    font-size: 15px;
+    font-weight: 30px;
+    text-align: center;
 }
 /**/
 .acerca-de .info-container .about-more button:hover{background: var(--blue);}
@@ -428,14 +423,14 @@ body{
 .our-projects .container-project{
     width: 90%;
     margin:auto;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .our-projects .container-project .project-title{
     padding:10px;
     text-align: center;
     width: 50%;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .our-projects .container-project .project-title h2{
     font-size: 30px;
@@ -448,14 +443,16 @@ body{
    height: 3px;
    margin: 10px auto;
 }
+
+/*
 .our-projects .container-project .project-img{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 80px;
-    padding-bottom: 100px;
 }
+
 .our-projects .container-project .project-img img{
   width: calc(30% - 10px);
   margin:10px;
@@ -463,91 +460,12 @@ body{
   border-radius: 10px;
   cursor: pointer;
 }
+*/
 @media only screen and (max-width:773px){
     .our-projects .container-project .project-img img{width: 80%; margin-bottom: 30px;}
 }
 @media only screen and (max-width:446px){
     .our-projects .container-project .project-title h2{font-size: 30px;}
-}
-
-/** Testimonios **/
-.testimonios{
-    width: 100%;
-    margin-top: 120px;
-}
-.testimonios .testimonios-title{
-    width: 50%;
-    margin:auto;
-    text-align: center;
-}
-.testimonios .testimonios-title h2{
-    font-size: 50px;
-    font-weight: normal;
-    color: var(--black);
-    margin-bottom: 10px;
-}
-.testimonios .testimonios-title hr{
-    width: 60%;
-    height: 2px;
-    margin:auto;
-    background: var(--black);
-}
-.testimonios .box-testimonio{
-    width: 90%;
-    margin: 80px auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.testimonios .box-testimonio .card-testimonio{
-    width: 45%;
-    margin: 20px;
-}
-.testimonios .box-testimonio .card-testimonio .card-img{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-.testimonios .box-testimonio .card-testimonio .card-img img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    cursor: pointer;
-}
-.testimonios .box-testimonio .card-testimonio .testimonio-text{
-    border: 2px solid var(--red);
-    padding:20px;
-    border-radius: 20px;
-    transition: 0.1s;
-    cursor: pointer;
-}
-.testimonios .box-testimonio .card-testimonio .testimonio-text h4{
-    font-size: 30px;
-    font-weight: 400;
-    color: var(--red);
-    text-align: center;
-    margin-bottom: 10px;
-    transition: 0.1s;
-}
-.testimonios .box-testimonio .card-testimonio .testimonio-text p{
-    font-size: 20px;
-    text-align: center;
-    line-height: 40px;
-    color: var(--black);
-}
-.testimonios .box-testimonio .card-testimonio .testimonio-text:hover{
-    border: 2px solid var(--blue);
-}
-.testimonios .box-testimonio .card-testimonio .testimonio-text:hover h4{
-    color: var(--blue);
-}
-
-@media only screen and (max-width:890px){
-    .testimonios .box-testimonio .card-testimonio .card-img img{width: 200px; height: 200px;}
-    .testimonios .box-testimonio .card-testimonio{width: 100%;}
-    .testimonios .box-testimonio .card-testimonio .testimonio-text h4{font-size: 25px;}
-    .testimonios .box-testimonio .card-testimonio .testimonio-text p{font-size: 17px; line-height: 35px;}
 }
 
 /** Footer **/

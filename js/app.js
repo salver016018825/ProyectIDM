@@ -94,6 +94,8 @@ abajo.addEventListener('click', () => {
 const bodyTag = document.querySelector('body');
 const myNav = document.querySelector('nav');
 const myElem = document.querySelector('nav li a');
+/*prueba */
+const myli = document.getElementsByClassName('lists')
 
 let scrolled = () => {
   let dec = scrollY / (bodyTag.scrollHeight - innerHeight);
@@ -101,6 +103,7 @@ let scrolled = () => {
 }
 
 addEventListener('scroll', () => {
-  myNav.style.setProperty('background', scrolled() > 25 ? "#fff" : "rgba(0,0,0,0.0)"); /*#d35400*/
+  myNav.style.setProperty('background', scrolled() > 25 ? "#202020" : "rgba(0,0,0,0.0)"); /*cambia el color de fondo*/
+  
   
 })
