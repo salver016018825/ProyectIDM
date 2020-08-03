@@ -22,7 +22,7 @@
     /*box-shadow: 1px 1px 2px var(--orange);*/
     box-shadow: 5px 5px 10px #fff; /*sombra*/
     cursor: default;
-    background: #fff url(../img/machine.jpg) no-repeat center center;
+    background: url(../img/machine.jpg) no-repeat center center;
  }
  .view .mask,.view .content {
     width: 300px;
@@ -88,7 +88,7 @@
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.3); /*rgba(219,127,8, 0.7)*/
+    background: rgba(0,0,0,0.7); /*rgba(219,127,8, 0.7)*/
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;

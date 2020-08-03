@@ -103,7 +103,7 @@ let scrolled = () => {
 }
 
 addEventListener('scroll', () => {
-  myNav.style.setProperty('background', scrolled() > 25 ? "#202020" : "rgba(0,0,0,0.0)"); /*cambia el color de fondo*/
+  myNav.style.setProperty('background', scrolled() > 25 ? "rgba(0,0,0,0.3)" : "rgba(0,0,0,0.0)"); /*cambia el color de fondo*/
   
   
 })
