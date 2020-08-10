@@ -20,24 +20,8 @@
     
 }
 
-.contenedor-imagenes{
-    display: flex;
-    width: 85%;
-    margin: auto;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    /*border-radius: 3px;*/
-    
-}
 
-.contenedor-imagenes .imagen{
-    width: 32%;
-    position: relative;
-    height: 250px;
-    margin-bottom: 35px;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0,.75);
-    
-}
+
 
 .imagen img{
     width: 100%;

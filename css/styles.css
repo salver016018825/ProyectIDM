@@ -71,6 +71,7 @@ body{
     position: relative;
     width: 100%;
 }
+
 .menu{
     position: fixed;
     top:0;
@@ -136,18 +137,23 @@ body{
         right: 30px;
         top: 20px;
         font-size: 28px;
-        color: var(--black);
+        color: var(--white);
         transition: 0.5s;
         cursor: pointer;
     }
-    .btn-menu > .fa-times{color: var(--red);}
-    .btn-menu > .fa-bars:hover{color:var(--red);}
+    .btn-menu > .fa-times{
+        color: var(--white);
+    }
+
+    .btn-menu > .fa-bars:hover{
+        color:var(--blue);
+    }
     .menu .logo-box{margin-left: 30px;}
     .menu .list-container{
         position: fixed;
         top:60px;
         left:-100%;
-        background:#fff;
+        background: rgba(0,0,0,0.8);
         width: 100%;
         height: calc(100vh - 60px);
     }
@@ -158,11 +164,11 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border-top:4px solid var(--red);
+        border-top:4px solid var(--orange);
     }
     .menu .list-container ul li{
         width: 90%;
-        border-bottom: 2px solid var(--black);
+        border-bottom: 1px solid var(--white);
         display: flex;
         justify-content: center;
     }
@@ -173,11 +179,11 @@ body{
     }
     .menu .list-container ul li a.active{
         background: none;
-        color:var(--red);
+        color: #fff;
     }
     .menu .list-container ul li a:hover{
         background: none;
-        color:var(--red);
+        color:var(--white);
     }
 }
 
@@ -255,14 +261,19 @@ body{
 }
 
 @media only screen and (max-width:773px ){
-    .img-header .welcome h1{font-size: 40px;}
+    .img-header .welcome h1{
+        font-size: 40px;
+    }
+    .img-header .welcome hr{width: 90%;}
     .img-header .welcome > button{width: 130px; font-size: 20px;}
 }
 @media only screen and (max-width:590px){
-    .img-header .welcome h1{font-size: 30px;}
-    .img-header .welcome hr{width: 100px;}
+    .img-header .welcome h1{font-size: 20px;}
+    .img-header .welcome hr{width: 80%;}
     .img-header .welcome p{font-size: 17px;}
-    .img-header .welcome > button{width: 100px; font-size: 17px;}
+    .img-header .welcome > button{
+        width: 100px; font-size: 17px;
+    }
 }
 
 /** Acerca de Nosotros **/
@@ -358,9 +369,6 @@ body{
 /*icon*/   
 
 .container .card:hover{
-    /*transform: translateY(-15px); */
-    /*stransform: translate(20px , 1px);
-    /*transform: translate3d(10px,10px,-10px);*/    
     transition: 1s;
     box-shadow: 5px 5px 10px var(--black);
 
@@ -383,9 +391,11 @@ body{
     text-align: center;
 }
 /**/
+
 .acerca-de .info-container .about-more button:hover{background: var(--blue);}
 
 @media only screen and (max-width:773px){
+    .container .card{flex-direction: column;} /**/
     .acerca-de .info-container .about-gallery{flex-direction: column;}
     .acerca-de .info-container .about-gallery img{width: 100%;}
 }
@@ -398,7 +408,7 @@ body{
 .our-projects{
     position: relative;
     width: 100%;
-    height: 100%; 
+    height: 780px; 
     background: url(../img/machine.jpg);
     background-attachment:fixed;
     background-position: center;
@@ -442,6 +452,16 @@ body{
    width: 50%;
    height: 3px;
    margin: 10px auto;
+}
+
+.contenedor-imagenes{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /*border-radius: 3px;*/
+    
 }
 
 /*

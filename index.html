@@ -9,10 +9,11 @@
 
     <!-- Estilos Css -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/galeria.css"> 
+    <!-- <link rel="stylesheet" href="css/galeria.css">--> 
     <link rel="stylesheet" href="css/foo2.css">
     <link rel="stylesheet" href="css/hover.css">
-
+    <link rel="stylesheet" href="css/style-video.css">
+    <!--estio fuentes-->
     <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,500,700&display=swap" rel="stylesheet">
 
 </head>
@@ -20,7 +21,6 @@
 <body>
     <!-- Ir Arriba -->
     <div class="go-top">
-
         <span class="fas fa-angle-double-up"></span>
     </div>
 
@@ -33,15 +33,13 @@
                 </figure>
                 <span class="btn-menu"><i class="fas fa-bars"></i></span>
             </div>
-
             <div class="list-container">
-                <ul class="lists" class="menue" data-animation="bonus">
+                <ul class="lists">
                     <li><a href="index.html" class="active">Inicio</a></li>
                     <li><a href="#">Servicios</a></li>
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
                     <li><a href="#">Contacto</a></li>
-
                 </ul>
             </div>
         </nav>
@@ -61,7 +59,14 @@
     </header>
 
     <main>
-
+        <section class="container-video">
+            <video id="slider" autoplay muted loop><source src="video/Manufacturing.mp4"></video>
+            <ul class="navigation">
+                <li onclick="videoUrl('video/Manufacturing.mp4')"><img src="img/tal.PNG" alt=""></li>
+                <li onclick="videoUrl('video/pieza.mp4')"><img src="img/vide.png" alt=""></li>
+                <li onclick="videoUrl('video/video.mp4')"><img src="img/comp.png" alt=""></li>
+        </ul>
+        </section>
         <!-- Acerca de nosotros -->
         <section class="acerca-de">
 
@@ -114,14 +119,10 @@
         <!-- Nuestros proyectos -->
 
         <section class="our-projects">
-            <div class="skew-arriba"></div>
+            <!--<div class="skew-arriba"></div>-->
             <div class="deg-background"></div>
             <div class="ejeZproject">
                 <div class="container-project">
-                    <div class="project-title">
-                        <h2>Servicios</h2>
-                        <hr>
-                    </div>
                     <div class="contenedor-imagenes">
                         <div class="view view-first">
                             <img src="img/drill.jpg" alt="">
@@ -164,7 +165,7 @@
                             </div>
                         </div>
                         <div class="view view-first">
-                            <img src="img/ima2.jpg" alt="">
+                            <img src="img/2.jpg" alt="">
                             <div class="mask">
                                 <h2>HERRAMIENTA DE IZAJE</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
@@ -180,7 +181,7 @@
                             </div>
                         </div>
                         <div class="view view-first">
-                            <img src="img/tor.jpg" alt="">
+                            <img src="img/t.jpg" alt="">
                             <div class="mask">
                                 <h2>DADOS</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
@@ -199,7 +200,10 @@
                 </div>
             </div>
             <!--<div class="skew-abajo"></div>-->
+            
         </section>
+
+        
     </main>
 
 
@@ -236,10 +240,7 @@
                         <div class="social-icono"><i class="fab fa-facebook-square"></i></div>
                         <label> Siguenos en Facebook</label>
                     </div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d233.4889141919122!2d-100.379675!3d20.554437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDMzJzE1LjkiTiAxMDDCsDIyJzQ2LjgiVw!5e0!3m2!1ses-419!2sus!4v1596162934982!5m2!1ses-419!2sus"
-                        width="300" height="150" frameborder="0" style="border:0;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe>
+                    
                 </div>
                 <div class="colum3">
                     <h1>Contacto</h1>
@@ -247,27 +248,13 @@
                         <!--<img src="img/casa2.png" class="social-icono">-->
                         <div class="social-icono"><i class="fas fa-home"></i></div>
                         <label>
-                            Calle Napoles, Villas del Cimatario, Roma
+                            <p>Calle Napoles, Villas del Cimatario, Roma</p>
                         </label>
                     </div>
-                    <div class="row2">
-                        <!--<img src="img/phone.png" class="social-icono">-->
-                        <div class="social-icono"><i class="fab fa-whatsapp-square"></i></div>
-                        <label>
-                            - 442 287 32 25
-                            <br>
-                            - 442 202 33 07
-                            <br>
-                            - 442 119 32 56
-                        </label>
-                    </div>
-                    <div class="row2">
-                        <!--<img src="img/email.png" id="icono">-->
-                        <div class="social-icono"><i class="fas fa-at"></i></div>
-                        <label>
-                            idmetalmecanico@aol.com
-                        </label>
-                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d233.4889141919122!2d-100.379675!3d20.554437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDMzJzE1LjkiTiAxMDDCsDIyJzQ2LjgiVw!5e0!3m2!1ses-419!2sus!4v1596162934982!5m2!1ses-419!2sus"
+                        width="300" height="150" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
         </div>
@@ -281,6 +268,11 @@
     </footer>
 
     <!-- Scripts -->
+    <script type="text/javascript">
+		function videoUrl(zzz){
+			document.getElementById("slider").src = zzz;
+		}
+	</script>
     <script src="https://kit.fontawesome.com/35db202371.js"></script>
     <script src="/js/app.js"></script>
 

@@ -17,12 +17,12 @@
     overflow: hidden;
     position: relative;
     text-align: center;
-    -webkit-box-shadow: 1px 1px 2px #e6e6e6; /*#e6e6e6*/
-    -moz-box-shadow: 1px 1px 2px #fff;
-    /*box-shadow: 1px 1px 2px var(--orange);*/
-    box-shadow: 5px 5px 10px #fff; /*sombra*/
+    -webkit-box-shadow: 1px 1px 1px #e6e6e6; /*#e6e6e6*/
+    -moz-box-shadow: 1px 1px 1px #fff;
+    box-shadow: 1px 1px 1px var(--orange);
+    box-shadow: 5px 5px 1px #fff; /*sombra*/
     cursor: default;
-    background: url(../img/machine.jpg) no-repeat center center;
+    
  }
  .view .mask,.view .content {
     width: 300px;
