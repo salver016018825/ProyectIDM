@@ -1,0 +1,52 @@
+.sesgoabajo{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.sesgoarriba{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 10vh 100vw 0 0;
+    border-style: solid;
+    border-color:  #fff transparent transparent transparent;
+}
+ 
+
+.galeria-estatica{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    position: relative;    
+}
+.contenedor-estatica{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    
+}
+.contenedor-estatica img{
+    width: 100%;
+    height: 100%;   
+}
+
+@media only screen and (max-width:320px ){
+
+    .galeria-estatica{
+        height: 100px;
+    }
+    .contenedor-estatica{
+    width: 70%;
+    height: 100px;
+}
+}
+
