@@ -9,10 +9,11 @@
 
     <!-- Estilos Css -->
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <link rel="stylesheet" href="css/galeria.css">--> 
-    <link rel="stylesheet" href="css/foo2.css">
-    <link rel="stylesheet" href="css/hover.css">
-    <link rel="stylesheet" href="css/style-video.css">
+    <link rel="stylesheet" href="css/galeria.css"> 
+    <link rel="stylesheet" href="css/PiePagina.css"> 
+    <link rel="stylesheet" href="css/hover.css"> 
+    <!-- <link rel="stylesheet" href="css/style-video.css"> -->
+    <link rel="stylesheet" href="css/video-grid.css">
     <link rel="stylesheet" href="css/style-menu.css">
     <!--estio fuentes-->
     <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,500,700&display=swap" rel="stylesheet">
@@ -48,8 +49,7 @@
             <div class="welcome">
                 <h1>Ingenieria y Desarrollo Metalmecanico</h1>
                 <hr>
-                <p>Procesos de Manufactura</p>
-                <button id="abajo">Ver abajo</button>
+                <p>Procesos de Manufactura</p>                
             </div>
         </div>
         <div class="skew-abajo"></div>
@@ -58,14 +58,34 @@
     </header>
 
     <main>
-        <section class="container-video">
-            <video id="slider" autoplay muted loop><source src="video/Manufacturing.mp4"></video>
+        <!-- <section class="container-video">
+            <video id="slider" autoplay muted ><source src="video/Manufacturing.mp4"></video>
             <ul class="navigation">
-                <li onclick="videoUrl('video/Manufacturing.mp4')"><img src="img/tal.PNG" alt=""></li>
-                <li onclick="videoUrl('video/pieza.mp4')"><img src="img/vide.png" alt=""></li>
+                <li onclick="videoUrl('video/Manufacturing.mp4')"><img src="img/" alt=""></li>
+                <li onclick="videoUrl('video/pieza.mp4')"><img src="img/vid.jpeg" alt=""></li>
                 <li onclick="videoUrl('video/video.mp4')"><img src="img/comp.png" alt=""></li>
         </ul>
-        </section>
+        </section> -->
+        <section>
+            <div class="container-video">
+              <div class="container-card" >          
+                  <video class="size-video" loop autoplay muted>
+                      <source src="video/grabado.mp4" type="video/mp4">
+                    </video>      
+              </div>
+              <div class="container-card">
+                    <video class="size-video" loop autoplay muted>
+                        <source src="video/hierro.mp4" type="video/mp4">
+                      </video>           
+                </div>
+                <div class="container-card" >
+                    <video class="size-video" loop autoplay muted>
+                        <source src="video/Manufacturing.mp4" type="video/mp4">
+                      </video>  
+                </div>
+            </div>
+          </section>
+        
         <!-- Acerca de nosotros -->
         <section class="acerca-de">
 
@@ -124,7 +144,7 @@
                 <div class="container-project">
                     <div class="contenedor-imagenes">
                         <div class="view view-first">
-                            <img src="img/drill.jpg" alt="">
+                            <img src="img/herramientas-forja.jpg" alt="">
                             <div class="mask">
                                 <h2>HERRAMIENTAS DE FORJA </h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
@@ -132,25 +152,25 @@
                             </div>
                         </div>
                         <div class="view view-first">
-                            <img src="img/t.jpg" alt="">
+                            <img src="img/moldes.jpg" alt="">
                             <div class="mask">
-                                <h2>GAGES</h2>
+                                <h2>MOLDES</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
                                 <a href="#" class="info">Read More</a>
                             </div>
                         </div>
                         <div class="view view-first">
-                            <img src="img/cnc.jpg" alt="">
-                            <div class="mask">
-                                <h2>Moldes</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
-                                <a href="#" class="info">Read More</a>
-                            </div>
-                        </div>
-                        <div class="view view-first">
-                            <img src="img/t.jpg" alt="">
+                            <img src="img/person.jpg" alt="">
                             <div class="mask">
                                 <h2>TROQUELES</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
+                                <a href="#" class="info">Read More</a>
+                            </div>
+                        </div>
+                        <div class="view view-first">
+                            <img src="img/40.jpeg" alt="">
+                            <div class="mask">
+                                <h2>FABRICACION DE REFACCIONES</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
                                 <a href="#" class="info">Read More</a>
                             </div>
@@ -200,9 +220,74 @@
             </div>
             <!--<div class="skew-abajo"></div>-->
             
+        </section>    
+        
+        <!--Galeria estatica-->
+        <section class="galeria-estatiaca">
+            <div class="sesgoarriba"></div>
+
+            <div class="contenedor-estatica"><img src="img/10.1.jpg" alt=""></div>
+            <div class="contenedor-estatica"><img src="img/38.1.jpg" alt=""></div>
+            <div class="contenedor-estatica"><img src="img/20.jpg" alt=""></div>
+            <div class="contenedor-estatica"><img src="img/23.1.jpg" alt=""></div>
+            <div class="contenedor-estatica"><img src="img/01.1.jpeg" alt=""></div>
+
+            <div class="sesgoabajo"></div>
         </section>
 
-        
+        <!--Servicios-->
+    <header class="header">
+        <div class="grid">
+            <div class="textos-hero">
+                <!--h1 class="weigth-600">
+                  Servicios <span class="wegth-400"></span>
+              </h1-->
+                <P class="parrafo">Ofrecemos diseño y fabricacion para producir piezas de alta calidad
+                    que cumplen con las normas y estandares internacionales del sector industrial, utilizando
+                    maquinaria de alta tecnología, somos innovadores dentro del mercado para satisfacer las
+                    necesidades del cliente.</P>
+                <a href="contacto1.html" class="cta">contactarme</a>
+            </div>
+            <div class="img-hero">
+                <img src="imagen/logo.png" alt="" class="img">
+            </div>
+        </div>
+    </header>
+
+    <section class="services">
+        <section class="grid">
+            <div class="items">
+
+                <div class="item">
+                    <i class="fas fa-mail-bulk"></i>
+                    <h3 class="titulo-services">Accesibilidad</h3>
+                    <p>Nuestra principal iniciativa es brindar un excelente servicio y trato a nuestros clientes
+                        para cumplir con sus espectativas y ofrecer nuestro servico a todo el mercado industrial.
+                        <!--Nuestro equipo de trabajo especializado en los procesos industriales dando la mejor calidad 
+                      en mano de abra ya que se cumplen con las reglas requeridad para su fabricación.-->
+                    </p>
+                </div>
+
+                <div class="item">
+                    <i class="fas fa-user-tie"></i>
+                    <h3 class="titulo-services">Profesionalismo</h3>
+                    <p>IDM es una empresa con certificaciones y su capital humano especialmente capacitados cumplen
+                        con las competencias y
+                        ética profesional.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <i class="fas fa-user-check"></i>
+                    <h3 class="titulo-services">Eficacia</h3>
+                    <p>Nuestro centro de trabajo tiene la capacidad de diseñar y producir
+                        piezas cumpliendo la demanda del cliente.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
 
@@ -235,7 +320,7 @@
                 <div class="colum2">
                     <h1>Redes Sociales</h1>
                     <div class="row">
-                        <!--<img src="img/fac.png">-->
+                        
                         <div class="social-icono"><i class="fab fa-facebook-square"></i></div>
                         <label> Siguenos en Facebook</label>
                     </div>
@@ -244,7 +329,7 @@
                 <div class="colum3">
                     <h1>Contacto</h1>
                     <div class="row2">
-                        <!--<img src="img/casa2.png" class="social-icono">-->
+                        
                         <div class="social-icono"><i class="fas fa-home"></i></div>
                         <label>
                             <p>Calle Napoles, Villas del Cimatario, Roma</p>
@@ -257,7 +342,7 @@
                 </div>
             </div>
         </div>
-        <!--Pie de pagina final-->
+        
         <div class="container-footer">
             <div class="copyright">
                 @2020 Ingenieria y Desarrollo Metalmecanico |
