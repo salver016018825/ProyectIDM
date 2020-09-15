@@ -501,7 +501,8 @@ a {
     height: 300px;
     overflow: hidden;
     display: flex;
-    position: relative;    
+    position: relative;  
+    padding: 50px;  
 }
 .contenedor-estatica{
     width: 100%;
@@ -724,9 +725,11 @@ a {
 
 .enlaces a:hover{
     color: #235496;
-    
 }
 
+.enlaces i:hover{
+    color: #235496;
+}
 
 
 /**
