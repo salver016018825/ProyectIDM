@@ -20,6 +20,8 @@ body {
     font-family: 'Red Hat Text', sans-serif;
 }
 
+
+
 a {
     text-decoration: none;
 }
@@ -620,7 +622,7 @@ a {
 }
 
 /**
-    *   Mortada Moldes**
+    *   Portada Servicios**
 
     -----------------------------------------------
 
@@ -631,7 +633,7 @@ a {
     width: 100%;
 }
 
-.img-header-moldes {
+/* .img-header-moldes {
     position: relative;
     width: 100%;
     height: 70vh;
@@ -647,7 +649,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgba(35,84,150,0.6); */
+    /* background: rgba(35,84,150,0.6); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -660,7 +662,7 @@ a {
     font-size: 50px;
     color: #fff;
     font-weight: 200;
-}
+} */
 
 
 /**
@@ -699,7 +701,7 @@ a {
     background: #fff;
     width: 100%;
     /* max-width: 1000px; */
-    /* margin: 0 auto;
+/* margin: 0 auto;
     position: relative;
     padding: 50px;
     background: url(../img/408318.jpg); 
@@ -824,7 +826,7 @@ a {
 
 
 /**
-    *   Animaciones para la pagina moldes**
+    *   Animaciones para la pagina Servicios**
 
     -----------------------------------------------
 
@@ -833,7 +835,7 @@ a {
 
 .animado {
     opacity: 0;
-    transition: all 0.8s;
+    transition: all 0.4 s;
 }
 
 .mostrarArriba {
@@ -850,6 +852,23 @@ a {
     }
 }
 
+.mostrar-texto {
+    animation-duration: 3s;
+    animation-name: animacion-texto;
+}
+
+@keyframes animacion-texto {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* 
 @media(max-width:400px) {
     .moldes {
         grid-template-columns: repeat(1, 100%);
@@ -862,9 +881,9 @@ a {
     .menu-lateral {
         grid-template-columns: repeat(1, 33%);
     }
-}
+} */
 
-.img-header-moldes {
+/* .img-header-moldes {
     animation-duration: 5s;
     animation-name: moldes;
 }
@@ -893,74 +912,10 @@ a {
         opacity: 1;
         color: #dc7633;
     }
-}
+} */
 
 /**
-    *   Catalogo**
-
-    -----------------------------------------------
-
-**/
-
-
-.container-services {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 0;
-    padding-top: 30px;
-
-}
-
-.container-imagen,
-.container-text {
-    padding: 2px;
-    align-items: center;
-    height: 550px;
-    margin: 30px;
-
-}
-
-.container-imagen img {
-    height: 100%;
-    width: 80%;
-    filter: blur(1px);
-}
-
-.container-text {
-    text-align: center;
-    font-size: 17px;
-    color: #dc7633;
-    display: grid;
-    ;
-}
-button{
-    width: 100px;
-    background: #fff;
-    padding: 8px 0;
-    color: #235423;
-    outline: none;
-    font-size: 12px;
-    cursor: pointer;
-    border-radius: 20px;
-    margin: auto;
-
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-#img-front {
-    border-radius: 10%;
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    max-width: 60%;
-}
-
-/**
-    *   portada animada Moldes**
+    *   portada animada Servicios**
 
     -----------------------------------------------
 
@@ -970,13 +925,13 @@ a {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
+    padding: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #235496;
+    background: url(../img/drill-4502834_1920.jpg);
+    background-position: center;
     transition: 0.5s;
-
 }
 
 .content-moldes {
@@ -985,7 +940,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .content-moldes .textBox-moldes {
@@ -1003,12 +957,13 @@ a {
 }
 
 .content-moldes .textBox-moldes h2 span {
-    font-size: 1.5em;
+    font-size: 1.6em;
     margin-bottom: 10px;
 }
 
 .content-moldes .textBox-moldes p {
     color: #fff;
+    font-size: 1.4em;
 }
 
 .content-moldes .textBox-moldes a {
@@ -1028,12 +983,14 @@ a {
     width: 600px;
     display: flex;
     padding-right: 50px;
+    padding-bottom: 20px;
     justify-content: flex-end;
     margin-top: 50px;
 }
 
-.content-moldes .imgMolde img {
-    max-width: 360px;
+.content-moldes .imgMolde video {
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .thumb {
@@ -1060,26 +1017,41 @@ a {
     max-width: 60px;
 }
 
-.contenedor-forja p:hover{
+.contenedor-forja p:hover {
     /* color: #235496; */
-    transition:all 0.5s;
+    transition: all 0.5s;
     text-decoration-line: underline;
 }
 
-.contenedor-imagen img:hover{
+.contenedor-imagen img:hover {
     opacity: 1;
 }
 
-/*Herramientas de forja*/
-.wrapper{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    flex-wrap: wrap;
-    background: rgba(0, 0, 0, 0.8);
+@media only screen and (max-width:365px) {
+    .sec .content-moldes {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .content-moldes .textBox-moldes h2 {
+        font-size: 1.7em;
+    }
+
+    .content-moldes .textBox-moldes p {
+        font-size: 1em;
+        margin-top: 30px;
+    }
+
+    .content-moldes .imgMolde {
+        width: 310px;
+        padding: 30px;
+    }
+
 }
 
-.wrapper-impar{
+/* contenido servicios */
+
+.wrapper {
     display: flex;
     width: 100%;
     height: 100vh;
@@ -1087,44 +1059,66 @@ a {
     background: rgba(0, 0, 0, 0.9);
 }
 
-.wrapper-imparfor{
+.wrapper-impar {
     display: flex;
     width: 100%;
     height: 100vh;
     flex-wrap: wrap;
-    background: rgba(0, 0, 0, 0.6);
+    background: #fff;
 }
 
-.left-col, .right-col{
+.wrapper-impar .titulo-texto {
+    color: #235496;
+}
+
+.wrapper-impar .color-texto {
+    color: #dc7633;
+}
+
+.wrapper-imparfor {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    background: #235496;
+}
+
+.left-col,
+.right-col {
     flex-basis: 50%;
     height: 100vh;
     position: relative;
     padding: 20px;
 }
 
-.content{
+.left-col {
+    background: #fff;
+}
+
+.content {
     max-width: 500px;
+    /*500px*/
     position: absolute;
     top: 50%;
     left: 120px;
     transform: translateY(-50%);
 }
 
-.content h1{
+.content h1 {
     color: #dc7633;
     font-size: 60px;
     line-height: 70px;
     margin: 25px 0;
 }
 
-.content p{
-    color: #ffff;
+.content p {
+    color: #fff;
     font-size: 17px;
     line-height: 28px;
     margin-bottom: 50px;
 }
 
-.slider{
+.slider {
     width: 100%;
     height: 60%;
     display: flex;
@@ -1132,8 +1126,27 @@ a {
     margin-top: 50px;
 }
 
-.slider img{
+.slider img {
     width: 100%;
+    opacity: 0.7;
+
 }
 
-/* services */
+.slider img:hover {
+    opacity: 1;
+    filter: saturate();
+    transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 365) {
+
+
+    .left-col,
+    .right-col {
+        flex-direction: column-reverse;
+    }
+
+}
+
+
+/*contenido servicios */

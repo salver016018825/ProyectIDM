@@ -10,18 +10,17 @@ btnMenu.addEventListener('click', (event) => {
   //Icon X
   barIconX.classList.toggle('fa-times');
 
-   if(activador){
-     menu.style.left = '0%'; 
-     menu.style.transition = '0.5s';
-  
-     activador = false;
-   }
-   else{
+  if (activador) {
+    menu.style.left = '0%';
+    menu.style.transition = '0.5s';
+
+    activador = false;
+  } else {
     activador = false;
     menu.style.left = '-100%';
 
     activador = true;
-   }
+  }
 
 });
 
@@ -29,11 +28,11 @@ btnMenu.addEventListener('click', (event) => {
 let enlaces = document.querySelectorAll('.lists li a');
 
 enlaces.forEach((element) => {
-   
+
   element.addEventListener('click', (event) => {
-   enlaces.forEach((link) => {
-     link.classList.remove('active');
-   });
+    enlaces.forEach((link) => {
+      link.classList.remove('active');
+    });
     event.target.classList.add('active');
 
   });
@@ -42,39 +41,39 @@ enlaces.forEach((element) => {
 
 //Scroll Efect
 
- let prevScrollPos = window.pageYOffset;
- let goTop = document.querySelector('.go-top');
+let prevScrollPos = window.pageYOffset;
+let goTop = document.querySelector('.go-top');
 
 window.onscroll = () => {
-  
+
   //Hide & Show - Scroll Menu (Function)
   let currentScrollPos = window.pageYOffset;
 
   if (prevScrollPos > currentScrollPos) {
     menuContent.style.top = '0px';
     menuContent.style.transition = '0.5s';
-  }else{
+  } else {
     menuContent.style.top = '-60px';
     menuContent.style.transition = '0.5s';
   }
   prevScrollPos = currentScrollPos;
-  
+
   //Scoll Menu & Go Top & See Down (Styles)
   let arriba = window.pageYOffset;
 
   //Conditions
-  if(arriba <= 600){
+  if (arriba <= 600) {
     menuContent.style.borderBottom = 'none';
 
     //Ocultar Go Top
     goTop.style.right = '-100px';
-  }else{
+  } else {
     menuContent.style.borderBottom = '4px solid gray';
 
     //Mostrar Go Top
     goTop.style.right = '0px';
   }
-  
+
 }
 
 //Go Top Click
@@ -88,7 +87,7 @@ let abajo = document.querySelector('#abajo');
 abajo.addEventListener('click', () => {
   document.body.scrollTop = 600;
   document.documentElement.scrollTop = 600;
-  
+
 });
 
 const bodyTag = document.querySelector('body');
@@ -104,7 +103,5 @@ let scrolled = () => {
 
 addEventListener('scroll', () => {
   myNav.style.setProperty('background', scrolled() > 25 ? "rgba(0,0,0,0.3)" : "rgba(0,0,0,0.0)"); /*cambia el color de fondo*/
-  
+
 })
-
-
