@@ -989,7 +989,7 @@ a {
 }
 
 .content-moldes .imgMolde video {
-    max-width: 650px;
+    max-width: 550px;
     background: rgba(0, 0, 0, 0.6);
 }
 
@@ -1009,40 +1009,47 @@ a {
     transition: 0.5s;
 }
 
-.thumb li:hover {
-    transform: translateY(-15px);
-}
+.thumb li:hover { transform: translateY(-15px); }
 
-.thumb li img {
-    max-width: 60px;
-}
+.thumb li img { max-width: 60px; }
 
 .contenedor-forja p:hover {
-    /* color: #235496; */
     transition: all 0.5s;
     text-decoration-line: underline;
 }
 
-.contenedor-imagen img:hover {
-    opacity: 1;
-}
+.contenedor-imagen img:hover { opacity: 1;}
 
-@media only screen and (max-width:365px) {
-    .sec .content-moldes {
-        flex-direction: column;
-        width: 100%;
+@media only screen and (max-width: 800px) {
+
+    .sec{
+        padding: 10px
+    }
+    .sec .content-moldes{
+        flex-direction: column;        
     }
 
-    .content-moldes .textBox-moldes h2 {
-        font-size: 1.7em;
+    .content-moldes .imgMolde{
+        margin: auto 0;
+    }
+    .content-moldes .imgMolde video {
+        max-width: 300px;
+    }
+    .content-moldes .textBox-moldes h2{
+        font-size: 1.9em;
     }
 
-    .content-moldes .textBox-moldes p {
-        font-size: 1em;
-        margin-top: 30px;
+    .content-moldes .textBox-moldes h2 span {
+        font-size: 1.3em;
+        margin-bottom: 1px;
+    }
+    .content-moldes .textBox-moldes p{
+        font-size: 1.3em;
+        margin-top: 40px;
+        opacity: 1;
     }
 
-    .content-moldes .imgMolde {
+    .content-moldes .imgMolde{
         width: 310px;
         padding: 30px;
     }
@@ -1091,9 +1098,9 @@ a {
     padding: 20px;
 }
 
-.left-col {
+/* .left-col {
     background: #fff;
-}
+} */
 
 .content {
     max-width: 500px;
@@ -1122,7 +1129,7 @@ a {
     width: 100%;
     height: 60%;
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-top: 50px;
 }
 
@@ -1138,12 +1145,31 @@ a {
     transition: all 0.5s ease-in-out;
 }
 
-@media only screen and (max-width: 365) {
+@media only screen and (max-width: 800px) {
 
+    .wrapper .wrapper-impar .wrapper-imparfor{
+        position: relative;
+        height: 100px;
+    }
 
     .left-col,
     .right-col {
-        flex-direction: column-reverse;
+        flex-basis: 100%;
+        height: 270px;
+    }
+
+    .content{
+        left: 0;
+        text-align: center;
+    }
+
+    .content h1{
+        font-size: 34px;
+        /* line-height: 38px;    */     
+    }
+
+    .slider{
+        height: 175px;
     }
 
 }
