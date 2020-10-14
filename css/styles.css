@@ -286,9 +286,7 @@ a {
 
 
 @media only screen and (max-width:773px) {
-    .img-header {
-        width: 100%;
-    }
+    .img-header { width: 100%;}
 
     .img-header .welcome h1 {
         font-size: 40px;
@@ -296,13 +294,9 @@ a {
 
     }
 
-    .img-header .welcome p {
-        font-size: 16px;
-    }
+    .img-header .welcome p { font-size: 16px; }
 
-    .img-header .welcome hr {
-        width: 90%;
-    }
+    .img-header .welcome hr { width: 90%; }
 
 }
 
@@ -311,13 +305,9 @@ a {
         font-size: 20px;
     }
 
-    .img-header .welcome hr {
-        width: 80%;
-    }
+    .img-header .welcome hr { width: 80%;}
 
-    .img-header .welcome p {
-        font-size: 17px;
-    }
+    .img-header .welcome p {font-size: 17px; }
 }
 
 /** Acerca de Nosotros **/
@@ -929,8 +919,10 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: url(../img/drill-4502834_1920.jpg);
+    background: url(../img/servicios_web/portada_servicio.jpg);
+    background-attachment: fixed;
     background-position: center;
+    background-size: cover;
     transition: 0.5s;
 }
 
@@ -948,7 +940,7 @@ a {
 }
 
 .content-moldes .textBox-moldes h2 {
-    color: #fff;
+    color: #235496;
     font-size: 4em;
     line-height: 1.5em;
     font-weight: 900;
@@ -964,23 +956,11 @@ a {
 .content-moldes .textBox-moldes p {
     color: #fff;
     font-size: 1.4em;
-}
-
-.content-moldes .textBox-moldes a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 20px;
-    background: #fff;
-    color: #235496;
-    border-radius: 40px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #235496;
 }
 
 .content-moldes .imgMolde {
-    width: 600px;
+    width: 550px;
     display: flex;
     padding-right: 50px;
     padding-bottom: 20px;
@@ -993,51 +973,19 @@ a {
     background: rgba(0, 0, 0, 0.6);
 }
 
-.thumb {
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-    transform: translateX(-50%);
-    display: flex;
-}
-
-.thumb li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.thumb li:hover { transform: translateY(-15px); }
-
-.thumb li img { max-width: 60px; }
-
-.contenedor-forja p:hover {
-    transition: all 0.5s;
-    text-decoration-line: underline;
-}
-
 .contenedor-imagen img:hover { opacity: 1;}
 
 @media only screen and (max-width: 800px) {
 
-    .sec{
-        padding: 10px
-    }
-    .sec .content-moldes{
-        flex-direction: column;        
-    }
+    .sec{ padding: 10px}
 
-    .content-moldes .imgMolde{
-        margin: auto 0;
-    }
-    .content-moldes .imgMolde video {
-        max-width: 300px;
-    }
-    .content-moldes .textBox-moldes h2{
-        font-size: 1.9em;
-    }
+    .sec .content-moldes{ flex-direction: column; }
+
+    .content-moldes .imgMolde{ margin: auto 0;}
+
+    .content-moldes .imgMolde video { max-width: 300px;}
+
+    .content-moldes .textBox-moldes h2{font-size: 2em;}
 
     .content-moldes .textBox-moldes h2 span {
         font-size: 1.3em;
@@ -1046,17 +994,16 @@ a {
     .content-moldes .textBox-moldes p{
         font-size: 1.3em;
         margin-top: 40px;
-        opacity: 1;
     }
 
     .content-moldes .imgMolde{
         width: 310px;
-        padding: 30px;
+        padding: 10px;
     }
 
 }
 
-/* contenido servicios */
+/* contenido servicios en el Main*/
 
 .wrapper {
     display: flex;
@@ -1074,13 +1021,9 @@ a {
     background: #fff;
 }
 
-.wrapper-impar .titulo-texto {
-    color: #235496;
-}
+.wrapper-impar .titulo-texto { color: #235496;}
 
-.wrapper-impar .color-texto {
-    color: #dc7633;
-}
+.wrapper-impar .color-texto { color: #dc7633;}
 
 .wrapper-imparfor {
     display: flex;
@@ -1098,9 +1041,6 @@ a {
     padding: 20px;
 }
 
-/* .left-col {
-    background: #fff;
-} */
 
 .content {
     max-width: 500px;
@@ -1165,12 +1105,14 @@ a {
 
     .content h1{
         font-size: 34px;
-        /* line-height: 38px;    */     
+        line-height: 38px;        
     }
 
-    .slider{
-        height: 175px;
-    }
+    .content p{ margin: 15px; }
+    
+    .slider{ height: 175px; }
+
+    .slider img{ opacity: 1; }
 
 }
 
