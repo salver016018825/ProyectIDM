@@ -945,7 +945,9 @@ a {
     line-height: 1.5em;
     font-weight: 900;
     text-transform: uppercase;
+    font-family: 'EB Garamond', serif;
     width: 140px;
+    text-shadow: 2px 2px 5px #fff;
 }
 
 .content-moldes .textBox-moldes h2 span {
@@ -957,6 +959,7 @@ a {
     color: #fff;
     font-size: 1.4em;
     text-shadow: 2px 2px 5px #235496;
+    font-family: 'EB Garamond', serif;
 }
 
 .content-moldes .imgMolde {
@@ -1056,6 +1059,7 @@ a {
     font-size: 60px;
     line-height: 70px;
     margin: 25px 0;
+    font-family: 'EB Garamond', serif;
 }
 
 .content p {
@@ -1063,6 +1067,7 @@ a {
     font-size: 17px;
     line-height: 28px;
     margin-bottom: 50px;
+    font-family: 'EB Garamond', serif;
 }
 
 .slider {
@@ -1110,9 +1115,14 @@ a {
 
     .content p{ margin: 15px; }
     
-    .slider{ height: 175px; }
+    .slider{ 
+        height: 190px;
+        width: 250px;
+        overflow: hidden;
+        margin: auto; 
+    }
 
-    .slider img{ opacity: 1; }
+    .slider img{ opacity: 1; width: 100%;}
 
 }
 
