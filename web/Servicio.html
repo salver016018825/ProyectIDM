@@ -1,37 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../img/iconos/idm.ico" type=”image/x-icon”>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,700&family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../img/iconos/idm.ico" type=”image/x-icon”> <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,700&family=EB+Garamond&display=swap"
+        rel="stylesheet">
     <title>Servicios IDM</title>
 </head>
-
 <body>
-    <!-- Ir Arriba -->
-    <div class="go-top">
-        <span class="fas fa-angle-double-up"></span>
-    </div>
-    <!-- Menu de Navegacion -->
-    <header id="header">
-        <!-- <nav class="menu">
-            <div class="logo-box">
-                <figure>
-                    <img src="../img/servicios_web/idm.png" loading="lazy" alt="idm Metalmecanica" class="logo">
-                </figure>
-                <span class="btn-menu"><i class="fas fa-bars"></i></span>
-            </div>
-            <div class="list-container">
-                <ul class="lists">
-                    <li><a href="index.html" class="active">Inicio</a></li>
-                    <li><a href="#">Futuros Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-        </nav> -->
+    <!--Menu -->
+    <header>
         <nav class="menu" id="menu">
             <div class="contenedor contenedor-botones-menu">
                 <button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
@@ -40,18 +21,73 @@
     
             <div class="contenedor contenedor-enlaces-nav">
                 <div class="btn-departamentos" id="btn-departamentos">
-                    <p>Todos los <span>Departamentos</span></p>
+                    <p>Todos los <span>Servicios</span></p>
                     <i class="fas fa-caret-down"></i>
                 </div>
     
                 <div class="enlaces">
-                    <a href="#">Cuenta</a>
-                    <a href="#">Promociones</a>
-                    <a href="#">Mesa de Regalos</a>
-                    <a href="#">Ayuda</a>
+                    <a href="#">Inicio</a>
+                    <a href="#">Futuros Proyectos</a>
+                    <a href="#">Contacto</a>
                 </div>
             </div>
+    
+            <div class="contenedor contenedor-grid">
+                <div class="grid" id="grid">
+                    
+                    <div class="categorias">
+                        <button class="btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</button>
+                        <h3 class="subtitulo">Categorias</h3>
+                        <a href="#" data-categoria="tecnologia-y-computadoras">Servicios <i class="fas fa-angle-right"></i></a>
+                    </div>
+    
+                    <div class="contenedor-subcategorias">					
+                        <div class="subcategoria " data-categoria="tecnologia-y-computadoras">
+                            <div class="enlaces-subcategoria">
+                                <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+                                <h3 class="subtitulo">Metalmecanica</h3>
+                                <a href="#">Herramientas de Forja</a>
+                                <a href="#">Moldes</a>
+                                <a href="#">Troqueles</a>
+                                <a href="#">Dados Herramientas de Sub-Emsambles</a>
+                                <a href="#">Herramientas CNC</a>
+                                <a href="#">Materiales Empleados</a>
+                                <a href="#">Fabricacion de Refacciones</a>
+                                <a href="#">Herramientas de Izaje</a>
+                                <a href="#">Fixture & Gages</a>
+                                <a href="#">Maquinados Especiales</a>
+                                <a href="#">Retro-Ingenieria</a>
+                                <a href="#">Asistencia CAD CAM</a>
+                                <a href="#">Paileria</a>
+                            </div>
+    
+                            <div class="banner-subcategoria">
+                                <a href="#">
+                                    <img src="../img/menu/maquina.jpg" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="galeria-subcategoria">
+                                <a href="#">
+                                    <img src="../img//menu/disenio.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="../img/menu/29.jpeg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="../img/menu/tor.jpg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="../img/menu/puntas.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>		
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
+
     <section class="sec">
         <div class="content-moldes">
             <div class="textBox-moldes mostrar-texto">
@@ -73,8 +109,8 @@
                 <div class="left-col">
                     <div class="content mostrar-texto">
                         <h1 style="color: #dc7633;">Herramientas de Forja</h1>
-                        <p> Con mas de 30 años de experiencia en la fabricacion de forja en caliente y frio 
-                            ofreciendo forja libre, con estampado, recalcado e isotermico, cumple con una multitud 
+                        <p> Con mas de 30 años de experiencia en la fabricacion de forja en caliente y frio
+                            ofreciendo forja libre, con estampado, recalcado e isotermico, cumple con una multitud
                             de aplicaciones en los distintos campos industriales.</p>
                     </div>
                 </div>
@@ -95,7 +131,7 @@
                 <div class="right-col">
                     <div class="content">
                         <h1 class="titulo-texto">Moldes</h1>
-                        <p class="color-texto">La fabricacion cumple con los requerimientos de tolerancia y acabado 
+                        <p class="color-texto">La fabricacion cumple con los requerimientos de tolerancia y acabado
                             para la industria Manufacturera plastica, esencialmente para la produccion de componentes
                             de linea blanca, automotriz y aeroespacial.</p>
                     </div>
@@ -141,8 +177,8 @@
                     <div class="content">
                         <h1 class="titulo-texto">Herramientas CNC</h1>
                         <p class="color-texto">Maquinado de alta presicion para fabricacion de fresas de un solo filo o
-                            de dos filos, al igual las herramientas de corte o cuchilla son fabricadas por el acero al carbono, rapido,
-                            cermet y ceramica ofreciendo durabilidad y calidad.</p>
+                            de dos filos, al igual las herramientas de corte o cuchilla son fabricadas por el acero al
+                            carbono, rapido, cermet y ceramica ofreciendo durabilidad y calidad.</p>
                     </div>
                 </div>
                 <div class="right-col">
@@ -176,15 +212,15 @@
                     <div class="content">
                         <h1>Fabricacion de Refacciones</h1>
                         <p>La fabricacion especial de Refacciones, partiendo de un modelo
-                            muestra,
-                            ofreciendo a nuestros clientes mejor tiempo de respuesta en fabricacion, favoreciendo en
+                            muestra, ofreciendo a nuestros clientes mejor tiempo de respuesta en fabricacion, favoreciendo en
                             tiempo y de entrega, costo e insumo.
                         </p>
                     </div>
                 </div>
                 <div class="right-col">
                     <div class="slider">
-                        <img src="../img/servicios_web/fabricacion_refacciones.jpeg" loading="lazy" alt="Fabricacion de Refacciones">
+                        <img src="../img/servicios_web/fabricacion_refacciones.jpeg" loading="lazy"
+                            alt="Fabricacion de Refacciones">
                     </div>
                 </div>
             </div>
@@ -200,7 +236,7 @@
                     <div class="content">
                         <h1 class="titulo-texto">Herramientas de Izaje</h1>
                         <p class="color-texto">Estructuras y piezas metalicas utilizadas para dar seguiridad en los
-                            procesos de carga y descarga de objetos, este cumple con estandares de calidad y 
+                            procesos de carga y descarga de objetos, este cumple con estandares de calidad y
                             seguiridad para proporcionar un buen desempeño en las operaciones de trabajo.
                         </p>
                     </div>
@@ -227,7 +263,8 @@
             <div class="wrapper animado">
                 <div class="left-col">
                     <div class="slider">
-                        <img src="../img/servicios_web/maquinado_especial.jpeg" loading="lazy" alt="Maquinados Especiales">
+                        <img src="../img/servicios_web/maquinado_especial.jpeg" loading="lazy"
+                            alt="Maquinados Especiales">
                     </div>
                 </div>
                 <div class="right-col">
@@ -246,8 +283,7 @@
                     <div class="content">
                         <h1 class="color-titulo">Retro-Ingenieria</h1>
                         <p class="color-texto">Metodo con el principal objetivo determinar el Diseño, el material y el
-                            proceso de
-                            fabricacion de una pieza, emplea servicio es supervisando y hecho por profesionales </p>
+                            proceso de fabricacion de una pieza, emplea servicio es supervisando y hecho por profesionales </p>
                     </div>
                 </div>
                 <div class="right-col">
@@ -269,8 +305,7 @@
                         <h1>Asistencia CAD CAM</h1>
                         <p>Es un instrumento fundamental para la industria de Manufactura, son partes indispensables
                             para la produccion de un producto, son Diseñados para ser efectivos y presicos. Los
-                            materiales
-                            empleados son de alta durabilidad y calidad.</p>
+                            materiales empleados son de alta durabilidad y calidad.</p>
                     </div>
                 </div>
             </div>
@@ -281,8 +316,7 @@
                     <div class="content">
                         <h1>Paileria</h1>
                         <p style="color: #dc7633;">Estructura metalica Diseñada y fabricada para cumplir con los
-                            requirimientos de las distintas
-                            industrias, los materiales empleados son seleccionados para ofrecer durabilidad y calidad.
+                            requirimientos de las distintas industrias, los materiales empleados son seleccionados para ofrecer durabilidad y calidad.
                         </p>
                     </div>
                 </div>
@@ -296,7 +330,8 @@
     </main>
     <!--scripts -->
     <script src="https://kit.fontawesome.com/35db202371.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="../js/main.js"></script>
     <script src="../js/animation.js"></script>
 </body>
+
 </html>
