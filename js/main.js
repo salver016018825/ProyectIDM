@@ -85,3 +85,21 @@ btnCerrarMenu.addEventListener('click', (e)=> {
 	});
 	document.querySelector('body').style.overflow = 'visible';
 });
+
+
+/* Menu aparecer desaparecer */
+let menuContent = document.querySelectorAll('.menu');
+let PrevScrollPos = window.pageYOffset;
+
+window.onscroll = () =>{
+	let currentScrollPos = window.pageYOffset;
+	if(prevScrollPos > currentScrollPos){
+		containerMenu.style.top = '0';
+		containerMenu.style.transition = '0.5s';
+	}else{
+		menuContent.style.top = '-50px';
+		menuContent.style.transition = '0.5s';
+	}
+
+	prevScrollPos = currentScrollPos;
+}
