@@ -88,26 +88,25 @@ btnCerrarMenu.addEventListener('click', (e) => {
 
 
 /* Menu aparecer desaparecer */
-let menuContent = document.querySelectorAll('.menu');
-let PrevScrollPos = window.pageYOffset;
+// let menuContent = document.querySelectorAll('.menu');
+// let PrevScrollPos = window.pageYOffset;
 
-window.onscroll = () => {
-	let currentScrollPos = window.pageYOffset;
-	if (prevScrollPos > currentScrollPos) {
-		containerMenu.style.top = '0px';
-		containerMenu.style.transition = '0.5s';
-	} else {
-		menuContent.style.top = '-50px';
-		menuContent.style.transition = '0.5s';
-	}
-
-	prevScrollPos = currentScrollPos;
-}
+// window.onscroll = () => {
+// 	let currentScrollPos = window.pageYOffset;
+// 	if (prevScrollPos > currentScrollPos) {
+// 		containerMenu.style.top = '-50px';
+// 		containerMenu.style.transition = '0.5s';
+// 	} else {
+// 		menuContent.style.top = '-50px';
+// 		menuContent.style.transition = '0.5s';
+// 	}
+// 	prevScrollPos = currentScrollPos;
+// }
 
 let bodyTag = document.querySelector('body');
 let myNav = document.querySelector('nav'); 
-let scrolled = () => {
 
+let scrolled = () => {
 	let dec = scrollY / (bodyTag.scrollHeight - innerHeight);
 	return Math.floor(dec * 100);
 }
