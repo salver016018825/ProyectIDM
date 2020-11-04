@@ -114,3 +114,8 @@ let scrolled = () => {
 addEventListener('scroll', () =>{
 	myNav.style.setProperty('background', scrolled() > 5 ? "rgba(220,118,51,1)" : "rgba(35,84,150,0.5)");
 })
+
+/*preolader site*/
+window.addEventListener("load",function(){
+	document.getElementById("loader").classList.toggle("loader2")
+});

@@ -1,365 +1,238 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <title>IDM Queretaro</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- Estilos Css -->
+    <title>IDM Page</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/galeria.css"> 
-    <link rel="stylesheet" href="css/PiePagina.css"> 
-    <!-- <link rel="stylesheet" href="css/hover.css">  -->
-    <!-- <link rel="stylesheet" href="css/style-video.css"> -->
-    <link rel="stylesheet" href="css/video-grid.css">
-    <link rel="stylesheet" href="css/style-menu.css">
-    <!--estio fuentes-->
-    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,500,700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/fooindex.css">
 </head>
 
 <body>
-    <!-- Ir Arriba -->
-    <div class="go-top">
-        <span class="fas fa-angle-double-up"></span>
-    </div>
-
-    <!-- Menu de Navegacion -->
-    <header id="header">
-        <nav class="menu">
+    <div class="lds-dual-ring loader" id="loader"></div>
+    <!--Menu -->
+    <header>
+        <nav class="menu" id="menu">
             <div class="logo-box">
                 <figure>
-                    <img src="img/logot.png" alt="" class="logo">
+                    <img src="/img/menu/idm.png" alt="IDM" loading="lazy" class="logo">
                 </figure>
-                <span class="btn-menu"><i class="fas fa-bars"></i></span>
             </div>
-            <div class="list-container">
-                <ul class="lists">
-                    <li><a href="index.html" class="active">Inicio</a></li>
-                    <li><a href="#">Futuros Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
+            <div class="contenedor contenedor-botones-menu">
+                <button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
+                <button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
+            </div>
+
+            <div class="contenedor contenedor-enlaces-nav">
+                <div class="btn-departamentos" id="btn-departamentos">
+                    <p>Todos los <span>Servicios</span></p>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+
+                <div class="enlaces" id="list">
+                    <a href="web/DesarrollandoIdm.html">Inicio</a>
+                    <a href="web/futuros-proyectos.html">Futuros Proyectos</a>
+                    <a href="web/DesarrollandoIdm.html">Contacto</a>
+                </div>
+            </div>
+
+            <div class="contenedor contenedor-grid">
+                <div class="grid" id="grid">
+
+                    <div class="categorias">
+                        <button class="btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</button>
+                        <a href="Servicio.html" data-categoria="tecnologia-y-computadoras">Servicios <i
+                                class="fas fa-angle-right"></i></a>
+                    </div>
+
+                    <div class="contenedor-subcategorias">
+                        <div class="subcategoria " data-categoria="tecnologia-y-computadoras">
+                            <div class="enlaces-subcategoria">
+                                <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+                                <h3 class="subtitulo">Metalmecanica</h3>
+                                <a href="web/Servicio.html#Herramientasdeforja">Herramientas de Forja</a>
+                                <a href="web/Servicio.html#moldes">Moldes</a>
+                                <a href="web/Servicio.html#troqueles">Troqueles</a>
+                                <a href="web/Servicio.html#herramientasSub">Dados Herramientas de Sub-Emsambles</a>
+                                <a href="web/Servicio.html#herramientascnc">Herramientas CNC</a>
+                                <a href="web/Servicio.html#materialesempleados">Materiales Empleados</a>
+                                <a href="web/Servicio.html#fabricacionrefacciones">Fabricacion de Refacciones</a>
+                                <a href="web/Servicio.html#izaje">Herramientas de Izaje</a>
+                                <a href="web/Servicio.html#gages">Fixture & Gages</a>
+                                <a href="web/Servicio.html#maquinadoespecial">Maquinados Especiales</a>
+                                <a href="web/Servicio.html#retro-ing">Retro-Ingenieria</a>
+                                <a href="web/Servicio.html#asistencia-cad-cam">Asistencia CAD CAM</a>
+                                <a href="web/Servicio.html#paileria">Paileria</a>
+                            </div>
+
+                            <div class="banner-subcategoria">
+                                <a href="#">
+                                    <img src="img/menu/maquina.jpg" loading="lazy" alt="">
+                                </a>
+                            </div>
+
+                            <div class="galeria-subcategoria">
+                                <a href="#">
+                                    <img src="img//menu/disenio.jpg" loading="lazy" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/menu/29.jpeg" loading="lazy" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/menu/tor.jpg" loading="lazy" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="img/menu/puntas.jpg" loading="lazy" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
-
-        <!-- Imagen Header -->
-        <div class="img-header">
-            <div class="welcome">
-                <h1>Ingenieria y Desarrollo Metalmecanico</h1>
-                <hr>
-                <p>Procesos de Manufactura</p>                
+    </header>
+    <section>
+        <div class="contenedor-desarrollo">
+            <div class="contendor-desarrollo-img">
+                <img src="img/building site/webdesign-3411373_1920.jpg" alt="">
+                <p>Pagina en Proceso...</p>
+            </div>
+            <div class="cono">
+                <img src="img/building site/cono.png" alt="">
             </div>
         </div>
-        <div class="skew-abajo"></div>
-
-
-    </header>
-
-    <main>
-        <!-- <section class="container-video">
-            <video id="slider" autoplay muted ><source src="video/Manufacturing.mp4"></video>
-            <ul class="navigation">
-                <li onclick="videoUrl('video/Manufacturing.mp4')"><img src="img/" alt=""></li>
-                <li onclick="videoUrl('video/pieza.mp4')"><img src="img/vid.jpeg" alt=""></li>
-                <li onclick="videoUrl('video/video.mp4')"><img src="img/comp.png" alt=""></li>
-        </ul>
-        </section> -->
-        <section>
-            <div class="container-video">
-              <div class="container-card" >          
-                  <video class="size-video" loop autoplay muted>
-                      <!-- <source src="video/grabado.mp4" type="video/mp4"> -->
-                    </video>      
-              </div>
-              <div class="container-card">
-                    <video class="size-video" loop autoplay muted>
-                        <!-- <source src="video/hierro.mp4" type="video/mp4"> -->
-                      </video>           
-                </div>
-                <div class="container-card" >
-                    <video class="size-video" loop autoplay muted>
-                        <!-- <source src="video/Manufacturing.mp4" type="video/mp4"> -->
-                      </video>  
-                </div>
-            </div>
-          </section>
-        
-        <!-- Acerca de nosotros -->
-        <section class="acerca-de">
-
-            <div class="info-container">
-                <h1>Acerca de Nosotros</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie in risus eget iaculis.
-                    Pellentesque
-                    habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed at ultricies
-                    lacus. Sed
-                    ut ornare mi, ac blandit nibh. Nulla sollicitudin lorem consequat, porta est ut, scelerisque risus.
-                    Morbi
-                    iaculis a sem quis iaculis. Sed facilisis turpis placerat, aliquam augue in, aliquet lectus.</p>
-
-                <div class="about-gallery">
-                    <div class="container-galeria">
-                        <div class="card">
-                            <h2>Mision</h2>
-                            <div class="icon">
-                                <i class="fas fa-users-cog"></i>
-                            </div>
-                            <p class="parrafo">Somos una empresa apasionada, comprometida y en constante mejora con
-                                nuestros
-                                procesos de manufactura, nuestras principales operaciones están enfocadas a la
-                                fabricación y diseño de
-                                Herramentales en General.</p>
-                        </div>
-
-                        <div class="card">
-                            <h2>Vision</h2>
-                            <div class="icon">
-                                <i class="far fa-handshake"></i>
-                            </div>
-                            <p class="parrafo">Proveedor primordial, para desarrollo de herramentales, en los cinco sectores económicos
-                            </p>
-                        </div>
-
-                        <div class="card">
-                            <h2>Valores</h2>
-                            <div class="icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <p class="parrafo">Disponibilidad al cambio</br>Pasión</br>Transformación</br></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skew-abajo"></div>
-        </section>
-
-        <!-- Nuestros proyectos -->
-
-        <section class="our-projects">
-            <!--<div class="skew-arriba"></div>-->
-            <div class="deg-background"></div>
-            <div class="ejeZproject">
-                <div class="container-project">
-                    <div class="contenedor-imagenes">
-                        <div class="view view-first">
-                            <img src="img/herramientas-forja.jpg" alt="">
-                            <div class="mask">
-                                <h2>HERRAMIENTAS DE FORJA </h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
-                                <a href="web/HerramientaForja.html" class="info">Read More</a>
-                            </div>
-                        </div>
-                        <div class="view view-first">
-                            <img src="img/moldes.jpg" alt="">
-                            <div class="mask">
-                                <h2>MOLDES</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
-                                <a href="#" class="info">Read More</a>
-                            </div>
-                        </div>
-                        <div class="view view-first">
-                            <img src="img/person.jpg" alt="">
-                            <div class="mask">
-                                <h2>TROQUELES</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
-                                <a href="#" class="info">Read More</a>
-                            </div>
-                        </div>
-                        <div class="view view-first">
-                            <img src="img/40.jpeg" alt="">
-                            <div class="mask">
-                                <h2>FABRICACION DE REFACCIONES</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
-                                <a href="#" class="info">Read More</a>
-                            </div>
-                        </div>
-                        <div class="view view-first">
-                            <img src="img/drill.jpg" alt="">
-                            <div class="mask">
-                                <h2>FABRICACIÓN DE REFACCIONES</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
-                                <a href="#" class="info">Read More</a>
-                            </div>
-                        </div>
-                        <div class="view view-first">
-                            <img src="img/2.jpg" alt="">
-                            <div class="mask">
-                                <h2>HERRAMIENTA DE IZAJE</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
-                                <a href="#" class="info">Read More</a>
-                            </div>
-                        </div>
-                        <div class="view view-first">
-                            <img src="img/2.jpg" alt="">
-                            <div class="mask">
-                                <h2>FIXTURES</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
-                                <a href="#" class="info">Read More</a>
-                            </div>
-                        </div>
-                        <div class="view view-first">
-                            <img src="img/t.jpg" alt="">
-                            <div class="mask">
-                                <h2>DADOS</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
-                                <a href="#" class="info">Read More</a>
-                            </div>
-                        </div>
-                        <div class="view view-first">
-                            <img src="img/cnc.jpg" alt="">
-                            <div class="mask">
-                                <h2>HERRAMIENTAS CNC</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero esse neque eum corporis quidem rerum delectus accusantium at!.</p>
-                                <a href="#" class="info">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--<div class="skew-abajo"></div>-->
-            
-        </section>    
-        
-       <!--Galeria estatica-->
-       <section class="galeria-estatica">
-        <div class="sesgoarriba"></div>
-
-        <div class="contenedor-estatica"><img src="img/10.1.jpg" alt=""></div>
-        <div class="contenedor-estatica"><img src="img/38.1.jpg" alt=""></div>
-        <div class="contenedor-estatica"><img src="img/20.jpg" alt=""></div>
-        <div class="contenedor-estatica"><img src="img/23.1.jpg" alt=""></div>
-        <div class="contenedor-estatica"><img src="img/01.1.jpeg" alt=""></div>
-
-        <div class="sesgoabajo"></div>
     </section>
-
-        <!--Servicios-->
-    <header class="header">
-        <div class="grid">
-            <div class="textos-hero">
-                <!--h1 class="weigth-600">
-                  Servicios <span class="wegth-400"></span>
-              </h1-->
-                <P class="parrafo">Ofrecemos diseño y fabricacion para producir piezas de alta calidad
-                    que cumplen con las normas y estandares internacionales del sector industrial, utilizando
-                    maquinaria de alta tecnología, somos innovadores dentro del mercado para satisfacer las
-                    necesidades del cliente.</P>
-                <a href="contacto1.html" class="cta">contactarme</a>
-            </div>
-            <div class="img-hero">
-                <img src="imagen/logo.png" alt="" class="img">
-            </div>
-        </div>
-    </header>
-
-    <section class="services">
-        <section class="grid">
-            <div class="items">
-
-                <div class="item">
-                    <i class="fas fa-mail-bulk"></i>
-                    <h3 class="titulo-services">Accesibilidad</h3>
-                    <p>Nuestra principal iniciativa es brindar un excelente servicio y trato a nuestros clientes
-                        para cumplir con sus espectativas y ofrecer nuestro servico a todo el mercado industrial.
-                        <!--Nuestro equipo de trabajo especializado en los procesos industriales dando la mejor calidad 
-                      en mano de abra ya que se cumplen con las reglas requeridad para su fabricación.-->
-                    </p>
-                </div>
-
-                <div class="item">
-                    <i class="fas fa-user-tie"></i>
-                    <h3 class="titulo-services">Profesionalismo</h3>
-                    <p>IDM es una empresa con certificaciones y su capital humano especialmente capacitados cumplen
-                        con las competencias y
-                        ética profesional.
-                    </p>
-                </div>
-
-                <div class="item">
-                    <i class="fas fa-user-check"></i>
-                    <h3 class="titulo-services">Eficacia</h3>
-                    <p>Nuestro centro de trabajo tiene la capacidad de diseñar y producir
-                        piezas cumpliendo la demanda del cliente.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-
+    <!--pie de pagina-->
     <footer>
+
         <div class="container-footer-all">
+
             <div class="container-body">
+
                 <div class="colum1">
-                    <h1> Servicios</h1>
+                    <h1> Más informacion de la compañia</h1>
+
+                    <h2>DISEÑO, FABRICACÓN DE REFACCIONES, PIEZAS Y ATENCIÓN A CLIENTE.</h2>
+
                     <p>
-                        <a href="web/HerramientaForja.html">HERRAMENTALES DE FORJA</a>
+                        - Herramentales de Forja.
                         <br>
-                        GAGES
+                        - Troqueles.
                         <br>
-                        MOLDES
+                        - Refacciones.
                         <br>
-                        TROQUELES
+                        - Fixtures & Gages.
                         <br>
-                        FABRICACIÓN DE REFACCIONES
+                        - Moldes.
                         <br>
-                        HERRAMIENTA DE IZAJE
+                        - Herramental CNC.
                         <br>
-                        FIXTURES
+                        - Herramientas de Izaje.
                         <br>
-                        DADOS
+                        - Pailería.
                         <br>
-                        HERRAMIENTAS CNC
+                        - Dados herramientas de subensambles.
+                        <br>
+                        - Maquinados Especiales.
+                        <br>
+                        - Retro Ingeniería.
+                        <br>
+                        - Asistencia CAD CAM.
                     </p>
+                    <p class="estados">Servicios a nivel Nacional e Internacional</p>
                 </div>
 
                 <div class="colum2">
-                    <h1>Redes Sociales</h1>
+                    <h1>Siguenos en nuestras
+                        <br> redes sociales</h1>
+
                     <div class="row">
-                        
-                        <div class="social-icono"><i class="fab fa-facebook-square"></i></div>
-                        <label> Siguenos en Facebook</label>
+                        <img src="img/futuros_proyect/facebook.png">
+                        <label>IDM Ingenieria y Desarrollo Metalmecánico</label>
                     </div>
-                    
+
+                    <div class="row">
+                        <img src="img/futuros_proyect/twiter.png">
+                        <label>Twitter</label>
+                    </div>
+
+                    <div class="row">
+                        <img src="img/futuros_proyect/insta.png">
+                        <label>Instagram</label>
+                    </div>
+
+                    <div class="row">
+                        <img src="img/futuros_proyect/in.png">
+                        <label>IDM Ingenieria y Desarrollo Metalmecánico</label>
+                    </div>
+
+                    <div class="row">
+                        <img src="img/futuros_proyect/youtube.png">
+                        <label> Youtube</label>
+                    </div>
+
                 </div>
+
                 <div class="colum3">
                     <h1>Contacto</h1>
+
                     <div class="row2">
-                        
-                        <div class="social-icono"><i class="fas fa-home"></i></div>
+                        <img src="img/futuros_proyect/ubicacion.png">
                         <label>
-                            <p>Calle Napoles, Villas del Cimatario, Roma</p>
+                            Calle Napoles, Villas del Cimatario, Roma
+                        </label>
+                    </div> <br>
+
+                    <!--Mapa-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d233.4889141919122!2d-
+                      100.379675!3d20.554437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDMzJz
+                      E1LjkiTiAxMDDCsDIyJzQ2LjgiVw!5e0!3m2!1ses-419!2sus!4v1596162934982!5m2!1ses-419!2sus" width="300"
+                        height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0">
+                    </iframe> <br>
+
+
+
+                    <div class="row2">
+                        <img src="img/futuros_proyect/cel.png">
+                        <label>
+                            - 442 287 32 25
+                            <br>
+                            - 442 202 33 07
+                            <br>
+                            - 442 119 32 56
                         </label>
                     </div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d233.4889141919122!2d-100.379675!3d20.554437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDMzJzE1LjkiTiAxMDDCsDIyJzQ2LjgiVw!5e0!3m2!1ses-419!2sus!4v1596162934982!5m2!1ses-419!2sus"
-                        width="300" height="150" frameborder="0" style="border:0;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe>
+
+                    <div class="row2">
+                        <img src="img/futuros_proyect/mail.png">
+                        <label>
+                            idmetalmecanico@aol.com
+                        </label>
+                    </div>
                 </div>
+
             </div>
+
+
+
         </div>
-        
+
+        <!--Pie de pagina final-->
         <div class="container-footer">
             <div class="copyright">
-                @2020 Ingenieria y Desarrollo Metalmecanico |
+                @2021 Ingenieria y Desarrollo Metalmecanico |
                 Todos los Derechos Reservados
             </div>
+
         </div>
+
     </footer>
 
-    <!-- Scripts -->
-    <script type="text/javascript">
-		function videoUrl(zzz){
-			document.getElementById("slider").src = zzz;
-		}
-	</script>
     <script src="https://kit.fontawesome.com/35db202371.js"></script>
-    <script src="/js/app.js"></script>
-
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
 </body>
 
 </html>
