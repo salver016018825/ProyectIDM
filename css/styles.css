@@ -20,21 +20,7 @@ body {
     /* font-family: 'Red Hat Text', sans-serif; */
 }
 
-/*preload*/
 
-/* .loader{
-    background: var(--orange);
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top:0;
-    left: 0;
-
-} */
 .lds-dual-ring {
     display: inline-block;
     width: 80px;
@@ -201,7 +187,7 @@ a {
     left: 0;
     width: 100%;
     height: 60px;
-    z-index: 1;
+    z-index: 9999;
 }
 
 .menu .contenedor-botones-menu {
@@ -1077,4 +1063,119 @@ footer{
     .colum3{
         margin-top: 40px;
     }
+}
+
+.seccion-portada{
+    position: relative;
+    width: 100%;
+}
+
+.portada-automatizacion{
+    background:url(../img/automatizacion/automatizar.svg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color:rgba(0,0,0,0.5);
+    /* background-blend-mode: soft-light; */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.portada-automatizacion .header-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+}
+.portada-automatizacion .header-info h2{
+    color:#fff;
+    font-size: 4em;
+    font-weight: normal;
+}
+.portada-automatizacion .header-info hr{
+    border:none;
+    outline: none;
+    height: 2px;
+    background: #fff;
+    width: 600px;
+    margin:15px 0px;
+}
+.portada-automatizacion .header-info p{
+    color:#fff;
+    font-size: 20px;
+}
+
+
+
+/*************AUTOMATIZACIÓN**************/
+
+
+.automatizacion-txt1{
+    padding-top: 100px;
+    padding-bottom: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.proj-automatizacion1{
+    float: left;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    padding: 15px;
+}
+
+.automatizacion-txt1 p{
+    text-align: justify;
+    font-size: 17px;
+    padding-top: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #3C3C3C;
+}
+
+/*************INYECCION DE PLASTICOS*************/
+.automatizacion-txt2{
+    padding-top: 0px;
+    padding-bottom: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+}  
+.proj-automatizacion2{
+    float: right;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    padding: 15px;
+}
+.automatizacion-txt2 p{
+    text-align: justify;
+    font-size: 17px;
+    padding-top: 100px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #3C3C3C;
+}
+
+
+@media only screen and (max-width: 800px){
+    .automatizacion-txt1{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .automatizacion-txt2{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .portada-automatizacion .header-info h2{
+        color:#fff;
+        font-size: 2.7em;
+        font-weight: normal;
+    }
+
 }

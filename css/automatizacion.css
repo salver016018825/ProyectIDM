@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--white);
+    overflow-x: hidden;
+    /* font-family: 'Red Hat Text', sans-serif; */
+}
+
+>>>>>>> Moldes
 /*********Boton arriba*************/
 .arriba{
     position: fixed;
@@ -28,6 +43,7 @@
    color: #fff;
 } 
 
+<<<<<<< HEAD
 
 /************Navegation Menu *******/
 #header{
@@ -96,17 +112,28 @@
 /** Img portada**/
 .img-header{
     background:url(../imagen/automatizar.svg);
+=======
+.portada-automatizacion{
+    background:url(../img/automatizacion/automatizar.svg);
+>>>>>>> Moldes
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-color:rgba(0,0,0,0.5);
     background-blend-mode: soft-light;
+<<<<<<< HEAD
     
+=======
+>>>>>>> Moldes
     position: relative;
     width: 100%;
     height: 100vh;
 }
+<<<<<<< HEAD
 .img-header .header-info{
+=======
+.portada-automatizacion .header-info{
+>>>>>>> Moldes
     position: absolute;
     top: 0;
     left: 0;
@@ -118,12 +145,20 @@
     flex-direction: column;
     z-index: 100;
 }
+<<<<<<< HEAD
 .img-header .header-info h2{
+=======
+.portada-automatizacion .header-info h2{
+>>>>>>> Moldes
     color:#fff;
     font-size: 70px;
     font-weight: normal;
 }
+<<<<<<< HEAD
 .img-header .header-info hr{
+=======
+.portada-automatizacion .header-info hr{
+>>>>>>> Moldes
     border:none;
     outline: none;
     height: 2px;
@@ -131,7 +166,11 @@
     width: 600px;
     margin:15px 0px;
 }
+<<<<<<< HEAD
 .img-header .header-info p{
+=======
+.portada-automatizacion .header-info p{
+>>>>>>> Moldes
     color:#fff;
     font-size: 20px;
 }
