@@ -126,25 +126,12 @@ window.onload = function () {
 		selector: '.background',
 		connectParticles: true,
 		color: '#eaeaea',
-		maxParticles: 100,
 		responsive: [{
-			breakpoint: 268,
+			breakpoint: 768,
 			options: {
-				maxParticles: 50,
-				connectParticles: true
-			}
-		}, {
-			breakpoint: 125,
-			options: {
-				maxParticles: 50,
+				maxParticles: 75,
+				color: '#eaeaea',
 				connectParticles: true,
-				
-				
-			}
-		}, {
-			breakpoint: 120,
-			options: {
-				maxParticles: 50 // disables particles.js
 			}
 		}]
 	});
