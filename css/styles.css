@@ -1046,6 +1046,15 @@ footer{
     display: flex;
 }
 
+
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
 .portada-automatizacion{
     background:url(../img/automatizacion/automatizar.svg);
     background-attachment: fixed;
@@ -1136,6 +1145,12 @@ footer{
 
 
 @media only screen and (max-width: 800px){
+    .portada-automatizacion{
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+
     .automatizacion-txt1{
         padding-left: 50px;
         padding-right: 50px;
@@ -1150,6 +1165,7 @@ footer{
         color:#fff;
         font-size: 2.7em;
         font-weight: normal;
+        text-align: center;
     }
 
 }
