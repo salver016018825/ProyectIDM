@@ -17,9 +17,7 @@
 body {
     background: var(--white);
     overflow-x: hidden;
-    /* font-family: 'Red Hat Text', sans-serif; */
 }
-
 
 .lds-dual-ring {
     display: inline-block;
@@ -62,7 +60,6 @@ a {
     width: 50px;
     height: 50px;
     background: rgba(220, 118, 51, 0.7);
-    /*border:2px solid rgba(220, 118, 51, 0.7);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,19 +84,7 @@ a {
     color: var(--white);
 }
 
-/**
-    *   Portada Servicios**
-
-    -----------------------------------------------
-
-**/
-
-/**
-    *   medidas responsi**
-
-    -----------------------------------------------
-
-**/
+/** Portada Servicios **/
 
 @media only screen and (max-width:773px) {
     .img-header-moldes {
@@ -119,12 +104,7 @@ a {
     }
 }
 
-/**
-    *   Animaciones para la pagina Servicios**
-
-    -----------------------------------------------
-
-**/
+/** Animaciones para la pagina Servicios **/
 
 
 .animado {
@@ -161,11 +141,7 @@ a {
     }
 }
 
-/*
-  ------------------------------------------------------
-    Menu Amazon
-  ------------------------------------------------------
-*/
+/* Menu Amazon */
 
 
 .contenedor {
@@ -191,7 +167,6 @@ a {
 }
 
 .menu .contenedor-botones-menu {
-    /* display: flex; */
     display: none;
     justify-content: space-between;
 }
@@ -272,12 +247,12 @@ a {
     margin-left: 10px;
     position: absolute;
     margin-top: 10px;
-    display: flex;
+    display: block;
 }
 
 .logo {
-    width: 60px;
-    height: 30px;
+    width: 50px;
+    height: 25px;
 }
 
 /* ------------------------- */
@@ -457,9 +432,9 @@ a {
     }
 
     .menu .logo-box {
-        align-items: flex-end;
+        
         position: absolute;
-        margin-top: 10px;
+        
     }
 
     .menu .contenedor {
@@ -473,9 +448,8 @@ a {
     }
 
     .menu .logo-box {
-        margin-left: 250px;
-        position: absolute;
-        margin-top: 10px;
+        right: 30px;
+        
     }
 
     .menu .contenedor-botones-menu {
@@ -489,7 +463,7 @@ a {
         justify-content: flex-start;
         position: fixed;
         left: 0;
-        background: rgba(35, 84, 150, 0.5);
+        background: var(--black);
         height: 100vh;
         width: 100%;
         z-index: 2000;
@@ -538,7 +512,7 @@ a {
     }
 
     .grid>div {
-        background: rgba(35, 84, 150, 0.5);
+        background: var(--blue);
         width: 100%;
     }
 
@@ -593,18 +567,7 @@ a {
     }
 }
 
-/*
-  ------------------------------------------------------
-    Menu Amazon
-  ------------------------------------------------------
-*/
-
-/**
-    *   portada animada Servicios**
-
-    -----------------------------------------------
-
-**/
+/** portada animada Servicios */
 
 .sec {
     position: relative;
@@ -654,8 +617,8 @@ a {
 .content-moldes .textBox-moldes p {
     font-size: 1.3em;
     margin-top: 40px;
-    color: #fff;
-    text-shadow: 2px 2px 5px #235496;
+    color: var(--white);
+    text-shadow: 2px 2px 5px var(--orange);
     font-family: 'EB Garamond', serif;
 }
 
@@ -784,11 +747,11 @@ a {
     height: 100vh;
     position: relative;
     padding: 20px;
+    display:flex;
 }
 
 .content {
     max-width: 500px;
-    /*500px*/
     position: absolute;
     top: 50%;
     left: 120px;
@@ -833,15 +796,27 @@ a {
 
 @media only screen and (max-width: 800px) {
 
-    .wrapper .wrapper-impar .wrapper-imparfor {
+    .wrapper{
         position: relative;
-        height: 100px;
+        height: auto;    
+    }
+
+    .wrapper-impar{
+        position: relative;
+        height: auto;
+    }
+
+    .wrapper-imparfor{
+        position: relative;
+        height: auto;
     }
 
     .left-col,
     .right-col {
         flex-basis: 100%;
         height: 270px;
+        flex-direction: column;
+        position: relative;
     }
 
     .content {
@@ -859,7 +834,7 @@ a {
     }
 
     .slider {
-        height: 190px;
+        height: 100%;
         width: 250px;
         overflow: hidden;
         margin: auto;
@@ -933,21 +908,19 @@ a {
 }
 
 @media only screen and (max-width: 800px){
-    .contenedor-desarrollo{
-        height: 100vh;
-    }
+    
     .contenedor-desarrollo p{
         position: absolute;
         font-size: 0.6em;
-        left: 110px;
-        top: 195px;     
+        left: 120px;
+        top: 72px;     
         color: var(--white);   
     }
     .cono{
-        left: 130px;
-        top:295px;
-        width: 45px;
-        height: 35px;
+        left: 178px;
+        top: 88px;
+        width: 15px;
+        height: 13px;
     }
 }
 
@@ -1039,7 +1012,7 @@ footer{
 
 .container-footer{
     width: 100%;
-    background: #101010; /**color de baner (todos los derechos reservados)**/
+    background: #101010; 
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -1065,9 +1038,12 @@ footer{
     }
 }
 
+/* Automatizazion*/
+
 .seccion-portada{
     position: relative;
     width: 100%;
+    display: flex;
 }
 
 .portada-automatizacion{
@@ -1076,7 +1052,7 @@ footer{
     background-position: center;
     background-size: cover;
     background-color:rgba(0,0,0,0.5);
-    /* background-blend-mode: soft-light; */
+    background-blend-mode: soft-light;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -1114,8 +1090,6 @@ footer{
 
 
 /*************AUTOMATIZACIÓN**************/
-
-
 .automatizacion-txt1{
     padding-top: 100px;
     padding-bottom: 0px;
