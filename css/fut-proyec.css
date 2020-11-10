@@ -109,6 +109,12 @@ body{
     font-family: 'Titillium Web', sans-serif;
 }
 
+@media screen and (max-width: 800px){
+    .elementos-proyectos .icons{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 /***********Galeria estatica********/
 
@@ -134,32 +140,13 @@ body{
     height: 100%;   
 }
 
-@media only screen and (max-width:320px ){
 
-    .galeria-estatica{
+@media only screen and (max-width:800px ){
+
+    .galeria-estatica {
         height: 100px;
     }
     .contenedor-estatica{
-    width: 70%;
-    height: 100px;
+        height: 100%;
+    }    
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
