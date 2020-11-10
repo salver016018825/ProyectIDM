@@ -1,43 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-}
 
-body{
-    font-family: 'Titillium Web', sans-serif;
-}
-
-
-/*********Boton arriba*************/
-.arriba{
-    position: fixed;
-    bottom: 100px;
-    right: -100%;
-    width: 40px;
-    height: 40px;
-    background: rgb(220, 118, 51, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 1000;
-    transition: 0.5s;
-    border-radius: 100%;
-
-}
-.arriba:hover{
-    background: #fff;
-    color:#dc7633;
-    border: 2px solid #dc7633;
-}
-.arriba:hover span{color:#dc7633;
-}
-
-.arriba > span{
-   font-size: 30px;
-   color: #fff;
-} 
 
 /*******descripcón 1******/
 .descripcion{
@@ -149,4 +110,14 @@ body{
     .contenedor-estatica{
         height: 100%;
     }    
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 100vh;
+}
+
+@media (min-width: 576px) { 
+    h5{font-size: 1em; }
+
 }

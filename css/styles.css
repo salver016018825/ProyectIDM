@@ -1169,3 +1169,127 @@ footer{
     }
 
 }
+
+/*futuros proyectos*/
+/*******descripcón 1******/
+.descripcion{
+    width: 100%; 
+}
+.descripcion .info{
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+.descripcion .info p{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    color: #3C3C3C;
+    font-size: 17px;
+    line-height: 40px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.descripcion .info hr{
+    width: 90%;
+    border: none;
+    height: 2px;
+    background: #235496;
+    margin: auto;
+    
+}
+
+
+/*****************************/
+.elementos-proyectos{
+    width: 100%;
+    margin-top:0px;
+    background: #112c4e;
+    padding:30px;
+    
+}
+.elementos-proyectos p{
+    text-align: center;
+    font-weight: 400;
+    color:#fff;
+    font-family: 'Titillium Web', sans-serif;
+}
+.elementos-proyectos .icons{
+    width: 90%;
+    margin:30px auto;
+    display: flex;
+    justify-content: center;
+}
+.elementos-proyectos .icons > div{width: 100%; margin:0px 30px;}
+.elementos-proyectos .icons > div > .span-icon{
+    width:100%;
+    font-size: 25px;
+    color:#DC7633;
+    display: flex;
+    justify-content: center;
+}
+.elementos-proyectos .icons > div h2{
+    font-size: 30px;
+    color:#fff;
+    text-align: center;
+    font-weight:normal;
+    margin:20px 0px 5px 0px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.elementos-proyectos .icons > div p{
+    font-size: 15px;
+    text-align: center;
+    color:#fff;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+@media screen and (max-width: 800px){
+    .elementos-proyectos .icons{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/***********Galeria estatica********/
+
+ 
+
+.galeria-estatica{
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    display: flex;
+    position: relative; 
+}
+.contenedor-estatica{
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    
+}
+.contenedor-estatica img{
+    width: 100%;
+    height: 100%;   
+}
+
+
+@media only screen and (max-width:800px ){
+
+    .galeria-estatica {
+        height: 100px;
+    }
+    .contenedor-estatica{
+        height: 100%;
+    }    
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 100vh;
+}
+
+@media (min-width: 576px) { 
+    h5{font-size: 1em; }
+
+}
