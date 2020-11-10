@@ -104,18 +104,48 @@ btnCerrarMenu.addEventListener('click', (e) => {
 // }
 
 let bodyTag = document.querySelector('body');
-let myNav = document.querySelector('nav'); 
+let myNav = document.querySelector('nav');
 
 let scrolled = () => {
 	let dec = scrollY / (bodyTag.scrollHeight - innerHeight);
 	return Math.floor(dec * 100);
 }
 
-addEventListener('scroll', () =>{
+addEventListener('scroll', () => {
 	myNav.style.setProperty('background', scrolled() > 5 ? "rgba(220,118,51,1)" : "rgba(35,84,150,0.5)");
 })
 
 /*preolader site*/
-window.addEventListener("load",function(){
+window.addEventListener("load", function () {
 	document.getElementById("loader").classList.toggle("loader2")
 });
+
+/* partivcules*/
+window.onload = function () {
+	Particles.init({
+		selector: '.background',
+		connectParticles: true,
+		color: '#eaeaea',
+		maxParticles: 100,
+		responsive: [{
+			breakpoint: 268,
+			options: {
+				maxParticles: 50,
+				connectParticles: true
+			}
+		}, {
+			breakpoint: 125,
+			options: {
+				maxParticles: 50,
+				connectParticles: true,
+				
+				
+			}
+		}, {
+			breakpoint: 120,
+			options: {
+				maxParticles: 50 // disables particles.js
+			}
+		}]
+	});
+};
