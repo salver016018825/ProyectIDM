@@ -1132,6 +1132,10 @@ footer{
 @media only screen and (max-width: 800px){
     
     .textos-hero{grid-column: 1/20;}
+    .portada-certificado{
+        background-size: contain;
+        background-repeat: no-repeat;        
+    }
     .portada-certificado .header-info h2{font-size: 3em;}
     .contenedor-txt{flex-direction: column;}
     .textos-txt{width: 80%;}
@@ -1351,5 +1355,6 @@ footer{
 
 /*automatizacion texto carousel*/
 @media only screen and (max-width: 800px){
-    #size-text{font-size: 0.7em;}
+    #size-text{font-size: 1em;}
+    .carousel-inner img{height: 50vh}
 }
