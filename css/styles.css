@@ -1354,7 +1354,10 @@ footer{
 }
 
 /*automatizacion texto carousel*/
-@media only screen and (max-width: 800px){
+.carousel-inner img{height: 85vh}
+#size-text{font-size: 2em;}
+@media only screen and (max-width: 700px){
     #size-text{font-size: 1em;}
-    .carousel-inner img{height: 50vh}
+    .carousel-inner img{height: 60vh}
 }
+
