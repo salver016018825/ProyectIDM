@@ -125,7 +125,7 @@ a {text-decoration: none;}
     margin: auto;
     width: 90%;
     max-width: 1200px;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'EB Garamond', serif;
 }
 /* ------------------------- */
 /* Enlaces del NAV */
@@ -337,7 +337,7 @@ a {text-decoration: none;}
 .grid .enlaces-subcategoria a {
     color: var(--white);
     display: block;
-    font-size: 17px;
+    font-size: 14px;
     padding: 10px 20px;
 }
 
@@ -348,7 +348,7 @@ a {text-decoration: none;}
 }
 
 .grid .subtitulo {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: normal;
     color: #E47911;
     font-weight: bold;
