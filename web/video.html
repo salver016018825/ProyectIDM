@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ar">
+
+<head>
+    <meta charset="utf-8" />
+    <title>cambio de video source</title>
+    <link rel="stylesheet" href="../css/style-video.css">
+</head>
+
+<body>
+
+    <section class="container-video">
+        <video id="slider" autoplay muted>
+            <source src="../video/Manufacturing.mp4"></video>
+        <ul class="navigation">
+            <li id="uno" onclick="videoUrl('../video/Manufacturing.mp4')"><img id="img1" src="../img/tal.PNG" alt="">
+            </li>
+            <li id="dos" onclick="videoUrl('../video/pieza.mp4')"><img id="img2" src="../img/vide.png" alt=""></li>
+            <li id="tres" onclick="videoUrl('../video/video.mp4')"><img id="img3" src="../img/comp.png" alt=""></li>
+        </ul>
+    </section>
+
+    <video id="mivideo" controls>
+        <source src="../video/pieza.mp4" type="video/ogg"></source>
+        Tu navegador no soporta el elemento video
+      </video>
+      <strong>Tiempo Total Video:</strong>  segundos.
+      <script type="text/javascript">
+      
+        //Obtenemos la referencia al vídeo
+        var v = document.getElementById("mivideo");
+          
+        v.addEventListener("loadeddata",function(ev){
+          document.getElementById("tiempototal").innerHTML = v.duration;		
+        },true);	
+      </script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var v1 = document.getElementById("uno");
+        var v2 = document.getElementById("dos");
+        var v3 = document.getElementById("tres");
+
+        var img1 = document.getElementById('img1');
+        var img1 = document.getElementById('img2');
+        var img1 = document.getElementById('img3');
+
+        var t;
+
+        function verifica_fin() {
+            if (v1.ended) { // cuando finaliza....
+                v2.load(); // carga
+                v2.play(); // y lo reproduce
+            }
+        }
+        t = setInterval('verifica_fin()', 8000);
+        //]]>
+    </script>
+
+    <script type="text/javascript">
+        
+        var v1 = document.getElementById("uno");
+        var v2 = document.getElementById("dos");
+        var v3 = document.getElementById("tres");
+
+        var img1 = document.getElementById('img1');
+        var img1 = document.getElementById('img2');
+        var img1 = document.getElementById('img3');
+        var t;
+        
+        function videoUrl(zzz) {
+            document.getElementById("slider").src = zzz;
+        }
+
+
+
+
+    </script>
+    <script src="https://kit.fontawesome.com/35db202371.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

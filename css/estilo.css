@@ -1,0 +1,47 @@
+.container-services{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10px;
+}
+
+.container-imagen, .container-text{
+    padding: 2px;   
+    align-items: center;
+    height: 300px;
+    border: 2px solid red;
+}
+
+.container-imagen img{
+    height: 100%;
+    width: 80%;
+}
+
+.container-text{
+    text-align: center;
+    font-size: 17px;
+    color: #dc7633;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    background: rgba(0, 0, 0, 0.6);
+
+    
+}
+
+button{
+    width: 140px;
+    border: none;
+    background: #235496;
+    box-shadow: 0px 10px 10px 1px rbga(219,219,219,0.5);
+    padding: 15px 0;
+    color: #fff;
+    outline: none;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
