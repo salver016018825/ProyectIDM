@@ -1055,95 +1055,58 @@ footer{
     font-size: 20px;
 }
 
-.certificado{
-    height: 500px;
-    position: relative; 
-    width: 100%;/*espacio entre texto de servicio y tarjetas*/
+/*************certificaciones-txt1**************/
+.certificaciones-txt1{
+    padding-top: 100px;
+    padding-bottom: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
-/******texto-intro*******/
-.grid-certificado{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    width: 90%;
-    max-width: 1100%;
-    height: 100%;
-    margin: auto;
-    gap: 10px;
-    overflow: hidden;
-    align-items: center;
+.proj-certificaciones1{
+    float: left;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    padding: 15px;
 }
-.weight-400{font-weight: 400;}
-.weight-600{font-weight: 600;}
-.parrafo{margin-bottom: 10px;}
-.header{height: 500px; /*espacio entre texto de servicio y tarjetas*/}
-.img-hero{
-    width: 100%;
-    height: auto;
-    grid-column: 7/13;
-    text-align: right; /*position img*/
-}
-.img{
-    width: 95%;
-    max-width: 400px;
-}
-.textos-hero{
-    grid-column: 1/7;
-    padding-right: 20px;
-}
-.textos-hero p{
+
+.certificaciones-txt1 p{
     text-align: justify;
-}
-.textos-hero hr{
-    width: 100%;
-    border: none;
-    height: 2px;
-    background: #235496;
-    margin: auto;
+    font-size: 17px;
+    padding-top: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #3C3C3C;
 }
 
-/**2do texto**/
-.contenedor-txt{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-} 
-.contenedor-txt img{
-    width: 25%; /*tamaño img*/
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    margin-top: 0px;
-    padding-bottom: 60px;   
+/*************certificaciones-txt2*************/
+.certificaciones-txt2{
+    padding-top: 0px;
+    padding-bottom: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+}  
+.proj-certificaciones2{
+    float: right;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    padding: 15px;
 }
-.textos-txt{width: 45%;}
-.descripcion {margin-bottom: 20px;}
-
-.descripcion p{
-    padding: 0px 0px 30px 15px;  
-    font-weight: 300;
-    text-align:justify;
+.certificaciones-txt2 p{
+    text-align: justify;
+    font-size: 17px;
+    padding-top: 100px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #3C3C3C;
 }
-.descripcion hr{
-    width: 100%;
-    border: none;
-    height: 2px;
-    background: #235496;
-    margin: auto;
-}
-
 @media only screen and (max-width: 800px){
-    
-    .textos-hero{grid-column: 1/20;}
+    .certificaciones-txt1{padding: 25px;}
+    .certificaciones-txt2{padding: 25px;}
+    .portada-certificado .header-info h2{font-size: 3em;}
     .portada-certificado{
         background-size: contain;
         background-repeat: no-repeat;        
     }
-    .portada-certificado .header-info h2{font-size: 3em;}
-    .contenedor-txt{flex-direction: column;}
-    .textos-txt{width: 80%;}
-    .contenedor-txt img{width: 50%;}
-    .img-hero{grid-column: 1/17; }
 }
 /*certificados*/
 
@@ -1358,7 +1321,10 @@ footer{
 
 /*automatizacion texto carousel*/
 .carousel-inner img{height: 85vh}
-#size-text{font-size: 2em;}
+#size-text{
+    font-size: 2em;
+    font-family: 'Titillium Web', sans-serif;
+}
 @media only screen and (max-width: 700px){
     #size-text{font-size: 0.7em;}
     .carousel-inner img{height: 40vh}
