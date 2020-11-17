@@ -475,7 +475,6 @@ a {text-decoration: none;}
         height: 100%;
     }
 }
-
 /** portada animada Servicios */
 .sec {
     position: relative;
@@ -513,7 +512,7 @@ a {text-decoration: none;}
     text-transform: uppercase;
     width: 140px;
     text-shadow: 2px 2px 3px #fff;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .content-moldes .textBox-moldes h2 span {
@@ -523,11 +522,11 @@ a {text-decoration: none;}
 }
 
 .content-moldes .textBox-moldes p {
-    font-size: 1.3em;
+    font-size: 1.063em;
     margin-top: 40px;
     color: var(--white);
     text-shadow: 2px 2px 5px var(--orange);
-    font-family: 'EB Garamond', serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .content-moldes .imgMolde {
@@ -640,7 +639,7 @@ a {text-decoration: none;}
     font-size: 60px;
     line-height: 70px;
     margin: 25px 0;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .content p {
@@ -648,7 +647,7 @@ a {text-decoration: none;}
     font-size: 17px;
     line-height: 28px;
     margin-bottom: 50px;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .slider {
@@ -823,7 +822,7 @@ footer{
     margin-top: 20px;
 }
 .colum1 p{
-    font-size: 16px;
+    font-size: 17px;
     color: #c0c0c0;
     margin-top: 20px;
 }
@@ -943,7 +942,7 @@ footer{
 }
 .portada-automatizacion .header-info p{
     color:#fff;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 /*************AUTOMATIZACIÓN**************/
@@ -1055,95 +1054,60 @@ footer{
     font-size: 20px;
 }
 
-.certificado{
-    height: 500px;
-    position: relative; 
-    width: 100%;/*espacio entre texto de servicio y tarjetas*/
+/*************certificaciones-txt1**************/
+.certificaciones-txt1{
+    padding-top: 100px;
+    padding-bottom: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
-/******texto-intro*******/
-.grid-certificado{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    width: 90%;
-    max-width: 1100%;
-    height: 100%;
-    margin: auto;
-    gap: 10px;
-    overflow: hidden;
-    align-items: center;
+.proj-certificaciones1{
+    float: left;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    padding: 15px;
 }
-.weight-400{font-weight: 400;}
-.weight-600{font-weight: 600;}
-.parrafo{margin-bottom: 10px;}
-.header{height: 500px; /*espacio entre texto de servicio y tarjetas*/}
-.img-hero{
-    width: 100%;
-    height: auto;
-    grid-column: 7/13;
-    text-align: right; /*position img*/
-}
-.img{
-    width: 95%;
-    max-width: 400px;
-}
-.textos-hero{
-    grid-column: 1/7;
-    padding-right: 20px;
-}
-.textos-hero p{
+
+.certificaciones-txt1 p{
     text-align: justify;
-}
-.textos-hero hr{
-    width: 100%;
-    border: none;
-    height: 2px;
-    background: #235496;
-    margin: auto;
+    font-size: 17px;
+    padding-top: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #3C3C3C;
 }
 
-/**2do texto**/
-.contenedor-txt{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-} 
-.contenedor-txt img{
-    width: 25%; /*tamaño img*/
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    margin-top: 0px;
-    padding-bottom: 60px;   
+/*************certificaciones-txt2*************/
+.certificaciones-txt2{
+    padding-top: 0px;
+    padding-bottom: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+}  
+.proj-certificaciones2{
+    float: right;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    padding: 15px;
 }
-.textos-txt{width: 45%;}
-.descripcion {margin-bottom: 20px;}
-
-.descripcion p{
-    padding: 0px 0px 30px 15px;  
-    font-weight: 300;
-    text-align:justify;
+.certificaciones-txt2 p{
+    text-align: justify;
+    font-size: 17px;
+    padding-top: 100px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #3C3C3C;
 }
-.descripcion hr{
-    width: 100%;
-    border: none;
-    height: 2px;
-    background: #235496;
-    margin: auto;
-}
-
 @media only screen and (max-width: 800px){
-    
-    .textos-hero{grid-column: 1/20;}
+    .certificaciones-txt1{padding-left: 50px;
+        padding-right: 50px;}
+    .certificaciones-txt2{padding-left: 50px;
+        padding-right: 50px;}
+    .portada-certificado .header-info h2{font-size: 3em;}
     .portada-certificado{
         background-size: contain;
         background-repeat: no-repeat;        
     }
-    .portada-certificado .header-info h2{font-size: 3em;}
-    .contenedor-txt{flex-direction: column;}
-    .textos-txt{width: 80%;}
-    .contenedor-txt img{width: 50%;}
-    .img-hero{grid-column: 1/17; }
 }
 /*certificados*/
 
@@ -1188,7 +1152,7 @@ footer{
 }
 .portada-impresion3d .header-info p{
     color:#fff;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 /*************impresion3D-txt2**************/
@@ -1316,13 +1280,14 @@ footer{
     font-family: 'Titillium Web', sans-serif;
 }
 .elementos-proyectos .icons > div p{
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
     color:#fff;
     font-family: 'Titillium Web', sans-serif;
 }
 
 @media screen and (max-width: 800px){
+    .elementos-proyectos{height: auto;}
     .elementos-proyectos .icons{
         flex-direction: column;
         align-items: center;
@@ -1358,10 +1323,13 @@ footer{
 
 /*automatizacion texto carousel*/
 .carousel-inner img{height: 85vh}
-#size-text{font-size: 2em;}
+#size-text{
+    font-size: 2em;
+    font-family: 'Titillium Web', sans-serif;
+}
 @media only screen and (max-width: 700px){
-    #size-text{font-size: 1em;}
-    .carousel-inner img{height: 60vh}
+    #size-text{font-size: 0.7em;}
+    .carousel-inner img{height: 40vh}
 }
 
 /******stilos contacto*/
@@ -1409,7 +1377,7 @@ footer{
     width: 100%;
     display: flex;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 17px;
     align-items: center;
     flex-wrap: nowrap;
 }
@@ -1442,7 +1410,7 @@ footer{
     margin: 5px;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 17px;
     border-radius: 50%;
     box-shadow: 0px 3px 8px rgba(0,0,0,0.7); 
 }
@@ -1502,7 +1470,7 @@ textarea {
     position: absolute;
     right: 230px;
     z-index: 100;
-    font-size: 16px;
+    font-size: 17px;
     opacity: 0;
 
 }
