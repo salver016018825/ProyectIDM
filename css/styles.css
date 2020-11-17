@@ -125,7 +125,7 @@ a {text-decoration: none;}
     margin: auto;
     width: 90%;
     max-width: 1200px;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 /* ------------------------- */
 /* Enlaces del NAV */
@@ -337,7 +337,7 @@ a {text-decoration: none;}
 .grid .enlaces-subcategoria a {
     color: var(--white);
     display: block;
-    font-size: 14px;
+    font-size: 17px;
     padding: 10px 20px;
 }
 
@@ -348,7 +348,7 @@ a {text-decoration: none;}
 }
 
 .grid .subtitulo {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: normal;
     color: #E47911;
     font-weight: bold;
@@ -513,7 +513,7 @@ a {text-decoration: none;}
     text-transform: uppercase;
     width: 140px;
     text-shadow: 2px 2px 3px #fff;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .content-moldes .textBox-moldes h2 span {
@@ -523,11 +523,11 @@ a {text-decoration: none;}
 }
 
 .content-moldes .textBox-moldes p {
-    font-size: 1.3em;
+    font-size: 1.063em;
     margin-top: 40px;
     color: var(--white);
     text-shadow: 2px 2px 5px var(--orange);
-    font-family: 'EB Garamond', serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .content-moldes .imgMolde {
@@ -640,7 +640,7 @@ a {text-decoration: none;}
     font-size: 60px;
     line-height: 70px;
     margin: 25px 0;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .content p {
@@ -648,7 +648,7 @@ a {text-decoration: none;}
     font-size: 17px;
     line-height: 28px;
     margin-bottom: 50px;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .slider {
@@ -823,7 +823,7 @@ footer{
     margin-top: 20px;
 }
 .colum1 p{
-    font-size: 16px;
+    font-size: 17px;
     color: #c0c0c0;
     margin-top: 20px;
 }
@@ -943,7 +943,7 @@ footer{
 }
 .portada-automatizacion .header-info p{
     color:#fff;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 /*************AUTOMATIZACIÓN**************/
@@ -1188,7 +1188,7 @@ footer{
 }
 .portada-impresion3d .header-info p{
     color:#fff;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 /*************impresion3D-txt2**************/
@@ -1316,7 +1316,7 @@ footer{
     font-family: 'Titillium Web', sans-serif;
 }
 .elementos-proyectos .icons > div p{
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
     color:#fff;
     font-family: 'Titillium Web', sans-serif;
@@ -1360,8 +1360,8 @@ footer{
 .carousel-inner img{height: 85vh}
 #size-text{font-size: 2em;}
 @media only screen and (max-width: 700px){
-    #size-text{font-size: 1em;}
-    .carousel-inner img{height: 60vh}
+    #size-text{font-size: 0.7em;}
+    .carousel-inner img{height: 40vh}
 }
 
 /******stilos contacto*/
@@ -1409,7 +1409,7 @@ footer{
     width: 100%;
     display: flex;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 17px;
     align-items: center;
     flex-wrap: nowrap;
 }
@@ -1442,7 +1442,7 @@ footer{
     margin: 5px;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 17px;
     border-radius: 50%;
     box-shadow: 0px 3px 8px rgba(0,0,0,0.7); 
 }
@@ -1502,7 +1502,7 @@ textarea {
     position: absolute;
     right: 230px;
     z-index: 100;
-    font-size: 16px;
+    font-size: 17px;
     opacity: 0;
 
 }
