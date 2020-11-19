@@ -131,7 +131,7 @@ a {text-decoration: none;}
 /* Enlaces del NAV */
 /* ------------------------- */
 .menu {
-    background: rgba(35, 84, 150, 0.5);
+    background: rgba(35, 84, 150, 0.2);
     padding: 5px 0;
     position: fixed;
     top: 0px;
@@ -386,7 +386,7 @@ a {text-decoration: none;}
 }
 
 @media screen and (max-width: 800px) {
-    .menu .contenedor {width: 100%;}
+    .menu .contenedor {width: 100%; top: 65px;}
     .menu .logo-box {right: 50px;}
     .menu .contenedor-botones-menu {display: flex;}
 
@@ -426,6 +426,11 @@ a {text-decoration: none;}
         display: block;
         margin: 10px 0;
         padding: 10px;
+    }
+  
+    .logo {
+        width: 70px;
+        height: 35px;
     }
 
     .grid {
