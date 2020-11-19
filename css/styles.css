@@ -131,7 +131,7 @@ a {text-decoration: none;}
 /* Enlaces del NAV */
 /* ------------------------- */
 .menu {
-    background: rgba(35, 84, 150, 0.2);
+    background: rgba(35, 84, 150, 0.5);
     padding: 5px 0;
     position: fixed;
     top: 0px;
@@ -167,7 +167,6 @@ a {text-decoration: none;}
     justify-content: space-between;
     align-items: center;
     transition: 0.8s;
-    font-family: 'Titillium Web', sans-serif;
 }
 
 .menu .btn-departamentos {
@@ -178,7 +177,7 @@ a {text-decoration: none;}
     align-items: flex-end;
     border: 1px solid transparent;
     font-size: 12px;
-    cursor: default;    
+    cursor: default;
 }
 
 .menu .btn-departamentos i {
@@ -202,7 +201,6 @@ a {text-decoration: none;}
     border-radius: 3px;
     font-size: 14px;
     transition: 0.8s;
-    font-family: 'Titillium Web', sans-serif;
 }
 
 .menu .contenedor-enlaces-nav .enlaces a:hover {
@@ -212,14 +210,14 @@ a {text-decoration: none;}
 }
 
 .menu .logo-box {
-    margin-left: 5px;
+    margin-left: 15px;
     position: absolute;
-    margin-top: 5px;
+    margin-top: 10px;
     display: block;
 }
 
 .logo {
-    width: 70px;
+    width: 50px;
     height: 35px;
 }
 
@@ -227,7 +225,6 @@ a {text-decoration: none;}
     width: 100%;
     height: 100%;
 }
-
 /* ------------------------- */
 /* GRID */
 /* ------------------------- */
@@ -262,7 +259,6 @@ a {text-decoration: none;}
     box-shadow: 0px 3px 6px rgba(0, 0, 0, .5);
     transition: 0.8s;
     background: rgba(35, 84, 150, 0.9);
-    font-family: 'Titillium Web', sans-serif;
 }
 
 /* ------------------------- */
@@ -384,7 +380,6 @@ a {text-decoration: none;}
 /* Mediaqueies */
 /* ------------------------- */
 @media screen and (max-width: 1000px) {
-    .menu {background: rgba(35, 84, 150, 0.2);}        
     .menu .contenedor-enlaces-nav {padding: 0 10px;}
     .menu .logo-box {position: absolute;}
     .menu .contenedor {width: 100%;}
@@ -402,7 +397,7 @@ a {text-decoration: none;}
         justify-content: flex-start;
         position: fixed;
         left: 0;
-        background:  rgba(35, 84, 150, 0.9);
+        background: rgba(35, 84, 150, 0.9);
         height: 100vh;
         width: 100%;
         z-index: 2000;
@@ -470,11 +465,11 @@ a {text-decoration: none;}
     .grid .contenedor-subcategorias .subcategoria {grid-template-columns: 1fr;}
     .grid .contenedor-subcategorias .banner-subcategoria {
         width: 100%;
-        /* min-height: 250px; */
         max-height: 350px;
     }
-    
+        /*prueba*/
     .grid .contenedor-subcategorias .galeria-subcategoria{height: 100%;}
+    
     .grid .enlaces-subcategoria {
         min-height: 50vh;
         overflow: auto;
@@ -584,7 +579,7 @@ a {text-decoration: none;}
     .content-moldes .textBox-moldes h2 {font-size: 2em;}
 
     .content-moldes .textBox-moldes h2 span {
-        font-size: 1.3em;
+        font-size: 2em;
         margin-bottom: 1px;
     }
 
