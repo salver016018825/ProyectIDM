@@ -1,0 +1,142 @@
+.carrusel-servicios{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    background: url(../imagen/disenio-pieza-oscuro.jpg) no-repeat center center fixed; /*112c4e*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+}
+h4, h1,small,a{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+a{
+    text-decoration: none;
+}
+.Carousel{
+    width: 100%;
+    margin: 0px 60px;
+}
+.Carousel h1{
+    background-image: url(../imagen/titulo-servicios.gif);
+	background-size: cover;
+    color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 80px;
+	line-height: .75;
+    margin: 10px 0;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+/* images */
+
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 81vw;
+    overflow: hidden;
+    padding-top: 100px;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+.slick{
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+.slick h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: #dc7633;
+    padding: 15px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.slick h4 small{
+    font-size: 15px;
+    display: block;
+    font-family: 'Titillium Web', sans-serif;
+}
+.slick a img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+    transition: .3s ease-in-out;
+}
+.slick a img:hover{
+    opacity: .85;
+}
+
+/* buttons */
+
+.slick-arrow{
+    border-radius: 30px;
+    background-color: #dc7633;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+}
+.slick-arrow:focus{
+    outline: 0;
+}
+.slick-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: #fff;
+}
+.slick-prev{
+    left: 0px;
+}
+.slick-next{
+    right: 0px;
+}
+
+@media only screen and (max-width: 700px){
+    .carrusel-servicios{
+        flex-direction: column; 
+        height: 70vh;
+    }
+
+    .Carousel h1{
+        color: #fff;
+        font-size: 2em;
+    }
+
+    .slick-list{flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
