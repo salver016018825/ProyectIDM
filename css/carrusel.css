@@ -6,7 +6,7 @@
     height: 100vh;
     width: 100%;
     align-items: center;
-    background: url(../imagen/disenio-pieza-oscuro.jpg) no-repeat center center fixed; /*112c4e*/
+    background: url(../img/index/disenio-pieza-oscuro.jpg) no-repeat center center fixed; /*112c4e*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -26,11 +26,7 @@ a{
     margin: 0px 60px;
 }
 .Carousel h1{
-    background-image: url(../imagen/titulo-servicios.gif);
-	background-size: cover;
-    color: transparent;
-	-moz-background-clip: text;
-	-webkit-background-clip: text;
+	color: transparent;
 	text-transform: uppercase;
 	font-size: 80px;
 	line-height: .75;
@@ -124,19 +120,12 @@ a{
     right: 0px;
 }
 
-@media only screen and (max-width: 700px){
-    .carrusel-servicios{
-        flex-direction: column; 
-        height: 70vh;
-    }
-
+@media only screen and (max-width: 800px){
+    .carrusel-servicios{flex-direction: column;}
     .Carousel h1{
+        margin: auto;
+        padding: 50px;
         color: #fff;
         font-size: 2em;
-    }
-
-    .slick-list{flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
