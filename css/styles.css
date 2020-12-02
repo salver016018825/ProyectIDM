@@ -843,10 +843,12 @@ footer{
 .colum2 h1{
     font-size: 22px;
     color: #dc7633;
+    margin: auto;
 }
 .colum2 .row{
     margin-top: 15px;
     display: flex;
+    padding-left: 50px;
 }
 .row img{
     width: 36px;
@@ -894,6 +896,7 @@ footer{
     .colum1{max-width: 100%;}
     .colum2,
     .colum3{margin-top: 40px;}
+    iframe{width: 280px;}
 }
 
 /* Automatizazion*/
@@ -1330,10 +1333,7 @@ footer{
 
 /*automatizacion texto carousel*/
 .carousel-inner img{height: 85vh}
-#size-text{
-    font-size: 2em;
-    font-family: 'Titillium Web', sans-serif;
-}
+
 @media only screen and (max-width: 700px){
     #size-text{font-size: 0.7em;}
     .carousel-inner img{height: 40vh}

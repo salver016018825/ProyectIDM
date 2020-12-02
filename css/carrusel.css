@@ -121,7 +121,10 @@ a{
 }
 
 @media only screen and (max-width: 800px){
-    .carrusel-servicios{flex-direction: column;}
+    .carrusel-servicios{
+        flex-direction: column;
+        height: 75vh;
+    }
     .Carousel h1{
         margin: auto;
         padding: 50px;

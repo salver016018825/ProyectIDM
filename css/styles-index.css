@@ -690,17 +690,43 @@ section .contac-idm p {
 @media only screen and (max-width:800px) {
     .sect-contac {
         display: flex;
-        max-width: 100%;
-        overflow: hidden;
-
+        width: 100%;
     }
 
-    .contacto {
-
-        left: 10px:
-    }
+    .contacto { left: 10px;}
 }
-
+@media only screen and (max-width: 991px){
+    .sect-contac{
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        
+    }
+    .sect-contac .contacto{margin-left: 50px;margin-right: 50px;}
+    .sect-contac .contac-idm h2{
+        margin: auto;
+        font-size: 2em;
+        padding-top: 0;
+    }
+    .sect-contac .contac-idm p{
+        margin: auto;
+    }
+    .sect-contac .contac-idm{
+        width: 100%;
+        position: relative;
+        top: 360px;        
+    }    
+    .contac-idm .btn-contacto{margin-left:50px; margin-right:50px; margin-top: 10px;}
+    .contac-idm .pdf i{
+        position: absolute;
+        margin-left: 0px;
+        padding-bottom: 0; 
+        top:-70px;
+        float: left;
+        left: 270px;
+        }
+}
 /***************factores de servicio******************/
 .elementos {
     width: 100%;
@@ -756,7 +782,13 @@ section .contac-idm p {
     .elementos .icons {
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
     }
+    
+    .box-elements{padding: 10px;margin-bottom: 10px;}
+    .elementos .icons > div{padding-bottom: 10px;}
+    .elementos .icons > div h2{margin: 0px 0px 0px 0px;}
+    
 }
 
 /******************futuros proyectos****************/
@@ -953,10 +985,7 @@ section .contac-idm p {
 
 .sect-nosotros {
     background: #fff;
-    /*padding:100px;*/
-    /*display: flex;*/
     justify-content: flex-start;
-    /*align-items: center;*/
     min-height: 100vh;
 }
 
@@ -992,7 +1021,7 @@ section .contac-idm p {
 .sect-nosotros .nosotros .nosotrosBx {
     padding: 40px 20px;
     background: #222;
-    max-width: 340px;
+    width: 340px;
     margin: 20px;
     text-align: center;
 }
@@ -1012,6 +1041,7 @@ section .contac-idm p {
 }
 
 @media screen and (max-width:800px) {
+    
     .nosotros-idm h2{margin-left: 45px;}
     .nosotros-idm p {
         margin: auto;
@@ -1124,12 +1154,9 @@ section .contac-idm p {
     width: 250px;
 }
 
-
-
-@media only screen and(max-width: 991px) {
-
-    .proyectos .contentBx,
-    .proyectos .imgBx {
-        width: 50%;
-    }
+@media only screen and (max-width: 800px){
+    .fondo{height: auto;}
+    .fondo .empresas h2{ font-size: 2.5em; padding: 0px; margin: auto;}
+    .fondo .empresas p{font-size: 1em; padding: 5px;}
+    .project-img{margin: 10px;}
 }
