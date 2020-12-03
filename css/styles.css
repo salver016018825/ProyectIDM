@@ -1584,7 +1584,7 @@ textarea {
     justify-content: center;
   }
   .publicidad {
-    width: 1000px; /*1000px 5000*/
+    width: 800px; /*1000px 800*/
     height: 100px;
     position: relative;
     background: white;
@@ -1596,7 +1596,7 @@ textarea {
     height: 100px;
     display: flex;
     align-items: center;
-    animation: slideshow 8s linear infinite;
+    animation: slideshow 18s linear infinite;
   }
   .contenedor-imagenes-publicidad img {
     height: 70px;
