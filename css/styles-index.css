@@ -1107,7 +1107,7 @@ section .contac-idm p {
     }
 }
 
-.slider {
+/* .slider {
     background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
     height: 100px;
@@ -1152,7 +1152,7 @@ section .contac-idm p {
 .slider .slide {
     height: 100px;
     width: 250px;
-}
+} */
 
 @media only screen and (max-width: 800px){
     .fondo{height: auto;}
