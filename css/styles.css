@@ -7,9 +7,9 @@
     --title: 35px;
     --text: 19px;
 }
-@font-face {    
+/* @font-face {    
     font-display: swap;    
-  }
+  } */
   
 * {
     margin: 0;
@@ -1335,7 +1335,7 @@ footer{
 .carousel-inner img{height: 85vh}
 
 @media only screen and (max-width: 700px){
-    #size-text{font-size: 0.7em;}
+    #size-text{font-size: 0.5em;}
     .carousel-inner img{height: 40vh}
 }
 
@@ -1625,8 +1625,10 @@ textarea {
   }
 
   @media only screen and (max-width: 800px){
-    .caja-publicidad .publicidad{
-        width: 500px;
-
-    }
+    .publicidad{width: 310px;}
+    @keyframes slideshow {
+        0% {transform: translateX(0);}
+        100% {transform: translateX(-100%);}
+      }
+    .contenedor-imagenes-publicidad{border: 2px solid red;}
   }

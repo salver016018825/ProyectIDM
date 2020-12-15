@@ -26,11 +26,11 @@ a{
     margin: 0px 60px;
 }
 .Carousel h1{
-	color: transparent;
+	color: #fff;
 	text-transform: uppercase;
 	font-size: 80px;
 	line-height: .75;
-    margin: 10px 0;
+    margin: 5px 0;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -79,6 +79,7 @@ a{
     display: block;
     font-family: 'Titillium Web', sans-serif;
 }
+img {max-width: 100%;}
 .slick a img{
     object-fit: cover;
     height: 300px;

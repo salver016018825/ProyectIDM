@@ -44,55 +44,17 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    /* padding: 50px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    background-image: url(../img/index/portada-prueba.gif);
-    /* background-position: center center;
-    
-    box-sizing: border-box;
-    
-    align-items: center; */
-    /* background-attachment: fixed; */
+    background-image: url(../img/index/portada-index.gif);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     transition: 0.5s;
 }
 
-/* .navbar{
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background: rgba(35, 84, 150, 0.6);
-    padding: 0 60px;
-    box-sizing: border-box;
-}
-.logo{
-    width: 155px;
-}
-.logo img{
-    width: 80px;
-    position: relative;
-    z-index: 10;
-    cursor: pointer;
-}
-nav{
-    flex:1;
-}
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 60px;
-}
-nav ul li a{
-    text-decoration: none;
-    color:#fff;
-    font-size: 14px;
-} */
+
 .sidebar {
     width: 155px;
     height: 100vh;
@@ -448,7 +410,7 @@ nav ul li a{
     height: 100vh;
 }
 .section-nuestros-servicios .section-servicios-portada {
-    background: url(../img/index/servicios-prueba1.png) no-repeat center center fixed;
+    background: url(../img/index/servicios-prueba1.jpg) no-repeat center center fixed;
     /*padding:100px;*/
     display: flex;
     justify-content: flex-start;
@@ -505,7 +467,7 @@ nav ul li a{
         position: relative;
     }
     .section-nuestros-servicios .section-servicios-portada {
-        background: url(../img/index/servicios-prueba-movil.png);
+        background: url(../img/index/servicios-prueba-movil.jpg);
         background-position: center;
         background-size: 100% 100%;
         background-repeat: no-repeat;             
@@ -903,7 +865,7 @@ section .contac-idm p {
 }
 
 .elon-musk .figure-img {
-    background: url(../img/index/SLOGAN.png);
+    background: url(../img/index/SLOGAN.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -916,7 +878,7 @@ section .contac-idm p {
 }
 
 .elon-musk .figure-img h4 {
-    width: 80%;
+    width: 150%;
     color: #fff;
     font-size: 26px;
     font-weight: normal;
@@ -980,6 +942,7 @@ section .contac-idm p {
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
+    .elon-musk .figure-img h4{width: 80%;}
 }
 /************Nosotros********************/
 
