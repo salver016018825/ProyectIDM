@@ -79,7 +79,6 @@ a{
     display: block;
     font-family: 'Titillium Web', sans-serif;
 }
-img {max-width: 100%;}
 .slick a img{
     object-fit: cover;
     height: 300px;
@@ -122,14 +121,20 @@ img {max-width: 100%;}
 }
 
 @media only screen and (max-width: 800px){
+    .slick-list{overflow: scroll hidden; white-space: nowrap;margin: auto;}
+    .slick-arrow{opacity: 0;}
     .carrusel-servicios{
         flex-direction: column;
-        height: 75vh;
+        height: 100vh;
     }
     .Carousel h1{
         margin: auto;
-        padding: 50px;
+        padding-top: 150px;
         color: #fff;
         font-size: 2em;
     }
+}
+
+@media only screen and (max-width: 450px){
+    .slick-track{left: 42px;}
 }

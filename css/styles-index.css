@@ -331,7 +331,7 @@ body {
 
 @media only screen and (max-width:800px) {
     .portada-inicio {
-        background: url(../img/index/portada-prueba-movil.gif);
+        background-image: url(../img/index/portada-index.gif);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;
@@ -401,6 +401,11 @@ body {
         padding: 10px;        
         height: 30vh;
     }
+}
+
+
+@media only screen and (max-width: 450px){
+    .sidebar {top: 545px;}
 }
 
 /************servicios********************/
@@ -665,29 +670,49 @@ section .contac-idm p {
         width: 100%;
         
     }
-    .sect-contac .contacto{margin-left: 50px;margin-right: 50px;}
+    .sect-contac .contacto{
+        margin-left: 50px;
+        margin-right: 50px;
+        left:60px;
+        padding-top:90px;
+    }
     .sect-contac .contac-idm h2{
         margin: auto;
         font-size: 2em;
-        padding-top: 0;
+        margin-top: 35px;
     }
     .sect-contac .contac-idm p{
         margin: auto;
+        padding-top: 31px;
+        padding-bottom: 60px;
     }
     .sect-contac .contac-idm{
         width: 100%;
         position: relative;
         top: 360px;        
     }    
-    .contac-idm .btn-contacto{margin-left:50px; margin-right:50px; margin-top: 10px;}
+    .contac-idm .btn-contacto{
+        margin-left:70px;
+        margin-right:70px;
+        margin-top: 10px;
+        left:50px;
+    }
     .contac-idm .pdf i{
         position: absolute;
-        margin-left: 0px;
+        margin-left: 30px;
         padding-bottom: 0; 
-        top:-70px;
+        top:290px;
         float: left;
-        left: 270px;
+        left: 200px;
         }
+}
+
+@media only screen and (max-width: 450px){
+    .sect-contac .contacto{padding-top:70px;}
+    .contac-idm .pdf i{padding-top:0;left:170px}
+    .sect-contac .contac-idm h2{padding-top:20px;}
+    .sect-contac .contac-idm p{padding-bottom: 20px;}
+    .contac-idm .btn-contacto{left:40px;}
 }
 /***************factores de servicio******************/
 .elementos {
@@ -848,8 +873,12 @@ section .contac-idm p {
             text-align: center;
             height: 100%;
         }
-        .btn-project{margin-right: 50px;
-        margin-left: 50px;}
+        .btn-project{
+            margin-right: 50px;
+            margin-left: 50px;
+            left:43px;
+        }
+            
         .contentBx{padding: 5px;}
         .txt-proyectos{font-size:2em;}
         .txt{font-size:1em;}
@@ -1119,7 +1148,7 @@ section .contac-idm p {
 
 @media only screen and (max-width: 800px){
     .fondo{height: auto;}
-    .fondo .empresas h2{ font-size: 2.5em; padding: 0px; margin: auto;}
+    .fondo .empresas h2{ font-size: 2.5em; padding: 50px; margin: auto;}
     .fondo .empresas p{font-size: 1em; padding: 5px;}
     .project-img{margin: 10px;}
 }

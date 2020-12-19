@@ -83,6 +83,10 @@ formulario.addEventListener('submit', (e) => {
 	}
 });
 
+function placeOrder(form){
+    form.submit();
+}
+
 
 
 
