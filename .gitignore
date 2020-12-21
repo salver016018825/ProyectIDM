@@ -63,5 +63,6 @@
 *.max
 
 #video
-IDM_Metalmecanica/video
-IDM_Metalmecanica/img
+video/
+img/
+file/
