@@ -224,13 +224,13 @@ a {text-decoration: none;}
 
 .menu .contenedor-enlaces-nav .contacto a{
     position: absolute;
-    left: -60px;
-    top: 0px;
+    left: 350px;
+    top: 5px;
 } 
 
 .menu .contenedor-enlaces-nav .futuros a{
     position: absolute;
-    left: 200px;
+    left: 210px;
     top: 5px;
 }
 
