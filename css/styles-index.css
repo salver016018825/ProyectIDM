@@ -562,11 +562,10 @@ body {
     cursor: pointer;
 } */
 /* section */
-.contactoh {
+.contactopdf {
     position: absolute;
-
     height: 50%;
-    left: 400px;
+    left: 380px;
     padding-top: 60px;
 
 }
@@ -648,7 +647,7 @@ section .contac-idm p {
 
 .contac-idm i {
     color: #dc7633;
-    margin-left: 600px;
+    margin-left: 620px;
     font-size: 26px;
     padding-bottom: 100px;
 }
@@ -659,8 +658,7 @@ section .contac-idm p {
         display: flex;
         width: 100%;
     }
-
-    .contacto { left: 10px;}
+    .contactopdf { position:absolute;left: 85px;}
 }
 @media only screen and (max-width: 991px){
     .sect-contac{
@@ -679,41 +677,34 @@ section .contac-idm p {
     .sect-contac .contac-idm h2{
         margin: auto;
         font-size: 2em;
-        margin-top: 35px;
+        padding-top:50px;
+        
     }
     .sect-contac .contac-idm p{
         margin: auto;
-        padding-top: 31px;
-        padding-bottom: 60px;
+        padding-top: 20px;
     }
     .sect-contac .contac-idm{
         width: 100%;
         position: relative;
-        top: 360px;        
+        top: 340px;        
     }    
     .contac-idm .btn-contacto{
         margin-left:70px;
         margin-right:70px;
-        margin-top: 10px;
-        left:50px;
+        
     }
     .contac-idm .pdf i{
         position: absolute;
-        margin-left: 30px;
+        margin-left: 70px;
         padding-bottom: 0; 
-        top:290px;
+        top:225px;
         float: left;
-        left: 200px;
+        left: 240px;
         }
 }
 
-@media only screen and (max-width: 450px){
-    .sect-contac .contacto{padding-top:70px;}
-    .contac-idm .pdf i{padding-top:0;left:170px}
-    .sect-contac .contac-idm h2{padding-top:20px;}
-    .sect-contac .contac-idm p{padding-bottom: 20px;}
-    .contac-idm .btn-contacto{left:40px;}
-}
+
 /***************factores de servicio******************/
 .elementos {
     width: 100%;
