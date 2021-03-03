@@ -224,13 +224,19 @@ a {text-decoration: none;}
 
 .menu .contenedor-enlaces-nav .contacto a{
     position: absolute;
-    left: 350px;
+    left: 440px;
+    top: 5px;
+} 
+
+.menu .contenedor-enlaces-nav .nosotros a{
+    position: absolute;
+    left: 210px;
     top: 5px;
 } 
 
 .menu .contenedor-enlaces-nav .futuros a{
     position: absolute;
-    left: 210px;
+    left: 300px;
     top: 5px;
 }
 
@@ -420,7 +426,7 @@ a {text-decoration: none;}
 @media screen and (max-width: 1000px) {
     .menu .contenedor-enlaces-nav {padding: 0 10px;}
     .menu .logo-box {position: absolute;}
-    .menu .contenedor {width: 100%;}
+    .menu .contenedor {width: 50%;}
 }
 
 @media screen and (max-width: 800px) {
@@ -448,8 +454,9 @@ a {text-decoration: none;}
     .menu .btn-departamentos {
         width: 100%;
         align-items: center;
-        justify-content: space-between;
         cursor: pointer;
+        top: 50px;
+        left: 33px;
     }
 
     .menu .btn-departamentos i {
@@ -461,11 +468,26 @@ a {text-decoration: none;}
     .menu .enlaces {width: 100%;}
 
     .menu .enlaces a {
-        display: block;
         margin: 10px 0;
         padding: 10px;
+        
     }
-  
+
+    .menu .enlaces .nosotros a {
+        left: 25px;
+        top: 95px;
+    }
+
+    .menu .enlaces .contacto a {
+        left: 25px;
+        top: 160px;
+    }
+
+    .menu .enlaces .futuros a {
+        left: 25px;
+        top: 130px;
+    }  
+
     .logo {
         width: 70px;
         height: 45px;
