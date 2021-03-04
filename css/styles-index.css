@@ -1,3 +1,7 @@
+:root {
+    --blue: #235496;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -408,138 +412,66 @@ body {
     .sidebar {top: 545px;}
 }
 
-/************servicios********************/
-.section-nuestros-servicios{
+
+/*****servicios*******/
+.serviciosIDM{
+    position: relative;
     width: 100%;
-    overflow: hidden;
+    display: flex;
     height: 100vh;
 }
-.section-nuestros-servicios .section-servicios-portada {
-    background: url(../img/index/servicios-prueba1.jpg) no-repeat center center fixed;
-    /*padding:100px;*/
-    display: flex;
-    justify-content: flex-start;
-    /*align-items: center;*/
-    min-height: 100vh;
-    padding-bottom: 0px;
-    overflow: hidden;
-    background-size: cover;
-    width: 100%;
+.serviciosIDM .idm-servicios{
+    background:#FFFFFF;
+    padding: 100px;
+    width: 50%;
+    
 }
-
-.section-nuestros-servicios .serv-idm {
-    position: relative;
-    max-width: 650px;
-    z-index: 1;
-}
-
-.section-nuestros-servicios .serv-idm h2 {
-    color: #235496;
-    font-size: 45px;
-    /*font-weight: 700;*/
-    /*line-height: 1.1em;*/
-    text-align: justify;
-    padding-top: 100px;
-    margin-right: -450px;
-    margin-left: 520px;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-.section-nuestros-servicios .serv-idm h3 {
-    color: #3c3c3c;
-    font-size: 25px;
-    margin: 20px 0 10px;
-    text-align: center;
-    /*left: 100%;*/
-    margin-right: -300px;
-    margin-left: 400px;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-.serv-idm i {
-    color: #dc7633;
-    margin-left: 650px;
+.txt-serviciosIDM{
+    color: var(--blue);
     font-size: 40px;
-    padding-top: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 45px;
+    font-family: 'Titillium Web', sans-serif;
+    padding-bottom: 30px;
+    margin-top: 130px;
+}
+.descripcionIDM{
+    top: 50px;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 1px;    
+    padding-bottom: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    margin: auto;
+
+}
+.serviciosIDM .imgBx-ser{
+    background: url(../img/index/servicios-prueba1.jpg);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
 }
 
 
-@media only screen and (max-width:800px) {
-    .section-nuestros-servicios{
-        /* height: 150vh; */
-        overflow: hidden;
-        width: 100%;
-        position: relative;
-    }
-    .section-nuestros-servicios .section-servicios-portada {
-        background: url(../img/index/servicios-prueba-movil.jpg);
-        background-position: center;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;             
-        align-items: center;
+@media only screen and (max-width:800px) {   
+    .serviciosIDM{
         flex-direction: column;
-        background-attachment: fixed;
     }
-
-    .section-nuestros-servicios .serv-idm{
-     top: 50px;   
-    }
-    .section-nuestros-servicios .serv-idm h2 {
-        font-size: 1.5em;
-        margin: auto;
+    .serviciosIDM .idm-servicios, 
+    .serviciosIDM .imgBx-ser {
+        width: 100%;
         padding: 10px;
+        min-height: 400px;
         text-align: center;
-    }
-
-    .serv-idm{justify-content: center; align-items: center;}
-    .section-nuestros-servicios .serv-idm h3{
-        font-size: 1em; 
-        margin: auto;
-        text-align: center;
-        padding: 20px;
-    }    
+        height: 100%;
+    }        
+    .idm-servicios{padding: 5px;}
+    .txt-serviciosIDM{font-size:2em;}
+    .descripcionIDM{font-size:1em;}
+    .imgBx-ser{height: 100vh;}
 }
-
-
-
-/*.btn{
-    width: 200px;
-    height: 60px;
-    background: none;
-    border: 4px solid;
-    color:#dc7633;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 16px;
-    position: relative;
-    margin-right: -533px;
-    margin-left: 730px;
-    }
-    .btn::before, .btn::after{
-        content: "";
-        position: absolute;
-        width: 14px;
-        height: 4px;
-        background: #fff;
-        transform: skewX(50deg);
-        transition: .4s linear;
-    }
-    .btn::before{
-        top: -4px;
-        left: 10%;
-    }
-    .btn::after{
-        bottom: -4px;
-        right: 10%;
-    }
-    .btn:hover::before{
-        left: 80%;
-    }
-    .btn:hover::after{
-        right: 80%;
-    }*/
-
 
 /************Contacto********************/
 
@@ -774,6 +706,7 @@ section .contac-idm p {
     position: relative;
     width: 100%;
     display: flex;
+    height:100vh;
 }
 
 .proyectos .contentBx {
@@ -906,54 +839,6 @@ section .contac-idm p {
     line-height: 60px;
     font-family: 'Graduate', cursive;
 }
-
-/*.skew-abajo{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	border-width: 0 0 5vh 100vw;
-	border-style: solid;
-	border-color: transparent transparent #010A15 transparent;
-}
-.skew-arriba{
-	position: absolute;
-	top: 0;
-	left: 0;
-	border-width: 5vh 100vw 0 0;
-	border-style: solid;
-	border-color: #010A15 transparent transparent transparent;
-	z-index: 10;
-}
-
-/* .elon-musk{
-    position: relative;
-    background: url(../img/index/SLOGAN.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-    min-height: 100ch;
-}
-.figure-img{
-   position: relative;
-   width: 100%;
-   align-items: center;
-   border: 2px solid red;
-
-}
-.figure-img .text-eslogan{
-    position: relative;
-    max-width: 500px;
-}
-
-.figure-img .text-eslogan h4{
-    color: #fff;
-    font-size: 26px;
-    font-weight: normal;
-    text-align: right;
-    line-height: 60px;
-    font-family: 'Graduate', cursive;
-} */
 
 
 @media only screen and (max-width: 800px){
