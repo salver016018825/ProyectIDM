@@ -42,376 +42,49 @@ body {
     color: #fff;
 }
 
-/*********Portada inicio**************/
 
-.portada-inicio {
+/****Portada inicio*****/
+.portada-inicio .portada{
     position: relative;
     width: 100%;
-    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-image: url(../img/index/portada-index.gif);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 0.5s;
+    min-height: 100vh;
+    background: #3c3c3c;
+    overflow: hidden;
+    
 }
-
-
-.sidebar {
-    width: 155px;
-    height: 100vh;
-    background: rgba(255, 255, 255, 0.3);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.social-links {
-    width: 20px;
-    display: block;
-    margin: 220px auto 0;
-    text-align: center;
-}
-
-.social-links img {
-    height: 25px;
-    margin-bottom: 30px;
-
-}
-
-.banner1,
-.banner2,
-.banner3,
-.banner4 {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.txt-descripcion {
-    width: 800px;
-    position: absolute;
-    top: 200px;
-}
-
-.txt-descripcion h1 {
-    color: #fff;
-    font-size: 45px;
-    margin-bottom: 40px;
-    line-height: 25px;
-    margin-left: 180px;
-    letter-spacing: 1px;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-.txt-descripcion p {
-    color: #fff;
-    font-size: 25px;
-    line-height: 25px;
-    margin-left: 180px;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-.txt-descripcion .estados {
+h2{
     color: #ffffff;
-    font-size: 25px;
-    line-height: 25px;
-    margin-left: 180px;
+    text-align: center;
+    font-size: 8vw;
+    line-height: 0.8em;
+    z-index: 1000;
+    font-weight: 900;
+}
+h2 span{
+    font-size: 0.2em;
+    letter-spacing: 0.4em;
+    font-weight: 400;
+    text-transform: uppercase;
     font-family: 'Titillium Web', sans-serif;
 }
-
-.banner1 {
-    animation: slide1 26s linear infinite;
+.block{
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background: #000000;
+    box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.2);
 }
 
-.banner2 {
-    animation: slide2 26s linear infinite;
-}
-
-.banner3 {
-    animation: slide3 26s linear infinite;
-}
-
-.banner4 {
-    animation: slide4 26s linear infinite;
-}
-
-.banner5 {
-    animation: slide5 26s linear infinite;
-}
-
-@keyframes slide1 {
-    0% {
-        visibility: visible;
-    }
-
-    12.5% {
-        visibility: hidden;
-    }
-
-    25% {
-        visibility: hidden;
-    }
-
-    37.5% {
-        visibility: hidden;
-    }
-
-    50% {
-        visibility: hidden;
-    }
-
-    62.5% {
-        visibility: hidden;
-    }
-
-    75% {
-        visibility: hidden;
-    }
-
-    87.5% {
-        visibility: hidden;
-    }
-
-    100% {
-        visibility: hidden;
-    }
-}
-
-@keyframes slide2 {
-    0% {
-        visibility: hidden;
-    }
-
-    12.5% {
-        visibility: hidden;
-    }
-
-    25% {
-        visibility: visible;
-    }
-
-    37.5% {
-        visibility: hidden;
-    }
-
-    50% {
-        visibility: hidden;
-    }
-
-    62.5% {
-        visibility: hidden;
-    }
-
-    75% {
-        visibility: hidden;
-    }
-
-    87.5% {
-        visibility: hidden;
-    }
-
-    100% {
-        visibility: hidden;
-    }
-}
-
-@keyframes slide3 {
-    0% {
-        visibility: hidden;
-    }
-
-    12.5% {
-        visibility: hidden;
-    }
-
-    25% {
-        visibility: hidden;
-    }
-
-    37.5% {
-        visibility: hidden;
-    }
-
-    50% {
-        visibility: visible;
-    }
-
-    62.5% {
-        visibility: hidden;
-    }
-
-    75% {
-        visibility: hidden;
-    }
-
-    87.5% {
-        visibility: hidden;
-    }
-
-    100% {
-        visibility: hidden;
-    }
-}
-
-@keyframes slide4 {
-    0% {
-        visibility: hidden;
-    }
-
-    12.5% {
-        visibility: hidden;
-    }
-
-    25% {
-        visibility: hidden;
-    }
-
-    37.5% {
-        visibility: hidden;
-    }
-
-    50% {
-        visibility: hidden;
-    }
-
-    62.5% {
-        visibility: hidden;
-    }
-
-    75% {
-        visibility: visible;
-    }
-
-    87.5% {
-        visibility: hidden;
-    }
-
-    100% {
-        visibility: hidden;
-    }
-}
-
-@keyframes slide5 {
-    0% {
-        visibility: hidden;
-    }
-
-    12.5% {
-        visibility: hidden;
-    }
-
-    25% {
-        visibility: hidden;
-    }
-
-    37.5% {
-        visibility: hidden;
-    }
-
-    50% {
-        visibility: hidden;
-    }
-
-    62.5% {
-        visibility: hidden;
-    }
-
-    75% {
-        visibility: hidden;
-    }
-
-    87.5% {
-        visibility: hidden;
-    }
-
-    100% {
-        visibility: visible;
-    }
-}
-
-@media only screen and (max-width:800px) {
-    .portada-inicio {
-        background-image: url(../img/index/portada-index.gif);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100% 100%;
-    }
-
-    .sidebar {
-        width: 100%;
-        max-height: 60px;
-        top: 550px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
-
-    .sidebar .social-links {
-        flex-grow: 1;
-        margin: auto;
-        display: flex;
-        justify-content: space-around;
-        padding: 15px;
-    }
-
-    .contenedor-texto-banner {
-        /* position: relative;
-        width: 100vh;
-        height: 50vh;
-        top: 10px;
-        border: 2px solid red; */
-    }
-
-    .contenedor-texto-banner .banner1
-    .banner2
-    .banner3
-    .banner4 .banner5 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .txt-descripcion {
-        overflow: hidden;
-        width: 100%;
-        position: absolute;
-        margin: auto;
-        height: 60vh;
-        top: 90px;
-    }
-
-    .txt-descripcion h1 {
-        font-size: 2em;
-        margin: auto;
-        padding: 10px;
-    }
-
-    .txt-descripcion p {
-        font-size: calc(1em + 1vw);
-        margin: auto;
-        padding: 10px;
-        
-    }
-
-    .txt-descripcion .estados {
-        font-size: calc(1em + 1vw);
-        margin: auto;
-        padding: 10px;        
-        height: 30vh;
-    }
+@media only screen and (max-width:800px){
+    #title-idm{ font-size: 0.5em;}
 }
 
 
-@media only screen and (max-width: 450px){
-    .sidebar {top: 545px;}
-}
-
+/*@media only screen and (max-width: 450px){
+    .sidebar {top: 545px;}*/
 
 /*****servicios*******/
 .serviciosIDM{

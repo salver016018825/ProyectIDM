@@ -109,7 +109,6 @@
                             <div class="galeria-subcategoria">
                                 <a href="#"><img src="../img/menu/machined-parts.jpg" loading="lazy" alt="Forja"></a>
                                 <a href="#"><img src="../img/menu/menu3.jpg" loading="lazy" alt="Gages"></a>
-                                <a href="#"><img src="../img/menu/aluminum-4674002_640.jpg" loading="lazy"
                                         alt="Pieza Aluminio"></a>
                                 <a href="#"><img src="../img/menu/metal.jpg" loading="lazy"
                                         alt="Pieza Metalmecanico"></a>
@@ -121,61 +120,13 @@
         </nav>
     </header>
 
-    <div class="portada-inicio">
-        <div class="sidebar">
-            <div class="social-links">
-                <a target=”_blank” rel="preconnect"
-                    href="https://www.facebook.com/IDM-Ingenier%C3%ADa-Y-Desarrollo-Metalmec%C3%A1nico-107269107795817/">
-                    <img src="img/index/iconos-portada/icons-facebook.png" loading="lazy" alt="idm INDUSTRIAL QUERETARO facebook"></a>
-                    <img src="img/index/iconos-portada/icons-twitter.png" loading="lazy" alt="IDM INDUSTRIAL Queretaro twitter">
-                    <img src="img/index/iconos-portada/icons-instagram.png" loading="lazy" alt="IDM Industrial Queretaro instagram">
-                    <img src="img/index/iconos-portada/icons-linkedin.png" loading="lazy" alt="IDM Industrial Querétaro linkedin">
-            </div>
+    <!--portada-->
+    <section class="portada-inicio">
+        <div class="portada">
+            <h2><span id="title-idm">IDM - Industrial</span><br>Ingeniería y Desarrollo Metalmecanico</h2>
         </div>
-        <div class="contenedor-texto-banner">
-            <div class="banner1">
-                <div class="txt-descripcion">
-                    <h1>Fabricación de refacciones</h1>
-                    <p>Nuestro servicios especializados en fabricación de piezas y refacciones son realizadas a base de
-                        requerimientos del cliente cumpliendo con estandares de calidad y producción. </p>
-                </div>
-            </div>
-            <div class="banner2">
-                <div class="txt-descripcion">
-                    <h1>Diseño</h1> <br>
-                    <p>El diseño asistido es fundamental para simular un prototipo antes de ser ejecutado, adaptandonos
-                        al
-                        cliente y a sus necesidades. </p>
-                </div>
-            </div>
-            <div class="banner3">
-                <div class="txt-descripcion">
-                    <h1>Atencion a clientes</h1> <br>
-                    <p>Para nosotros el cliente es el factor más importante ya que la calidad y atención de servicio es
-                        primordial para mantener una estrecha relación Empresa-Cliente. </p>
-                </div>
-            </div>
-            <div class="banner4">
-                <div class="txt-descripcion">
-                    <h1>Futuros proyectos</h1> <br>
-                    <p>Una visión que mantenemos hacia un futuro con el objetivo de crecer implementando las tendencias
-                        tecnológica y estar a la banguardia de la industria 4.0.</p>
-                </div>
-            </div>
-            <div class="banner5">
-                <div class="txt-descripcion">
-                    <h1>Nuestro centro de trabajo</h1> <br>
-                    <p>Ubicado estrategicamente en el Estado de Querétaro nos da la fortaleza de distribuir a cualquier
-                        rincon de México y el mundo, gracias a la logística que nuestros ingenieros diseñan para abarcar
-                        todas la industrias ligeras y pesadas.
+    </section>
 
-                    </p> <br>
-                    <p class="estados">Monterrey-Querétaro-Saltillo-Puebla-Ciudad de México-Guanajuato-San Luis Potosi
-                        -Ciudad del Carmen-Tabasco-Veracruz-Morelia.</p>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="elementos">
         <div class="icons">
             <div>
@@ -569,6 +520,37 @@
     <script defer src="js/main.js"></script>
     <script defer src="js/carrusel.js"></script>
     <script defer src="js/animation.js"></script>
+    <script src="/js/anime.min.js"></script>
+    <script>
+        const portada = document.querySelector ('.portada')
+        for(var i = 0; i <= 100; i++){
+           const blocks = document.createElement('div');
+           blocks.classList.add('block');
+           portada.appendChild(blocks);
+        }
+
+        function animateBlocks(){
+            anime({
+               targets: '.block',
+               translateX: function(){
+                   return anime.random(-700,700);
+               },
+               translateY: function(){
+                   return anime.random(-500,500);
+               },
+               scale: function(){
+                   return anime.random(1,5);
+               },
+
+               easing:'linear',
+               duration: 3000,
+               delay: anime.stagger(10),
+               complete: animateBlocks,
+            })
+        }
+
+        animateBlocks()
+    </script>
 </body>
 
 </html>
