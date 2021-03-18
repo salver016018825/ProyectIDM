@@ -1368,6 +1368,29 @@ footer{
     }
 }
 
+/*sectores*/
+
+.sect-nosotros .nosotros .sectorBx{
+    /* border: 2px solid red; */
+    width: 340px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+    object-fit: cover;
+    
+}
+.sect-nosotros .nosotros .sectorBx img{
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.sect-nosotros .nosotros .sectorBx h2{
+    color: red;
+    font-size: 17px;
+    text-align: center;
+}
+
 /***********Galeria estatica********/
 
 .galeria-estatica{
