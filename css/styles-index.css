@@ -583,7 +583,7 @@ section .contac-idm p {
 
 @media screen and (max-width:800px) {
     
-    .nosotros-idm h2{margin-left: 45px;}
+    .nosotros-idm h2{margin-left: 45px;padding-top: 100px;}
     .nosotros-idm p {
         margin: auto;
         padding-left: 50px;
