@@ -56,7 +56,7 @@ body {
     
 }
 h2{
-    color: #235496;
+    color: #fff;
     text-align: center;
     font-size: 8vw;
     line-height: 0.8em;
@@ -82,6 +82,43 @@ h2 span{
     #title-idm{ font-size: 0.5em;}
 }
 
+/*****Certificacion******/
+
+.sect-certificacion {
+    background: #235496;
+    justify-content: flex-start;
+    min-height: 25vh;
+}
+
+.certificacion-idm h2 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-align: center;
+    padding-top: 50px;
+    
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.certificacion-idm p {
+    color: #fff;
+    font-size: 17px;
+    text-align: center;    
+    padding-bottom: 50px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+@media only screen and (max-width:800px) {
+    .certificacion{
+        position: absolute;
+    }
+    .certificacion-idm h2{margin: auto; font-size: 1.7em;}
+    .certificacion-idm p{
+        margin: auto;
+        font-size: 1em;
+    }
+}
 
 /*@media only screen and (max-width: 450px){
     .sidebar {top: 545px;}*/
@@ -136,7 +173,7 @@ h2 span{
     .serviciosIDM .imgBx-ser {
         width: 100%;
         padding: 10px;
-        min-height: 400px;
+        /* min-height: 400px; */
         text-align: center;
         height: 100%;
     }        
