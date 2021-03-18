@@ -51,12 +51,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #3c3c3c;
+    background: #000000;
     overflow: hidden;
     
 }
 h2{
-    color: #ffffff;
+    color: #235496;
     text-align: center;
     font-size: 8vw;
     line-height: 0.8em;
