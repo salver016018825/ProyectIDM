@@ -1,8 +1,11 @@
 const btnDepartamentos = document.getElementById('btn-departamentos'),
+	btnServicios = document.getElementById('btn-servicios'),
 	btnCerrarMenu = document.getElementById('btn-menu-cerrar'),
+	gridservicios = document.getElementById('grid-servicios'),
 	grid = document.getElementById('grid'),
 	contenedorEnlacesNav = document.querySelector('#menu .contenedor-enlaces-nav'),
 	contenedorSubCategorias = document.querySelector('#grid .contenedor-subcategorias'),
+	contenedorSubcategoriasServicios = document.querySelector('#grid-servicios .contenedor-subcategorias'),
 	esDispositivoMovil = () => window.innerWidth <= 800;
 
 btnDepartamentos.addEventListener('mouseover', () => {
@@ -11,9 +14,22 @@ btnDepartamentos.addEventListener('mouseover', () => {
 	}
 });
 
+btnServicios.addEventListener('mouseover',() =>{
+	if (!esDispositivoMovil()) {
+		gridservicios.classList.add('activo');
+	}
+});
+
+
 grid.addEventListener('mouseleave', () => {
 	if (!esDispositivoMovil()) {
 		grid.classList.remove('activo');
+	}
+});
+
+gridservicios.addEventListener('mouseleave',() =>{
+	if (!esDispositivoMovil()) {
+		gridservicios.classList.remove('activo');
 	}
 });
 
@@ -70,11 +86,32 @@ document.querySelectorAll('#menu .categorias a').forEach((elemento) => {
 	});
 });
 
+document.querySelectorAll('#menu .categorias a').forEach((elemento) => {
+	elemento.addEventListener('click', (e) => {
+		if (esDispositivoMovil()) {
+			contenedorSubcategoriasServicios.classList.add('activo');
+			document.querySelectorAll('#menu .subcategoria').forEach((categoria) => {
+				categoria.classList.remove('activo');
+				if (categoria.dataset.categoria == e.target.dataset.categoria) {
+					categoria.classList.add('activo');
+				}
+			});
+		}
+	});
+});
+
 // Boton de regresar en el menu de categorias
 document.querySelectorAll('#grid .contenedor-subcategorias .btn-regresar').forEach((boton) => {
 	boton.addEventListener('click', (e) => {
 		e.preventDefault();
 		contenedorSubCategorias.classList.remove('activo');
+	});
+});
+
+document.querySelectorAll('#grid-servicios .contenedor-subcategorias .btn-regresar').forEach((boton) =>{
+	boton.addEventListener('click', (e) => {
+		e.preventDefault();
+		contenedorSubcategoriasServicios.classList.remove('activo');
 	});
 });
 
@@ -102,7 +139,7 @@ btnCerrarMenu.addEventListener('click', (e) => {
 // 	}
 // 	prevScrollPos = currentScrollPos;
 // }
-
+/*menu */
 let bodyTag = document.querySelector('body');
 let myNav = document.querySelector('nav');
 
