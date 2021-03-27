@@ -72,6 +72,17 @@ document.querySelector('#grid .categorias .btn-regresar').addEventListener('clic
 	btnCerrarMenu.classList.remove('activo');
 });
 
+btnServicios.addEventListener('click', (e) =>{
+	e.preventDefault();
+	gridservicios.classList.add('activo');
+});
+
+document.querySelector('#grid-servicios .categorias .btn-regresar').addEventListener('click', (e) => {
+	e.preventDefault();
+	gridservicios.classList.remove('activo');
+	btnCerrarMenu.classList.remove('activo');
+});
+
 document.querySelectorAll('#menu .categorias a').forEach((elemento) => {
 	elemento.addEventListener('click', (e) => {
 		if (esDispositivoMovil()) {
@@ -154,7 +165,8 @@ addEventListener('scroll', () => {
 
 /*preolader site*/
 window.addEventListener("load", function () {
-	document.getElementById("#loader").classList.toggle("loader2");
+	this.console.log(`entrando`);
+	document.getElementById("loader").classList.toggle("loader2");
 });
 
 /* partivcules*/
