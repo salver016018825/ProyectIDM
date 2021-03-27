@@ -653,6 +653,20 @@ a {text-decoration: none;}
         transform: rotate(-90deg);
     }
 
+    .menu .btn-servicios {
+        width: 100%;
+        align-items: center;
+        cursor: pointer;
+        top: 85px;
+        left: 33px;
+    }
+
+    .menu .btn-servicios i {
+        position: static;
+        margin-left: 28px;
+        transform: rotate(-90deg);
+    }
+
     .menu .enlaces {width: 100%;}
 
     .menu .enlaces a {
@@ -663,17 +677,27 @@ a {text-decoration: none;}
 
     .menu .enlaces .nosotros a {
         left: 25px;
-        top: 95px;
+        top: 190px;
+    }
+
+    .menu .enlaces .catalogo a {
+        left: 25px;
+        top: 120px;
+    }
+
+    .menu .enlaces .materiales a {
+        left: 25px;
+        top: 155px;
     }
 
     .menu .enlaces .contacto a {
         left: 25px;
-        top: 65px;
+        top: 260px;
     }
 
     .menu .enlaces .futuros a {
         left: 25px;
-        top: 130px;
+        top: 225px;
     }  
 
     .logo {
