@@ -143,7 +143,7 @@
     position: relative;
     text-align: center;
     cursor: default;
-    background: url(../img/machine.jpg) no-repeat center center;
+    background: url(../img/index/alimenticia.jpg) no-repeat center center;
 }
 
 .view .mask, .view .content {
@@ -198,7 +198,7 @@
     font-family: 'Titillium Web', sans-serif; /*fuente letra*/
 }
 
-.view a.info: hover {
+.view a.info:hover {
     -webkit-box-shadow: 0 0 5px #000;
     -moz-box-shadow: 0 0 5px #000;
     box-shadow: 0 0 5px #000;
