@@ -15,179 +15,239 @@
 </head>
 
 <body>
-  <div class="lds-dual-ring loader" id="loader"></div>
-  <header>
-    <nav class="menu" id="menu">
-      <div class="logo-box">
-        <figure>
-          <img src="../img/menu/logoIDM.png" alt="IDM" loading="lazy" class="logo">
-        </figure>
-      </div>
-      <div class="contenedor contenedor-botones-menu">
-        <button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
-        <button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
-      </div>
-      <div class="contenedor contenedor-enlaces-nav">
-        <div class='inicio'><a href="../index.html">Inicio</a></div>
-        <div class="btn-departamentos" id="btn-departamentos">
-            <p>Todos los <span>Servicios</span></p>
-            <i class="fas fa-caret-down"></i>
-        </div>
+<header>
+  <nav class="menu" id="menu">
+    <div class="logo-box">
+      <figure>
+        <img src="../img/menu/logoIDM.png" alt="IDM Querétaro" loading="lazy" class="logo">
+      </figure>
+    </div>
+    <div class="contenedor contenedor-botones-menu">
+      <button aria-label="Menu" id="btn-menu-barras" class="btn-menu-barras"><i
+              class="fas fa-bars"></i></button>
+      <button aria-label="Cerrar" id="btn-menu-cerrar" class="btn-menu-cerrar"><i
+              class="fas fa-times"></i></button>
+    </div>
 
-        <div class="enlaces" id="list">
-          <div class="futuros" ><a href="../web/futuros-proyectos.html">Futuros Proyectos</a> </div>
-          <div class="nosotros"><a href="/index.html#nosotros">Nosotros</a></div>
-          <div class="contacto" ><a href="../web/contacto.html">Contacto</a></div>
+    <div class="contenedor contenedor-enlaces-nav">
+      <div class='inicio'><a href="../index.html">Inicio</a></div>
+      <div class="btn-departamentos" id="btn-departamentos">
+        <p><span>Productos</span></p>
+        <i class="fas fa-caret-down"></i>
+      </div>
+      <div class="btn-servicios" id="btn-servicios">
+        <p><span>Servicios</span></p>
+        <i class="fas fa-caret-down"></i>
+      </div>
+      <div class="enlaces" id="list">
+        <div class="materiales-menu"><a href="../web/materiales.html">Materiales</a></div>
+        <div class="catalogo"><a href="../index.html#catalogo">Catalogo</a></div>
+        <div class="futuros"><a href="../web/futuros-proyectos.html">Futuros Proyectos</a></div>
+        <div class="nosotros"><a href="../index.html#nosotros">Nosotros</a></div>
+        <div class="contacto"><a href="../web/contacto.html">Contacto</a></div>
       </div>
     </div>
-      <div class="contenedor contenedor-grid">
-        <div class="grid" id="grid">
-          <div class="categorias">
-            <button class="btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</button>
-            <a href="#" data-categoria="tecnologia-y-computadoras">Servicios <i class="fas fa-angle-right"></i></a>
-            <a href="#" data-categoria="libros">Futuros Proyectos <i class="fas fa-angle-right"></i></a>
-          </div>
-          <div class="contenedor-subcategorias">
-            <div class="subcategoria " data-categoria="tecnologia-y-computadoras">
-              <div class="enlaces-subcategoria">
-                <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
-                <h3 class="subtitulo">Metalmecanica</h3>
-                <a href="../web/Servicio.html#Herramientasdeforja">Herramientas de Forja</a>
-                <a href="../web/Servicio.html#moldes">Moldes</a>
-                <a href="../web/Servicio.html#troqueles">Troqueles</a>
-                <a href="../web/Servicio.html#herramientasSub">Dados Herramientas de Sub-Emsambles</a>
-                <a href="../web/Servicio.html#herramientascnc">Herramientas CNC</a>
-                <a href="../web/Servicio.html#materialesempleados">Materiales Empleados</a>
-                <a href="../web/Servicio.html#fabricacionrefacciones">Fabricacion de Refacciones</a>
-                <a href="../web/Servicio.html#izaje">Herramientas de Izaje</a>
-                <a href="../web/Servicio.html#gages">Fixture & Gages</a>
-                <a href="../web/Servicio.html#maquinadoespecial">Maquinados Especiales</a>
-                <a href="../web/Servicio.html#retro-ing">Retro-Ingenieria</a>
-                <a href="../web/Servicio.html#asistencia-cad-cam">Asistencia CAD CAM</a>
-                <a href="../web/Servicio.html#paileria">Paileria</a>
-              </div>
-              <div class="banner-subcategoria">
-                <a href="#"><img src="../img/menu/VideoCapture_20201215-120817.jpg" loading="lazy"
-                    alt="Maquinado_CNC"></a>
-              </div>
-              <div class="galeria-subcategoria">
-                <a href="#"><img src="../img/menu/metalmecanica.jpg" loading="lazy"
-                    alt="piezas maquinado "></a>
-                <a href="#"><img src="../img/menu/metalmecanica2IDM.jpg" loading="lazy"
-                    alt="Gage Maquinados"></a>
-                <a href="#"><img src="../img/menu/cnc-57.jpg" loading="lazy" alt="Maquinado CNC"></a>
-                <a href="#"><img src="../img/menu/menu.jpg" loading="lazy" alt="Maquinado"></a>
-              </div>
+    <!--servicios-->
+    <div class="contenedor-servicios contenedor-grid">
+      <div class="grid-servicios" id="grid-servicios">
+        <div class="categorias">
+          <button aria-label="Regresar" class="btn-regresar"><i class="fas fa-arrow-left"></i>
+            Regresar
+          </button>
+          <a href="#" data-categoria="tecnologia-y-computadoras">Servicios <i
+                  class="fas fa-angle-right"></i></a>
+        </div>
+        <div class="contenedor-subcategorias">
+          <div class="subcategoria " data-categoria="tecnologia-y-computadoras">
+            <div class="enlaces-subcategoria">
+              <button aria-label="Regresar" class="btn-regresar"><i
+                      class="fas fa-arrow-left"></i>Regresar
+              </button>
+              <h3 class="subtitulo"><a href="../web/Servicio.html">Nuestros Servicios</a></h3>
+              <a href="../web/Servicio.html#certificacion">Certificacion</a>
+              <a href="../web/Servicio.html#levantamiento">Levantamiento</a>
+              <a href="../web/Servicio.html#asistencia-cad-cam">Asistencia CAD CAM</a>
+              <a href="../web/Servicio.html#retro-ing">Retro-Ingeniería</a>
+              <a href="../web/Servicio.html#fabricacion">Fabricación</a>
             </div>
+            <div class="banner-subcategoria">
+              <a href="#"><img src="../img/menu/VideoCapture_20201215-120817.jpg" loading="lazy"
+                               alt="Maquinado_CNC"></a>
+            </div>
+            <div class="galeria-subcategoria">
+              <a href="#"><img src="../img/menu/metalmecanica.jpg" loading="lazy"
+                               alt="piezas maquinado "></a>
+              <a href="#"><img src="../img/menu/metalmecanica2IDM.jpg" loading="lazy"
+                               alt="Gage Maquinados"></a>
+              <a href="#"><img src="../img/menu/VideoCapture_20201215-120817.jpg" loading="lazy" alt="Maquinado CNC"></a>
+              <a href="#"><img src="../img/menu/menu.jpg" loading="lazy" alt="Maquinado"></a>
+            </div>
+          </div>
 
-            <div class="subcategoria " data-categoria="libros">
-              <div class="enlaces-subcategoria">
-                <button aria-label="Regresar" class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
-                <h3 class="subtitulo"><a href="../web/futuros-proyectos.html">Futuros Proyectos</a></h3>
-                <a href="../web/automatizacion.html">Automatizacion</a>
-                <a href="../web/impresion3D.html">Impresion 3D</a>
-                <a href="../web/certificaciones.html">certificaciones</a>
-              </div>
-              <div class="banner-subcategoria">
-                <a href="#"><img src="../img/menu/menu2.jpg" loading="lazy" alt=""></a>
-              </div>
-              <div class="galeria-subcategoria">
-                <a href="#"><img src="../img/menu/machined-parts.jpg" loading="lazy" alt="Forja"></a>
-                <a href="#"><img src="../img/menu/menu3.jpg" loading="lazy" alt="Gages"></a>
-                <a href="#"><img src="../img/menu/aluminum-4674002_640.jpg" loading="lazy" alt="Pieza Aluminio"></a>
-                <a href="#"><img src="../img/menu/metal.jpg" loading="lazy" alt="Pieza Metalmecanico"></a>
-              </div>
+          <div class="subcategoria " data-categoria="libros">
+            <div class="enlaces-subcategoria">
+              <button aria-label="Regresar" class="btn-regresar"><i
+                      class="fas fa-arrow-left"></i>Regresar
+              </button>
+              <h3 class="subtitulo"><a href="../web/futuros-proyectos.html">Futuros Proyectos</a></h3>
+            </div>
+            <div class="banner-subcategoria">
+              <a href="#"><img src="../img/menu/menu2.jpg" loading="lazy" alt=""></a>
+            </div>
+            <div class="galeria-subcategoria">
+              <a href="#"><img src="../img/menu/machined-parts.jpg" loading="lazy" alt="Forja"></a>
+              <a href="#"><img src="../img/menu/menu3.jpg" loading="lazy" alt="Gages"></a>
+              <a href="#"><img src="../img/menu/metal.jpg" loading="lazy" alt="Pieza Metalmecanico"></a>
+              <a href="#"><img src="" alt="Pieza Aluminio"></a>
             </div>
           </div>
         </div>
       </div>
-    </nav>
-  </header>
-  <!--Contacto-->
-  <main class="contenedor-contacto">
-    <div class="contenedor">
-      <h1>Contacto IDM</h1>
-      <div class="contenido">
-        <div class="info">
-          <!--Mapa-->
-          <iframe loading="lazy" rel="preconnect" target="_blank" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d233.4889141919122!2d-
+    </div>
+    <!--        Productos-->
+    <div class="contenedor contenedor-grid">
+      <div class="grid" id="grid">
+        <div class="categorias">
+          <button aria-label="Regresar" class="btn-regresar"><i class="fas fa-arrow-left"></i>
+            Regresar
+          </button>
+          <a href="#" data-categoria="tecnologia-y-computadoras">Productos <i
+                  class="fas fa-angle-right"></i></a>
+          <a href="../web/Galeria.html" data-categoria="libros">Galeria</a>
+        </div>
+        <div class="contenedor-subcategorias">
+          <div class="subcategoria " data-categoria="tecnologia-y-computadoras">
+            <div class="enlaces-subcategoria">
+              <button aria-label="Regresar" class="btn-regresar"><i
+                      class="fas fa-arrow-left"></i>Regresar
+              </button>
+              <h3 class="subtitulo"><a href="web/Servicio.html">Nuestros Productos</a></h3>
+              <a href="../web/Servicio.html#Herramientasdeforja">Herramientas de Forja</a>
+              <a href="../web/Servicio.html#moldes">Moldes</a>
+              <a href="../web/Servicio.html#troqueles">Troqueles</a>
+              <a href="../web/Servicio.html#herramientasSub">Dados Herramientas de Sub-Emsambles</a>
+              <a href="../web/Servicio.html#herramientascnc">Herramientas CNC</a>
+              <a href="../web/Servicio.html#materialesempleados">Materiales Empleados</a>
+              <a href="../web/Servicio.html#fabricacionrefacciones">Refacciones</a>
+              <a href="../web/Servicio.html#izaje">Herramientas de Izaje</a>
+              <a href="../web/Servicio.html#gages">Fixture & Gages</a>
+              <a href="../web/Servicio.html#maquinadoespecial">Maquinados Especiales</a>
+              <a href="../web/Servicio.html#paileria">Paileria</a>
+            </div>
+            <div class="banner-subcategoria">
+              <a href="#"><img src="../img/menu/VideoCapture_20201215-120817.jpg" loading="lazy"
+                               alt="Maquinado_CNC"></a>
+            </div>
+            <div class="galeria-subcategoria">
+              <a href="#"><img src="../img//menu/metalmecanica.jpg" loading="lazy"
+                               alt="piezas maquinado "></a>
+              <a href="#"><img src="../img/menu/metalmecanica2IDM.jpg" loading="lazy"
+                               alt="Gage Maquinados"></a>
+              <a href="#"><img src="../img/menu/cnc-57.jpg" loading="lazy" alt="Maquinado CNC"></a>
+              <a href="#"><img src="../img/menu/menu.jpg" loading="lazy" alt="Maquinado"></a>
+            </div>
+          </div>
+          <div class="subcategoria " data-categoria="libros">
+            <div class="enlaces-subcategoria">
+              <button aria-label="Regresar" class="btn-regresar"><i
+                      class="fas fa-arrow-left"></i>Regresar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--Contacto-->
+<main class="contenedor-contacto">
+  <div class="contenedor">
+    <h1>Contacto IDM</h1>
+    <div class="contenido">
+      <div class="info">
+        <!--Mapa-->
+        <iframe loading="lazy" rel="preconnect" target="_blank" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d233.4889141919122!2d-
                 100.379675!3d20.554437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDMzJz
                 E1LjkiTiAxMDDCsDIyJzQ2LjgiVw!5e0!3m2!1ses-419!2sus!4v1596162934982!5m2!1ses-419!2sus" width="300"
-            height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-          </iframe>
-          <div class="col">
-            <i class="icono fas fa-map-marker-alt"></i>
-            <p>Napoles Villa del Cimatario, Roma</p>
+                height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0">
+        </iframe>
+        <div class="col">
+          <i class="icono fas fa-map-marker-alt"></i>
+          <p>Napoles Villa del Cimatario, Roma</p>
+        </div>
+        <div class="col">
+          <i class="icono far fa-envelope"></i>
+          <p>idmetalmecanico@aol.com</p>
+        </div>
+        <div class="col">
+          <i class="icono fas fa-phone"></i>
+          <p> - 442 287 32 25 <br>- 442 202 33 07 <br>- 442 119 32 56</p>
+        </div>
+        <div class="redes-s">
+          <a rel="preconnect" target="_blank" loading="lazy"
+             href="https://www.facebook.com/IDM-Ingenier%C3%ADa-Y-Desarrollo-Metalmec%C3%A1nico-107269107795817/"><i
+                  class="fab fa-facebook-f"></i></a>
+          <a rel="preconnect" target="_blank" loading="lazy" href="https://twitter.com/IMetalmecanico"><i
+                  class="fab fa-twitter"></i></a>
+          <a rel="preconnect" target="_blank" loading="lazy" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <form action="../conf/envia.php" method="POST" class="formulario" id="formulario">
+        <!-- Grupo: Nombre -->
+        <div class="formulario__grupo" id="grupo__nombre">
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="nombre" placeholder="Nombre Completo"
+                   id="nombre"
+                   required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
-          <div class="col">
-            <i class="icono far fa-envelope"></i>
-            <p>idmetalmecanico@aol.com</p>
+          <p class="formulario__input-error">ingrese su nombre.</p>
+        </div>
+        <!-- Grupo: Correo Electronico -->
+        <div class="formulario__grupo" id="grupo__correo">
+          <div class="formulario__grupo-input">
+            <input type="email" class="formulario__input" name="correo" placeholder="correo@correo.com"
+                   id="correo"
+                   required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
-          <div class="col">
-            <i class="icono fas fa-phone"></i>
-            <p> - 442 287 32 25 <br>- 442 202 33 07 <br>- 442 119 32 56</p>
+          <p class="formulario__input-error">ingrese su correo .</p>
+        </div>
+        <div class="formulario__grupo" id="grupo__asunto">
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="asunto" placeholder="asunto" id="asunto"
+                   required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
-          <div class="redes-s">
-            <a rel="preconnect" target="_blank" loading="lazy"
-              href="https://www.facebook.com/IDM-Ingenier%C3%ADa-Y-Desarrollo-Metalmec%C3%A1nico-107269107795817/"><i
-                class="fab fa-facebook-f"></i></a>
-            <a rel="preconnect" target="_blank" loading="lazy" href="https://twitter.com/IMetalmecanico"><i
-                class="fab fa-twitter"></i></a>
-            <a rel="preconnect" target="_blank" loading="lazy" href="#"><i class="fab fa-instagram"></i></a>
+          <p class="formulario__input-error">ingrese el asunto a tratar.</p>
+        </div>
+        <div class="formulario__grupo" id="grupo__mensaje">
+          <div class="formulario__grupo-input">
+              <textarea type="text" class="formulario__input" name="mensaje" placeholder="mensaje" id="mensaje"
+                        required></textarea>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">escriba el mensaje para enviar.</p>
+        </div>
+        <div class="formulario__grupo" id="grupo__terminos">
+          <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+              correctamente.</p>
+          </div>
+          <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" onclick="placeOrder(this.form)" class="formulario">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Datos enviados exitosamente!<br>pronto
+              nos comunicaremos contigo</p>
           </div>
         </div>
-        <form action="../conf/envia.php" method="POST" class="formulario" id="formulario">
-          <!-- Grupo: Nombre -->
-          <div class="formulario__grupo" id="grupo__nombre">
-            <div class="formulario__grupo-input">
-              <input type="text" class="formulario__input" name="nombre" placeholder="Nombre Completo" id="nombre"
-                required>
-              <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-            <p class="formulario__input-error">ingrese su nombre.</p>
-          </div>
-          <!-- Grupo: Correo Electronico -->
-          <div class="formulario__grupo" id="grupo__correo">
-            <div class="formulario__grupo-input">
-              <input type="email" class="formulario__input" name="correo" placeholder="correo@correo.com" id="correo"
-                required>
-              <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-            <p class="formulario__input-error">ingrese su correo .</p>
-          </div>
-          <div class="formulario__grupo" id="grupo__asunto">
-            <div class="formulario__grupo-input">
-              <input type="text" class="formulario__input" name="asunto" placeholder="asunto" id="asunto" required>
-              <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-            <p class="formulario__input-error">ingrese el asunto a tratar.</p>
-          </div>
-          <div class="formulario__grupo" id="grupo__mensaje">
-            <div class="formulario__grupo-input">
-              <textarea type="text" class="formulario__input" name="mensaje" placeholder="mensaje" id="mensaje"
-                required></textarea>
-              <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-            <p class="formulario__input-error">escriba el mensaje para enviar.</p>
-          </div>
-          <div class="formulario__grupo" id="grupo__terminos">
-            <div class="formulario__mensaje" id="formulario__mensaje">
-              <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
-                correctamente.</p>
-            </div>
-            <div class="formulario__grupo formulario__grupo-btn-enviar">
-              <button type="submit" onclick="placeOrder(this.form)" class="formulario">Enviar</button>
-              <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Datos enviados exitosamente!<br>pronto
-                nos comunicaremos contigo</p>
-            </div>
-          </div>
-        </form>
-      </div>
+      </form>
     </div>
-  </main>
-  <script defer src="https://kit.fontawesome.com/35db202371.js"></script>
-  <!--<script defer src="../js/Email-validacion.js"></script>-->
-  <script defer src="../js/main.js"></script>
+  </div>
+</main>
+<script defer src="https://kit.fontawesome.com/35db202371.js"></script>
+<!--<script defer src="../js/Email-validacion.js"></script>-->
+<script defer src="../js/main.js"></script>
 </body>
 
 </html>
