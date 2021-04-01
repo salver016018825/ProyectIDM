@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Galeria</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!--meta name="viewport" content="width=500, initial-scale=1"-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Estilos Css -->
+    <link rel="stylesheet" href="../css/galeria.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header>
+    <nav class="menu" id="menu">
+        <div class="logo-box">
+            <figure>
+                <img src="../img/menu/logoIDM.png" alt="IDM Querétaro" loading="lazy" class="logo">
+            </figure>
+        </div>
+        <div class="contenedor contenedor-botones-menu">
+            <button aria-label="Menu" id="btn-menu-barras" class="btn-menu-barras"><i
+                    class="fas fa-bars"></i></button>
+            <button aria-label="Cerrar" id="btn-menu-cerrar" class="btn-menu-cerrar"><i
+                    class="fas fa-times"></i></button>
+        </div>
+
+        <div class="contenedor contenedor-enlaces-nav">
+            <div class='inicio'><a href="../index.html">Inicio</a></div>
+            <div class="btn-departamentos" id="btn-departamentos">
+                <p><span>Productos</span></p>
+                <i class="fas fa-caret-down"></i>
+            </div>
+            <div class="btn-servicios" id="btn-servicios">
+                <p><span>Servicios</span></p>
+                <i class="fas fa-caret-down"></i>
+            </div>
+            <div class="enlaces" id="list">
+                <div class="materiales-menu"><a href="../web/materiales.html">Materiales</a></div>
+                <div class="catalogo"><a href="../index.html#catalogo">Catalogo</a></div>
+                <div class="futuros"><a href="../web/futuros-proyectos.html">Futuros Proyectos</a></div>
+                <div class="nosotros"><a href="../index.html#nosotros">Nosotros</a></div>
+                <div class="contacto"><a href="../web/contacto.html">Contacto</a></div>
+            </div>
+        </div>
+        <!--servicios-->
+        <div class="contenedor-servicios contenedor-grid">
+            <div class="grid-servicios" id="grid-servicios">
+                <div class="categorias">
+                    <button aria-label="Regresar" class="btn-regresar"><i class="fas fa-arrow-left"></i>
+                        Regresar
+                    </button>
+                    <a href="#" data-categoria="tecnologia-y-computadoras">Servicios <i
+                            class="fas fa-angle-right"></i></a>
+                </div>
+                <div class="contenedor-subcategorias">
+                    <div class="subcategoria " data-categoria="tecnologia-y-computadoras">
+                        <div class="enlaces-subcategoria">
+                            <button aria-label="Regresar" class="btn-regresar"><i
+                                    class="fas fa-arrow-left"></i>Regresar
+                            </button>
+                            <h3 class="subtitulo"><a href="../web/Servicio.html">Nuestros Servicios</a></h3>
+                            <a href="../web/Servicio.html#certificacion">Certificacion</a>
+                            <a href="../web/Servicio.html#levantamiento">Levantamiento</a>
+                            <a href="../web/Servicio.html#asistencia-cad-cam">Asistencia CAD CAM</a>
+                            <a href="../web/Servicio.html#retro-ing">Retro-Ingeniería</a>
+                            <a href="../web/Servicio.html#fabricacion">Fabricación</a>
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="#"><img src="../img/menu/VideoCapture_20201215-120817.jpg" loading="lazy"
+                                             alt="Maquinado_CNC"></a>
+                        </div>
+                        <div class="galeria-subcategoria">
+                            <a href="#"><img src="../img/menu/metalmecanica.jpg" loading="lazy"
+                                             alt="piezas maquinado "></a>
+                            <a href="#"><img src="../img/menu/metalmecanica2IDM.jpg" loading="lazy"
+                                             alt="Gage Maquinados"></a>
+                            <a href="#"><img src="../img/menu/VideoCapture_20201215-120817.jpg" loading="lazy"
+                                             alt="Maquinado CNC"></a>
+                            <a href="#"><img src="../img/menu/menu.jpg" loading="lazy" alt="Maquinado"></a>
+                        </div>
+                    </div>
+
+                    <div class="subcategoria " data-categoria="libros">
+                        <div class="enlaces-subcategoria">
+                            <button aria-label="Regresar" class="btn-regresar"><i
+                                    class="fas fa-arrow-left"></i>Regresar
+                            </button>
+                            <h3 class="subtitulo"><a href="../web/futuros-proyectos.html">Futuros Proyectos</a></h3>
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="#"><img src="../img/menu/menu2.jpg" loading="lazy" alt=""></a>
+                        </div>
+                        <div class="galeria-subcategoria">
+                            <a href="#"><img src="../img/menu/machined-parts.jpg" loading="lazy" alt="Forja"></a>
+                            <a href="#"><img src="../img/menu/menu3.jpg" loading="lazy" alt="Gages"></a>
+                            <a href="#"><img src="../img/menu/metal.jpg" loading="lazy" alt="Pieza Metalmecanico"></a>
+                            <a href="#"><img src="" alt="Pieza Aluminio"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        Productos-->
+        <div class="contenedor contenedor-grid">
+            <div class="grid" id="grid">
+                <div class="categorias">
+                    <button aria-label="Regresar" class="btn-regresar"><i class="fas fa-arrow-left"></i>
+                        Regresar
+                    </button>
+                    <a href="#" data-categoria="tecnologia-y-computadoras">Productos <i
+                            class="fas fa-angle-right"></i></a>
+                    <a href="../web/Galeria.html" data-categoria="libros">Galeria</a>
+                </div>
+                <div class="contenedor-subcategorias">
+                    <div class="subcategoria " data-categoria="tecnologia-y-computadoras">
+                        <div class="enlaces-subcategoria">
+                            <button aria-label="Regresar" class="btn-regresar"><i
+                                    class="fas fa-arrow-left"></i>Regresar
+                            </button>
+                            <h3 class="subtitulo"><a href="web/Servicio.html">Nuestros Productos</a></h3>
+                            <a href="../web/Servicio.html#Herramientasdeforja">Herramientas de Forja</a>
+                            <a href="../web/Servicio.html#moldes">Moldes</a>
+                            <a href="../web/Servicio.html#troqueles">Troqueles</a>
+                            <a href="../web/Servicio.html#herramientasSub">Dados Herramientas de Sub-Emsambles</a>
+                            <a href="../web/Servicio.html#herramientascnc">Herramientas CNC</a>
+                            <a href="../web/Servicio.html#materialesempleados">Materiales Empleados</a>
+                            <a href="../web/Servicio.html#fabricacionrefacciones">Refacciones</a>
+                            <a href="../web/Servicio.html#izaje">Herramientas de Izaje</a>
+                            <a href="../web/Servicio.html#gages">Fixture & Gages</a>
+                            <a href="../web/Servicio.html#maquinadoespecial">Maquinados Especiales</a>
+                            <a href="../web/Servicio.html#paileria">Paileria</a>
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="#"><img src="../img/menu/VideoCapture_20201215-120817.jpg" loading="lazy"
+                                             alt="Maquinado_CNC"></a>
+                        </div>
+                        <div class="galeria-subcategoria">
+                            <a href="#"><img src="../img//menu/metalmecanica.jpg" loading="lazy"
+                                             alt="piezas maquinado "></a>
+                            <a href="#"><img src="../img/menu/metalmecanica2IDM.jpg" loading="lazy"
+                                             alt="Gage Maquinados"></a>
+                            <a href="#"><img src="../img/menu/cnc-57.jpg" loading="lazy" alt="Maquinado CNC"></a>
+                            <a href="#"><img src="../img/menu/menu.jpg" loading="lazy" alt="Maquinado"></a>
+                        </div>
+                    </div>
+                    <div class="subcategoria " data-categoria="libros">
+                        <div class="enlaces-subcategoria">
+                            <button aria-label="Regresar" class="btn-regresar"><i
+                                    class="fas fa-arrow-left"></i>Regresar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<!--PORTADA-GALERIA-->
+<section class="galeria-portada">
+    <div class="content-galeria">
+        <div class="textBox-galeria">
+            <h2 class="titulo-texto">IDM<br><span>GALERIA</span></h2>
+        </div>
+        <div class="imgMolde">
+
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="galeria">
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/img-izaje.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fixture&Gage.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/noferrroso.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/diseñoyfabricacion.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial1.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/refaccion.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/noferroso1.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial2.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial3.jpeg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial4.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/herramientasSubensamble.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial5.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial6.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionesespeciales7.jpg">
+        </div>
+
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial9.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial10.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial11.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial12.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial3.jpeg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial14.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial15.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial16.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial17.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionDiseño.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial18.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial19.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionIzaje.jpeg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial20.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial21.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial22.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial23.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial24.jpg">
+        </div>
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial25.jpg">
+        </div>
+
+        <div class="imagen">
+            <h1>Fabricación IDM-Industrial</h1>
+            <img src="../img/galeria/fabricacionespecial26.jpg">
+        </div>
+    </div>
+</section>
+
+<!--pie de pagina-->
+<footer>
+    <div class="container-footer-all">
+        <div class="container-body">
+            <div class="colum1">
+                <h1> Más informacion de la compañia</h1>
+                <h2>DISEÑO, FABRICACÓN DE REFACCIONES, PIEZAS Y ATENCIÓN A CLIENTE.</h2>
+                <p>
+                    - Herramentales de Forja.
+                    <br>
+                    - Troqueles.
+                    <br>
+                    - Refacciones.
+                    <br>
+                    - Fixtures & Gages.
+                    <br>
+                    - Moldes.
+                    <br>
+                    - Herramental CNC.
+                    <br>
+                    - Herramientas de Izaje.
+                    <br>
+                    - Pailería.
+                    <br>
+                    - Dados herramientas de subensambles.
+                    <br>
+                    - Maquinados Especiales.
+                    <br>
+                    - Retro Ingeniería.
+                    <br>
+                    - Asistencia CAD CAM.
+                </p>
+                <p class="estados">Servicios a nivel Nacional e Internacional</p>
+            </div>
+            <div class="colum2">
+                <h1>Siguenos en nuestras<br> redes sociales</h1>
+                <a target=”_blank” target=”_blank” rel="preconnect"
+                   href="https://www.facebook.com/IDM-Ingenier%C3%ADa-Y-Desarrollo-Metalmec%C3%A1nico-107269107795817/">
+                    <div class="row"><img src="../img/futuros_proyect/facebook.png" alt="facebook IDM" loading="lazy">
+                    </div>
+                </a>
+
+                <a target=”_blank” rel="preconnect" href="https://twitter.com/IMetalmecanico">
+                    <div class="row"><img src="../img/futuros_proyect/twiter.png" alt="twitter IDM" loading="lazy">
+                    </div>
+                </a>
+
+                <div class="row">
+                    <img src="../img/futuros_proyect/insta.png" alt="instagram IDM loading=" lazy">
+
+                </div>
+                <a target=”_blank” rel="preconnect"
+                   href="https://www.linkedin.com/company/idm-ingenieria-y-desarrollo-metalmecanico/">
+                    <div class="row">
+                        <img src="../img/futuros_proyect/in.png" alt="linkedin" loading="lazy">
+                    </div>
+                </a>
+                <div class="row">
+                    <img src="../img/futuros_proyect/youtube.png" alt="youtube IDM" loading="lazy">
+                </div>
+            </div>
+            <div class="colum3">
+                <h1>Contacto</h1>
+                <div class="row2">
+                    <img src="../img/futuros_proyect/ubicacion.png" alt="ubicacion IDM" loading="lazy">
+                    <label>
+                        Calle Napoles, Villas del Cimatario, Roma
+                    </label>
+                </div>
+                <br>
+                <!--Mapa-->
+                <iframe title="Ubicacion Ingenieria y Desarrollo Metalmecanico" rel="preconnect" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d233.4889141919122!2d-
+                      100.379675!3d20.554437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDMzJz
+                      E1LjkiTiAxMDDCsDIyJzQ2LjgiVw!5e0!3m2!1ses-419!2sus!4v1596162934982!5m2!1ses-419!2sus" width="290"
+                        height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0">
+                </iframe>
+                <br>
+                <div class="row2">
+                    <img src="../img/futuros_proyect/cel.png" alt="numero telefonico IDM" loading="lazy">
+                    <label>
+                        - 442 287 32 25
+                        <br>
+                        - 442 202 33 07
+                        <br>
+                        - 442 119 32 56
+                    </label>
+                </div>
+
+                <div class="row2">
+                    <img src="../img/futuros_proyect/mail.png" alt="correo de contacto IDM" loading="lazy">
+                    <label>
+                        idmetalmecanico@aol.com
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Pie de pagina final-->
+    <div class="container-footer">
+        <div class="copyright">
+            @2021 Ingenieria y Desarrollo Metalmecanico |
+            Todos los Derechos Reservados
+        </div>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

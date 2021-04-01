@@ -58,6 +58,16 @@
 
 @media only screen and (max-width: 800px) {
     .materiales {padding: 10px}
+    .materiales .content-materiales {flex-direction: column;}
+    .content-materiales .textBox-materiales h2 {font-size: 2em;}
+    .content-materiales .textBox-materiales h2 span {
+        font-size: 2em;
+        margin-bottom: 1px;
+    }
+    .content-materiales .textBox-materiales p {
+        font-size: 1em;
+        margin-top: 40px;
+    }
 }
 
 /* Nuestros servicios */
