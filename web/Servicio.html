@@ -14,60 +14,124 @@
 </head>
 
 <body>
-<!--<div class="lds-dual-ring loader" id="loader"></div>-->
-<!--Menu -->
 <header>
     <nav class="menu" id="menu">
         <div class="logo-box">
             <figure>
-                <img src="../img/menu/logoIDM.png" alt="IDM" loading="lazy" class="logo">
+                <img src="../img/menu/logoIDM.png" alt="IDM Querétaro" loading="lazy" class="logo">
             </figure>
         </div>
         <div class="contenedor contenedor-botones-menu">
-            <button aria-label="Menu" id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
-            <button aria-label="Cerrar" id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
+            <button aria-label="Menu" id="btn-menu-barras" class="btn-menu-barras"><i
+                    class="fas fa-bars"></i></button>
+            <button aria-label="Cerrar" id="btn-menu-cerrar" class="btn-menu-cerrar"><i
+                    class="fas fa-times"></i></button>
         </div>
+
         <div class="contenedor contenedor-enlaces-nav">
             <div class='inicio'><a href="../index.html">Inicio</a></div>
             <div class="btn-departamentos" id="btn-departamentos">
-                <p>Todos los <span>Servicios</span></p>
+                <p><span>Productos</span></p>
                 <i class="fas fa-caret-down"></i>
             </div>
-
+            <div class="btn-servicios" id="btn-servicios">
+                <p><span>Servicios</span></p>
+                <i class="fas fa-caret-down"></i>
+            </div>
             <div class="enlaces" id="list">
-                <div class="futuros" ><a href="../web/futuros-proyectos.html">Futuros Proyectos</a> </div>
-                <div class="nosotros"><a href="/index.html#nosotros">Nosotros</a></div>
-                <div class="contacto" ><a href="../web/contacto.html">Contacto</a></div>
+                <div class="materiales-menu"><a href="../web/materiales.html">Materiales</a></div>
+                <div class="catalogo"><a href="../index.html#catalogo">Catalogo</a></div>
+                <div class="futuros"><a href="../web/futuros-proyectos.html">Futuros Proyectos</a></div>
+                <div class="nosotros"><a href="../index.html#nosotros">Nosotros</a></div>
+                <div class="contacto"><a href="../web/contacto.html">Contacto</a></div>
             </div>
         </div>
-
-        <div class="contenedor contenedor-grid">
-            <div class="grid" id="grid">
-
+        <!--servicios-->
+        <div class="contenedor-servicios contenedor-grid">
+            <div class="grid-servicios" id="grid-servicios">
                 <div class="categorias">
-                    <button class="btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</button>
-                    <a href="#" data-categoria="tecnologia-y-computadoras">Servicios <i class="fas fa-angle-right"></i></a>
-                    <a href="#" data-categoria="libros">Futuros Proyectos <i class="fas fa-angle-right"></i></a>
+                    <button aria-label="Regresar" class="btn-regresar"><i class="fas fa-arrow-left"></i>
+                        Regresar
+                    </button>
+                    <a href="#" data-categoria="tecnologia-y-computadoras">Servicios <i
+                            class="fas fa-angle-right"></i></a>
                 </div>
-
                 <div class="contenedor-subcategorias">
                     <div class="subcategoria " data-categoria="tecnologia-y-computadoras">
                         <div class="enlaces-subcategoria">
-                            <button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
-                            <h3 class="subtitulo">Nuestros Servicios</h3>
-                            <a href="#Herramientasdeforja">Herramientas de Forja</a>
-                            <a href="#moldes">Moldes</a>
-                            <a href="#troqueles">Troqueles</a>
-                            <a href="#herramientasSub">Dados Herramientas de Sub-Emsambles</a>
-                            <a href="#herramientascnc">Herramientas CNC</a>
-                            <a href="#materialesempleados">Materiales Empleados</a>
-                            <a href="#fabricacionrefacciones">Fabricacion de Refacciones</a>
-                            <a href="#izaje">Herramientas de Izaje</a>
-                            <a href="#gages">Fixture & Gages</a>
-                            <a href="#maquinadoespecial">Maquinados Especiales</a>
-                            <a href="#retro-ing">Retro-Ingenieria</a>
-                            <a href="#asistencia-cad-cam">Asistencia CAD CAM</a>
-                            <a href="#paileria">Paileria</a>
+                            <button aria-label="Regresar" class="btn-regresar"><i
+                                    class="fas fa-arrow-left"></i>Regresar
+                            </button>
+                            <h3 class="subtitulo"><a href="../web/Servicio.html">Nuestros Servicios</a></h3>
+                            <a href="../web/Servicio.html#certificacion">Certificacion</a>
+                            <a href="../web/Servicio.html#levantamiento">Levantamiento</a>
+                            <a href="../web/Servicio.html#asistencia-cad-cam">Asistencia CAD CAM</a>
+                            <a href="../web/Servicio.html#retro-ing">Retro-Ingeniería</a>
+                            <a href="../web/Servicio.html#fabricacion">Fabricación</a>
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="#"><img src="../img/menu/VideoCapture_20201215-120817.jpg" loading="lazy"
+                                             alt="Maquinado_CNC"></a>
+                        </div>
+                        <div class="galeria-subcategoria">
+                            <a href="#"><img src="../img/menu/metalmecanica.jpg" loading="lazy"
+                                             alt="piezas maquinado "></a>
+                            <a href="#"><img src="../img/menu/metalmecanica2IDM.jpg" loading="lazy"
+                                             alt="Gage Maquinados"></a>
+                            <a href="#"><img src="../img/menu/VideoCapture_20201215-120817.jpg" loading="lazy" alt="Maquinado CNC"></a>
+                            <a href="#"><img src="../img/menu/menu.jpg" loading="lazy" alt="Maquinado"></a>
+                        </div>
+                    </div>
+
+                    <div class="subcategoria " data-categoria="libros">
+                        <div class="enlaces-subcategoria">
+                            <button aria-label="Regresar" class="btn-regresar"><i
+                                    class="fas fa-arrow-left"></i>Regresar
+                            </button>
+                            <h3 class="subtitulo"><a href="../web/futuros-proyectos.html">Futuros Proyectos</a></h3>
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="#"><img src="../img/menu/menu2.jpg" loading="lazy" alt=""></a>
+                        </div>
+                        <div class="galeria-subcategoria">
+                            <a href="#"><img src="../img/menu/machined-parts.jpg" loading="lazy" alt="Forja"></a>
+                            <a href="#"><img src="../img/menu/menu3.jpg" loading="lazy" alt="Gages"></a>
+                            <a href="#"><img src="../img/menu/metal.jpg" loading="lazy" alt="Pieza Metalmecanico"></a>
+                            <a href="#"><img src="" alt="Pieza Aluminio"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--        Productos-->
+        <div class="contenedor contenedor-grid">
+            <div class="grid" id="grid">
+                <div class="categorias">
+                    <button aria-label="Regresar" class="btn-regresar"><i class="fas fa-arrow-left"></i>
+                        Regresar
+                    </button>
+                    <a href="#" data-categoria="tecnologia-y-computadoras">Productos <i
+                            class="fas fa-angle-right"></i></a>
+                    <a href="../web/Galeria.html" data-categoria="libros">Galeria</a>
+                </div>
+                <div class="contenedor-subcategorias">
+                    <div class="subcategoria " data-categoria="tecnologia-y-computadoras">
+                        <div class="enlaces-subcategoria">
+                            <button aria-label="Regresar" class="btn-regresar"><i
+                                    class="fas fa-arrow-left"></i>Regresar
+                            </button>
+                            <h3 class="subtitulo"><a href="web/Servicio.html">Nuestros Productos</a></h3>
+                            <a href="../web/Servicio.html#Herramientasdeforja">Herramientas de Forja</a>
+                            <a href="../web/Servicio.html#moldes">Moldes</a>
+                            <a href="../web/Servicio.html#troqueles">Troqueles</a>
+                            <a href="../web/Servicio.html#herramientasSub">Dados Herramientas de Sub-Emsambles</a>
+                            <a href="../web/Servicio.html#herramientascnc">Herramientas CNC</a>
+                            <a href="../web/Servicio.html#materialesempleados">Materiales Empleados</a>
+                            <a href="../web/Servicio.html#fabricacionrefacciones">Refacciones</a>
+                            <a href="../web/Servicio.html#izaje">Herramientas de Izaje</a>
+                            <a href="../web/Servicio.html#gages">Fixture & Gages</a>
+                            <a href="../web/Servicio.html#maquinadoespecial">Maquinados Especiales</a>
+                            <a href="../web/Servicio.html#paileria">Paileria</a>
                         </div>
                         <div class="banner-subcategoria">
                             <a href="#"><img src="../img/menu/VideoCapture_20201215-120817.jpg" loading="lazy"
@@ -82,26 +146,11 @@
                             <a href="#"><img src="../img/menu/menu.jpg" loading="lazy" alt="Maquinado"></a>
                         </div>
                     </div>
-
                     <div class="subcategoria " data-categoria="libros">
                         <div class="enlaces-subcategoria">
                             <button aria-label="Regresar" class="btn-regresar"><i
-                                    class="fas fa-arrow-left"></i>Regresar</button>
-                            <h3 class="subtitulo"><a href="../web/futuros-proyectos.html">Futuros Proyectos</a></h3>
-                            <a href="../web/automatizacion.html">Automatizacion</a>
-                            <a href="../web/impresion3D.html">Impresion 3D</a>
-                            <a href="../web/certificaciones.html">certificaciones</a>
-                        </div>
-                        <div class="banner-subcategoria">
-                            <a href="#"><img src="../img/menu/menu2.jpg" loading="lazy" alt=""></a>
-                        </div>
-                        <div class="galeria-subcategoria">
-                            <a href="#"><img src="../img/menu/machined-parts.jpg" loading="lazy" alt="Forja"></a>
-                            <a href="#"><img src="../img/menu/menu3.jpg" loading="lazy" alt="Gages"></a>
-                            <a href="#"><img src="../img/menu/aluminum-4674002_640.jpg" loading="lazy"
-                                             alt="Pieza Aluminio"></a>
-                            <a href="#"><img src="../img/menu/metal.jpg" loading="lazy"
-                                             alt="Pieza Metalmecanico"></a>
+                                    class="fas fa-arrow-left"></i>Regresar
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -120,7 +169,7 @@
         </div>
         <div class="imgMolde">
             <video autoplay muted loop preload="metadata">
-                <source src="../video/Grabado_Metalmecanica_S.mp4"></video>
+                <source src="../videos/Grabado_Metalmecanica_S.mp4"></video>
         </div>
     </div>
 </section>
@@ -377,6 +426,24 @@
             <div class="right-col">
                 <div class="slider">
                     <img src="../img/servicios_web/pai.jpg" loading="lazy" alt="Paileria">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fabricacion">
+        <div class="wrapper-impar">
+            <div class="left-col">
+                <div class="slider">
+                    <img src="../img/servicios_web/fabricacion.jpeg" loading="lazy" alt="fabricacion">
+                </div>
+            </div>
+            <div class="right-col">
+                <div class="content">
+                    <h1 class="titulo-texto">Fabricación</h1>
+                    <p class="color-texto"> Elaboración de piezas y refacciones, mediante procesos industriales
+                        utilizando materiales de alta calidad, cumpliendo los requerimientos de los clientes.
+
+                    </p>
                 </div>
             </div>
         </div>
