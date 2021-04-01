@@ -257,7 +257,7 @@ a {text-decoration: none;}
     top: 15px;
 }
 
-.menu .contenedor-enlaces-nav .materiales a{
+.menu .contenedor-enlaces-nav .materiales-menu a{
     position: absolute;
     left: 400px;
     top: 5px;
@@ -685,7 +685,7 @@ a {text-decoration: none;}
         top: 120px;
     }
 
-    .menu .enlaces .materiales a {
+    .menu .enlaces .materiales-menu a {
         left: 25px;
         top: 155px;
     }

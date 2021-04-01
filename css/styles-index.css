@@ -85,7 +85,7 @@ h2 span{
 /*****Certificacion******/
 
 .sect-certificacion {
-    background: #235496;
+    background: var(--orange);
     justify-content: flex-start;
     min-height: 25vh;
 }
@@ -131,13 +131,13 @@ h2 span{
     height: 100vh;
 }
 .serviciosIDM .idm-servicios{
-    background:#FFFFFF;
+    background: var(--blue);
     padding: 100px;
     width: 50%;
     
 }
 .txt-serviciosIDM{
-    color: var(--blue);
+    color: var(--white);
     font-size: 40px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -148,7 +148,7 @@ h2 span{
 }
 .descripcionIDM{
     top: 50px;
-    color: #000000;
+    color: var(--white);
     font-size: 17px;
     font-weight: 300;
     letter-spacing: 1px;    
@@ -439,6 +439,7 @@ section .contac-idm p {
     color: #fff;
     font-size: 17px;
     font-weight: 300;
+    text-align: center;
     letter-spacing: 1px;
     padding-bottom: 30px;
     font-family: 'Titillium Web', sans-serif;
@@ -463,6 +464,7 @@ section .contac-idm p {
     cursor: pointer;
     font-size: 16px;
     position: relative;
+    left: 140px;
 
 }
 
