@@ -69,3 +69,6 @@ file/
 video/grabado.mp4
 
 .idea
+
+node_modules
+package-lock.json
