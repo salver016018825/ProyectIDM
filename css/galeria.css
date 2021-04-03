@@ -61,10 +61,16 @@ body{
     text-align: center;
 }
 
-
 @media only screen and (max-width: 800px) {
-    .galeria {padding: 10px}
+    .galeria-portada {padding: 10px}
+    .galeria-portada .content-galeria {flex-direction: column;}
+    .content-galeria .textBox-galeria h2 {font-size: 2em;}
+    .content-galeria .textBox-galeria h2 span {
+        font-size: 2em;
+        margin-bottom: 1px;
+    }
 }
+
 .galeria{
     position: relative;
     column-count: 3;
