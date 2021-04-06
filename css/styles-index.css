@@ -44,7 +44,7 @@ body {
 
 
 /****Portada inicio*****/
-.portada-inicio .portada{
+.portada-inicio .portada {
     position: relative;
     width: 100%;
     display: flex;
@@ -53,9 +53,10 @@ body {
     min-height: 100vh;
     background: #000000;
     overflow: hidden;
-    
+
 }
-h2{
+
+h2 {
     color: #fff;
     text-align: center;
     font-size: 8vw;
@@ -63,14 +64,16 @@ h2{
     z-index: 1000;
     font-weight: 900;
 }
-h2 span{
+
+h2 span {
     font-size: 0.2em;
     letter-spacing: 0.4em;
     font-weight: 400;
     text-transform: uppercase;
     font-family: 'Titillium Web', sans-serif;
 }
-.block{
+
+.block {
     position: absolute;
     width: 50px;
     height: 100px;
@@ -78,8 +81,10 @@ h2 span{
     box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.2);
 }
 
-@media only screen and (max-width:800px){
-    #title-idm{ font-size: 0.5em;}
+@media only screen and (max-width:800px) {
+    #title-idm {
+        font-size: 0.5em;
+    }
 }
 
 /*****Certificacion******/
@@ -97,24 +102,29 @@ h2 span{
     line-height: 1.1em;
     text-align: center;
     padding-top: 50px;
-    
+
     font-family: 'Titillium Web', sans-serif;
 }
 
 .certificacion-idm p {
     color: #fff;
     font-size: 17px;
-    text-align: center;    
+    text-align: center;
     padding-bottom: 50px;
     font-family: 'Titillium Web', sans-serif;
 }
 
 @media only screen and (max-width:800px) {
-    .certificacion{
+    .certificacion {
         position: absolute;
     }
-    .certificacion-idm h2{margin: auto; font-size: 1.7em;}
-    .certificacion-idm p{
+
+    .certificacion-idm h2 {
+        margin: auto;
+        font-size: 1.7em;
+    }
+
+    .certificacion-idm p {
         margin: auto;
         font-size: 1em;
     }
@@ -124,19 +134,21 @@ h2 span{
     .sidebar {top: 545px;}*/
 
 /*****servicios*******/
-.serviciosIDM{
+.serviciosIDM {
     position: relative;
     width: 100%;
     display: flex;
     height: 100vh;
 }
-.serviciosIDM .idm-servicios{
+
+.serviciosIDM .idm-servicios {
     background: var(--blue);
     padding: 100px;
     width: 50%;
-    
+
 }
-.txt-serviciosIDM{
+
+.txt-serviciosIDM {
     color: var(--white);
     font-size: 40px;
     font-weight: 600;
@@ -146,18 +158,20 @@ h2 span{
     padding-bottom: 30px;
     margin-top: 130px;
 }
-.descripcionIDM{
+
+.descripcionIDM {
     top: 50px;
     color: var(--white);
     font-size: 17px;
     font-weight: 300;
-    letter-spacing: 1px;    
+    letter-spacing: 1px;
     padding-bottom: 30px;
     font-family: 'Titillium Web', sans-serif;
     margin: auto;
 
 }
-.serviciosIDM .imgBx-ser{
+
+.serviciosIDM .imgBx-ser {
     background: url(../img/index/servicios-prueba1.jpg);
     width: 50%;
     background-size: cover;
@@ -165,85 +179,101 @@ h2 span{
 }
 
 
-@media only screen and (max-width:800px) {   
-    .serviciosIDM{
+@media only screen and (max-width:800px) {
+    .serviciosIDM {
         flex-direction: column;
     }
-    .serviciosIDM .idm-servicios, 
+
+    .serviciosIDM .idm-servicios,
     .serviciosIDM .imgBx-ser {
         width: 100%;
         padding: 10px;
         /* min-height: 400px; */
         text-align: center;
         height: 100%;
-    }        
-    .idm-servicios{padding: 5px;}
-    .txt-serviciosIDM{font-size:2em;}
-    .descripcionIDM{font-size:1em;}
-    .imgBx-ser{height: 100vh;}
+    }
+
+    .idm-servicios {
+        padding: 5px;
+    }
+
+    .txt-serviciosIDM {
+        font-size: 2em;
+    }
+
+    .descripcionIDM {
+        font-size: 1em;
+    }
+
+    .imgBx-ser {
+        height: 100vh;
+    }
 }
 
 /************Contacto********************/
-
-.sect-contac {
-    background: #222;
-    /*padding:100px;*/
-    /*display: flex;*/
-    justify-content: flex-start;
-    /*align-items: center;*/
+.contacto-catalogo {
+    display: flex;
     min-height: 60vh;
-}
-
-/* section .logo{
-    position: fixed;
-    top:30px;
-    color: #222;
-    font-weight: 700;
-    font-size: 2em;
-    z-index: 100;
-    cursor: pointer;
-} */
-/* section */
-.contactopdf {
-    position: absolute;
-    height: 50%;
-    left: 380px;
-    padding-top: 60px;
+    background: #222;
+    padding: 10px;
+    justify-content: center;
+    font-family: 'Titillium Web', sans-serif;
 
 }
 
-section .contac-idm {
-    position: relative;
-    max-width: 650px;
-    z-index: 1;
+.contacto-catalogo .contenedor-enlace-imagen {
+    width: 50%;
+    margin: auto;
 }
 
-section .contac-idm h2 {
+.contacto-catalogo .catalogo-imagen {
+    display: flex;
+    width: 220px;
+    height: 300px;
+    margin: auto;
+}
+
+.contacto-catalogo .catalogo-imagen img {
+    width: 100%;
+}
+
+.contacto-catalogo .contacto-enlace {
+    display: flex;
+    align-content: space-around;
+    width: 50%;
+    flex-direction: column;
+    height: 200px;
+    margin-top: 50px;
+
+}
+
+.contacto-catalogo .contacto-enlace h2 {
     color: #fff;
     font-size: 2em;
-    font-weight: 700;
-    line-height: 1.1em;
-    text-align: center;
-    padding-top: 50px;
-    margin-right: -570px;
-    margin-left: 730px;
-    font-family: 'Titillium Web', sans-serif;
+    margin: 10px;
+    padding-bottom: 10px;
 }
 
-section .contac-idm p {
+.contacto-catalogo .contacto-enlace p {
     color: #fff;
     font-size: 17px;
-    margin: 20px 0 10px;
+    margin: auto;
     text-align: center;
-    /*left: 100%;*/
-    margin-right: -533px;
-    margin-left: 730px;
-    padding-bottom: 50px;
-    font-family: 'Titillium Web', sans-serif;
-
 }
 
-.btn-contacto {
+.contacto-catalogo .contacto-enlace .contenedor-enlace-botton {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto-catalogo .boton-enlace {
+    width: 200px;
+    height: 60px;
+}
+
+.button-enlace {
     width: 200px;
     height: 60px;
     background: none;
@@ -253,13 +283,10 @@ section .contac-idm p {
     text-transform: uppercase;
     cursor: pointer;
     font-size: 16px;
-    position: relative;
-    margin-right: -533px;
-    margin-left: 860px;
 }
 
-.btn-contacto::before,
-.btn-contacto::after {
+.button-enlace::before,
+.button-enlace::after {
     content: "";
     position: absolute;
     width: 14px;
@@ -269,81 +296,46 @@ section .contac-idm p {
     transition: .4s linear;
 }
 
-.btn-contacto::before {
+.button-enlace::before {
     top: -4px;
     left: 10%;
 }
 
-.btn-contacto::after {
+.button-enlace::after {
     bottom: -4px;
     right: 10%;
 }
 
-.btn-contacto:hover::before {
+.button-enlace:hover::before {
     left: 80%;
 }
 
-.btn-contacto:hover::after {
+.button-enlace:hover::after {
     right: 80%;
 }
 
-.contac-idm i {
-    color: #dc7633;
-    margin-left: 620px;
-    font-size: 26px;
-    padding-bottom: 100px;
-}
-
-
-@media only screen and (max-width:800px) {
+/* @media only screen and (max-width:800px) {
     .sect-contac {
         display: flex;
         width: 100%;
     }
     .contactopdf { position:absolute;left: 85px;}
-}
-@media only screen and (max-width: 991px){
-    .sect-contac{
-        flex-direction: column;
-        align-items: center;
+} */
+@media only screen and (max-width: 991px) {
+    .contacto-catalogo {
         height: 100vh;
+        flex-direction: column;
+    }
+
+    .contacto-catalogo .contenedor-enlace-imagen {
         width: 100%;
-        
+        margin: 0px;
     }
-    .sect-contac .contacto{
-        margin-left: 50px;
-        margin-right: 50px;
-        left:60px;
-        padding-top:90px;
+
+    .contacto-catalogo .contacto-enlace {
+        width: 100%;   
+        margin: 0px;
     }
-    .sect-contac .contac-idm h2{
-        margin: auto;
-        font-size: 2em;
-        padding-top:50px;
-        
-    }
-    .sect-contac .contac-idm p{
-        margin: auto;
-        padding-top: 20px;
-    }
-    .sect-contac .contac-idm{
-        width: 100%;
-        position: relative;
-        top: 340px;        
-    }    
-    .contac-idm .btn-contacto{
-        margin-left:70px;
-        margin-right:70px;
-        
-    }
-    .contac-idm .pdf i{
-        position: absolute;
-        margin-left: 70px;
-        padding-bottom: 0; 
-        top:225px;
-        float: left;
-        left: 240px;
-        }
 }
 
 
@@ -404,11 +396,20 @@ section .contac-idm p {
         align-items: center;
         justify-content: space-between;
     }
-    
-    .box-elements{padding: 10px;margin-bottom: 10px;}
-    .elementos .icons > div{padding-bottom: 10px;}
-    .elementos .icons > div h2{margin: 0px 0px 0px 0px;}
-    
+
+    .box-elements {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .elementos .icons>div {
+        padding-bottom: 10px;
+    }
+
+    .elementos .icons>div h2 {
+        margin: 0px 0px 0px 0px;
+    }
+
 }
 
 /******************futuros proyectos****************/
@@ -416,7 +417,7 @@ section .contac-idm p {
     position: relative;
     width: 100%;
     display: flex;
-    height:100vh;
+    height: 100vh;
 }
 
 .proyectos .contentBx {
@@ -497,28 +498,41 @@ section .contac-idm p {
     right: 80%;
 }
 
-@media only screen and (max-width:800px) {   
-        .proyectos{
-            flex-direction: column;
-        }
-        .proyectos .contentBx, 
-        .proyectos .imgBx {
-            width: 100%;
-            padding: 10px;
-            min-height: 400px;
-            text-align: center;
-            height: 100%;
-        }
-        .btn-project{
-            margin-right: 50px;
-            margin-left: 50px;
-            left:43px;
-        }
-            
-        .contentBx{padding: 5px;}
-        .txt-proyectos{font-size:2em;}
-        .txt{font-size:1em;}
-        .imgBx{height: 100vh;}
+@media only screen and (max-width:800px) {
+    .proyectos {
+        flex-direction: column;
+    }
+
+    .proyectos .contentBx,
+    .proyectos .imgBx {
+        width: 100%;
+        padding: 10px;
+        min-height: 400px;
+        text-align: center;
+        height: 100%;
+    }
+
+    .btn-project {
+        margin-right: 50px;
+        margin-left: 50px;
+        left: 43px;
+    }
+
+    .contentBx {
+        padding: 5px;
+    }
+
+    .txt-proyectos {
+        font-size: 2em;
+    }
+
+    .txt {
+        font-size: 1em;
+    }
+
+    .imgBx {
+        height: 100vh;
+    }
 }
 
 /****************Slogan*********************/
@@ -553,14 +567,18 @@ section .contac-idm p {
 }
 
 
-@media only screen and (max-width: 800px){
-    .elon-musk{
+@media only screen and (max-width: 800px) {
+    .elon-musk {
         background: url(../img/index/SLOGAN1.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
-    .elon-musk .figure-img h4{width: 80%;}
+
+    .elon-musk .figure-img h4 {
+        width: 80%;
+    }
 }
+
 /************Nosotros********************/
 
 .sect-nosotros {
@@ -621,8 +639,12 @@ section .contac-idm p {
 }
 
 @media screen and (max-width:800px) {
-    
-    .nosotros-idm h2{margin-left: 45px;padding-top: 100px;}
+
+    .nosotros-idm h2 {
+        margin-left: 45px;
+        padding-top: 100px;
+    }
+
     .nosotros-idm p {
         margin: auto;
         padding-left: 50px;
@@ -734,9 +756,23 @@ section .contac-idm p {
     width: 250px;
 } */
 
-@media only screen and (max-width: 800px){
-    .fondo{height: auto;}
-    .fondo .empresas h2{ font-size: 2.5em; padding: 50px; margin: auto;}
-    .fondo .empresas p{font-size: 1em; padding: 5px;}
-    .project-img{margin: 10px;}
+@media only screen and (max-width: 800px) {
+    .fondo {
+        height: auto;
+    }
+
+    .fondo .empresas h2 {
+        font-size: 2.5em;
+        padding: 50px;
+        margin: auto;
+    }
+
+    .fondo .empresas p {
+        font-size: 1em;
+        padding: 5px;
+    }
+
+    .project-img {
+        margin: 10px;
+    }
 }
