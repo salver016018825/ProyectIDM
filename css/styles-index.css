@@ -283,6 +283,7 @@ h2 span {
     text-transform: uppercase;
     cursor: pointer;
     font-size: 16px;
+    position: relative;
 }
 
 .button-enlace::before,
