@@ -6,6 +6,7 @@ const btnDepartamentos = document.getElementById('btn-departamentos'),
 	contenedorEnlacesNav = document.querySelector('#menu .contenedor-enlaces-nav'),
 	contenedorSubCategorias = document.querySelector('#grid .contenedor-subcategorias'),
 	contenedorSubcategoriasServicios = document.querySelector('#grid-servicios .contenedor-subcategorias'),
+	close = document.getElementById('close-on-click'),
 	esDispositivoMovil = () => window.innerWidth <= 800;
 
 btnDepartamentos.addEventListener('mouseover', () => {
@@ -134,22 +135,15 @@ btnCerrarMenu.addEventListener('click', (e) => {
 	document.querySelector('body').style.overflow = 'visible';
 });
 
+close.addEventListener('click',(e) => {
+	error = e.preventDefault();
+	document.querySelectorAll('#menu .activo').forEach((elemento) => {
+		elemento.classList.remove('activo');
+	});
+	setTimeout(() =>location.href  = '../web/galeria.html',1000);
+	
+});
 
-/* Menu aparecer desaparecer */
-// let menuContent = document.querySelectorAll('.menu');
-// let PrevScrollPos = window.pageYOffset;
-
-// window.onscroll = () => {
-// 	let currentScrollPos = window.pageYOffset;
-// 	if (prevScrollPos > currentScrollPos) {
-// 		containerMenu.style.top = '-50px';
-// 		containerMenu.style.transition = '0.5s';
-// 	} else {
-// 		menuContent.style.top = '-50px';
-// 		menuContent.style.transition = '0.5s';
-// 	}
-// 	prevScrollPos = currentScrollPos;
-// }
 /*menu */
 let bodyTag = document.querySelector('body');
 let myNav = document.querySelector('nav');
@@ -165,7 +159,6 @@ addEventListener('scroll', () => {
 
 /*preolader site*/
 window.addEventListener("load", function () {
-	this.console.log(`entrando`);
 	document.getElementById("loader").classList.toggle("loader2");
 });
 
