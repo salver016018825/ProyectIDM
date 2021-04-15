@@ -340,12 +340,13 @@ a {text-decoration: none;}
     position: absolute;
     top: -5px;
     left: 113px;
+    opacity: 0;
 }
 
 .grid>div {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, .5);
     transition: 0.8s;
-    background: rgba(35, 84, 150, 0.9);
+    background: #051530;
 }
 
 /* ------------------------- */
@@ -486,12 +487,13 @@ a {text-decoration: none;}
     position: absolute;
     top: -5px;
     left: 216px;
+    opacity: 0;
 }
 
 .grid-servicios>div {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, .5);
     transition: 0.8s;
-    background: rgba(35, 84, 150, 0.9);
+    background: #051530;
 }
 
 /* ------------------------- */

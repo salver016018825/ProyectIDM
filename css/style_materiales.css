@@ -57,7 +57,7 @@
 
 
 @media only screen and (max-width: 800px) {
-    .materiales {padding: 10px; }
+    .materiales {padding: 10px}
     .materiales .content-materiales {flex-direction: column;}
     .content-materiales .textBox-materiales h2 {font-size: 2em;}
     .content-materiales .textBox-materiales h2 span {
